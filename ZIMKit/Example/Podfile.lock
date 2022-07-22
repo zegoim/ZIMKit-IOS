@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - ZIMKit (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - ZIMKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  ZIMKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  ZIMKit: 03853f7be5121b2c77ceed57afd2e99b9f2d091f
+
+PODFILE CHECKSUM: 62d85b5010712c90a9eb305215adbc8d09947a67
+
+COCOAPODS: 1.11.2

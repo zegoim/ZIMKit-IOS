@@ -1,0 +1,1779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4A68CFD979D413A619DF631BB121D98F /* Bugly */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9CC7AA793D9397C15E010F8242EE1046 /* Build configuration list for PBXAggregateTarget "Bugly" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = Bugly;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0251982D102D73525F761ED9547E3D23 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F057DF4A2303E39B020BD5A4666C28B1 /* zh-Hans.lproj */; };
+		031CBB38892046E3B2A8ECF9BF82AB9B /* chat_nav_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4984886527037451B56A63DDFE0F349 /* chat_nav_right@2x.png */; };
+		0DED5ECBE2015544ED0A00041859417D /* ZIMKitConversationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 28EB322A33A079AC7F95A90B2CC06714 /* ZIMKitConversationModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10646281D95EF61AA71BE81A414FB3C8 /* ZIMKitSystemMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = A4D644031DA5560FF86E1159C96FA5D6 /* ZIMKitSystemMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		141FCB692CDAA8F0DE386B7E749B610C /* ZIMKitConversationCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1557DB2A4FEB985B167C0F08F409762A /* ZIMKitConversationCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15B707FCB63AA66771CD3BAF88180B1C /* ZIMKitConversationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C69482B0ED010C72726F4B4EF204F7A4 /* ZIMKitConversationModel.m */; };
+		192B9FE067BDA7BCB3C60846E7A3527B /* ZIMKitMessagesVM.h in Headers */ = {isa = PBXBuildFile; fileRef = F2CF47C858B7B7F4D9AAB00899E0A3D5 /* ZIMKitMessagesVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AA56FC3457B2B57B999FCB40F175375 /* ZIMKitManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FD08287D8408DFB5BC61401692FA9015 /* ZIMKitManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D4F2D38B3813A7F76A6AF9434698AA2 /* Pods-ZIMKitDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3147E396ECF294794A26A442E72B0A8E /* Pods-ZIMKitDemo-dummy.m */; };
+		1EFBB6885B3811F6B9E7E5B964589B1B /* ZIMKitMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FC05CBA1C948F356DABD44128D4B24 /* ZIMKitMessage.m */; };
+		1FC220EA7F7D242B3273789C4827FF65 /* ZIMKitMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E2856C334C7E410A9F6D913FAD99FC8D /* ZIMKitMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FEC14575D7FEDC13CC7831893AE1F5F /* ZegoRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E18F61E1466F845826A422118D1F8 /* ZegoRefreshAutoFooter.m */; };
+		205017A314C184CB02A6EA9F5BB3F7B5 /* message_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2AF1F66A1B6ABCE1BFBA566E65808E9 /* message_selected@2x.png */; };
+		23223B415FEAD9836BC789FA40D818BD /* ZIMKitMessagesListVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8F4BB31EE32259C55A7637CD1548DA /* ZIMKitMessagesListVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2431DF953A51CF284DB576FB2EDC65ED /* conversation_bar_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 570767D2490C26B98A647DA6A8BD1C44 /* conversation_bar_close.png */; };
+		26A45227BBD7A71C52C1CD65BB985A51 /* message_send_fail.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4403D8E1FD5B58C9AD7A18D1D31925 /* message_send_fail.png */; };
+		26DB8DF9F3AD372A8904EA0418E30FC8 /* ZIMKitAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE080C87D097B398A41F0933353168B /* ZIMKitAlertView.m */; };
+		2C0EDB0303A03E1EA0170CD21BEF7309 /* ZIMKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2C4525B00EE75600A5666B12B93CF /* ZIMKitManager.m */; };
+		2D7D0196267C521ED8FF7A80BFF476A8 /* ZIMKitSystemMessageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C3DC91B9719F2EAD7A5493A3473DB39A /* ZIMKitSystemMessageCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31F3C736E62737251B5E9274A3DD6D22 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E5B9463470B5BA42B2E4E583F2E6D8 /* ReplaceMe.m */; };
+		3270A9F81E864F0B37BC02EC53B1B7B7 /* chat_nav_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74A2C3FAD789E6DF8D7EE0FBCC52B4FF /* chat_nav_right@3x.png */; };
+		32FA6B0A7026E19601B0F332CED54CF3 /* ZIMKitGroupModule.h in Headers */ = {isa = PBXBuildFile; fileRef = FF92C5AD33E11D3D11F2705A39DA5482 /* ZIMKitGroupModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34BD6C2258C3198C2B93FD97F16AE703 /* NSBundle+ZIMKitUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F79E1DDBB5AC74B983917A8E6C07DB6A /* NSBundle+ZIMKitUtil.m */; };
+		352C6282CF86E33FC0866C19A31CC991 /* Pods-ZIMKitDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F73A5C4C5AE11EDE7D84F40E1D65723 /* Pods-ZIMKitDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35710B31B98E8D8675EB38E3081AD5CF /* chat_nav_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329F5B90C9EEA7498F3C6C9C783FD4B1 /* chat_nav_left@2x.png */; };
+		363AFAC71FD206D0227A36E307C71466 /* ZIMKitMessageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 414A0C4193EF790E9287438AC3EDE90D /* ZIMKitMessageCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		372E0B7B7EFF6F14FEE2EC137A796160 /* ZIMKitMessageCellConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E8D37D64D7B5A5628B08B5DCBE719B /* ZIMKitMessageCellConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37F60C1C8944B733F99A8B9D3A33C90C /* ZIMKitConversationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AF1300BBD24A2B046E24E14C5AB48A /* ZIMKitConversationCell.m */; };
+		3A96B1C06B1B467454D7693C76798831 /* send_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6871104582FF56F18B96878D45869949 /* send_bubble@2x.png */; };
+		3A9DC1702CD38FFA4C033F4673DB7AEF /* ZIMKitRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 853B9EA33C76548C1244561F593168E7 /* ZIMKitRouter.m */; };
+		3AB63D8A358DEAA89B41D3B020E3B6E1 /* chat_default_avatar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C84048A50EA1CDA7D293026D9DF76C46 /* chat_default_avatar@3x.png */; };
+		3D852B78880409CE90DA3C1951ECAEF9 /* ZIMKitMessageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EE3018DEB5AA04701E7512CE4634BE /* ZIMKitMessageTool.m */; };
+		3DF15636DE6533150AFA4B6A6CE0E377 /* ZIMKitBubbleMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2608047DE8CAFADB99EB03EA8B9831 /* ZIMKitBubbleMessageCell.m */; };
+		3E834F83113BED6F7D2BCBA4CEEC5051 /* ZIMKitEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5653DE5A11CEC2E6D222356B0338EB /* ZIMKitEventHandler.m */; };
+		40DF311C1B274126070B1763A53F42D6 /* conversation_bar_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F58ECA5C6104E1DD23546A23F0CAEC08 /* conversation_bar_right@2x.png */; };
+		44F6F4DE1070AE6705F47CBDE1A2F1C6 /* conversation_msg_fail@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF31B047E7A14AE6CF4D59EE2F03868 /* conversation_msg_fail@3x.png */; };
+		45369BF479BB8E82058593FEA6BBE319 /* ZIMKitGroupDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 707ED2EEF6357139CEE5FB2F99BB399F /* ZIMKitGroupDetailController.m */; };
+		4A02A474774AE5CC922C6C7BC5C62D4E /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C6DD7AE6482DA1D26CC1C0368744A20 /* UIView+Toast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C9919082C0F4ADAF1FEA9FCF3AED540 /* ZIMKitConversationVM.h in Headers */ = {isa = PBXBuildFile; fileRef = 83884DE118B13A92F1DD95B6545DFC40 /* ZIMKitConversationVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50AB7346C6962EAEA31ABAA0D2E0745F /* conversation_msg_fail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBF6D17C858A5E2ABB05273167B6320 /* conversation_msg_fail@2x.png */; };
+		514CDA0150834DB4459787858D09C64E /* conversation_bar_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16CCB1DC6116F55E1C404C882DF1C7EF /* conversation_bar_left@2x.png */; };
+		53D1F3B918DC63F9BF488EC66311309E /* UIImage+ZIMKitUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BE309460396A90DC5528BB16D1DF28D2 /* UIImage+ZIMKitUtil.m */; };
+		55000BC90720E14AA53C6A879E31AD9C /* message_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A6873B4C7606DE10FEC29E7C05E108 /* message_selected@3x.png */; };
+		55241E2B0AD95E30982A8D25BE48563C /* NSBundle+ZIMKitUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 55AE8C93D1AAA113EE7FAB902494D116 /* NSBundle+ZIMKitUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55B2D6B30796B9DF394F52EF8E8E8650 /* ZIMKitUnReadView.h in Headers */ = {isa = PBXBuildFile; fileRef = FFE08CF92587770B899AEC378C18C026 /* ZIMKitUnReadView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5910623D4FBDE9AC7892ED8EE69CAA63 /* message_send_fail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 560D3D1C181461A9B85AD25599728247 /* message_send_fail@2x.png */; };
+		5C12CA56B0EBA91A21D42472B5554288 /* ZIMKitTextMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA58C54059C1BAE6E69AD515C2F49CCF /* ZIMKitTextMessage.m */; };
+		5CD369EBCC60192527ADFAFCBF94D535 /* ZIMKitConversationListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1E0ADB0FBFEDB7879AC101535E9C6F /* ZIMKitConversationListVC.m */; };
+		5CDB432045A99706D76AE40EA1D14722 /* ZIMMessage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D25E2371B64D550E97C5ADA35268A7A /* ZIMMessage+Extension.m */; };
+		5DE3B71B8F1BFF300745951B16487C86 /* NSString+ZIMKitUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 308B022182DC7E6C20F83B0CC49F6F87 /* NSString+ZIMKitUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E33BB73E8E08ECE4E353E7F821B556F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5E584C23EDA854CE9B2BD93207CF7AFD /* ZIMKitGroupModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D51A9862CC68F287A4BB0DDD6DDA6A /* ZIMKitGroupModule.m */; };
+		5E8C7B1941A0657024EDC4EB135DDB72 /* ZIMKitPrefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = 54B9371FC4C7878CDAF42CF2B108F742 /* ZIMKitPrefix.pch */; };
+		5F3091A0CB1C08599A75B5390386C6A1 /* ZIMKitRefreshAutoHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BED6D7D73D03E3AA5DB15E029EE4C35 /* ZIMKitRefreshAutoHeader.m */; };
+		5FBB3DD00FA0CF172743C0EF22A78C59 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 857EEBC787E1F5D87E5005E7EB9CC6C6 /* UIView+Toast.m */; };
+		63C162DD332A3EE294ECC49CB63AF871 /* conversation_msg_fail.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF743BDD32047579CF290FB872B873 /* conversation_msg_fail.png */; };
+		67704F5E5FEFAB46CB9C84EBB329731F /* ZIMKitGroupdetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B61F23512F8D2AC1EBE5A904A7FC4194 /* ZIMKitGroupdetailView.m */; };
+		68586C913424C6FF0AB042BD8679D598 /* conversation_bar_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B877155E3604D4340FFA1FC010CAB69 /* conversation_bar_right.png */; };
+		6858A71CF5992E1D64397768AAC2D713 /* ZIMKitGroupVM.m in Sources */ = {isa = PBXBuildFile; fileRef = A890C822FB415E0A797BD43AE269B9E1 /* ZIMKitGroupVM.m */; };
+		69389B6D410A699F5EA293E386CCB0DC /* conversation_bar_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBAA4CB94D613295F593E72A3228BDBF /* conversation_bar_close@2x.png */; };
+		69E6AB54692A9406DCDBE5C378FBABD2 /* ZIMKitBaseModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 69479A94251086F991D17A75D083ED7C /* ZIMKitBaseModule.m */; };
+		6C8FE6AD5CAC75921C46931AAB852827 /* ZIMKitBaseModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 17F2E2793AE180143778C57A6059833A /* ZIMKitBaseModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D16E428BE95D229B29D1632C0178624 /* ZIMKitTextMessageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BE0FF827D59BE6B9386AC58F49F4BF8 /* ZIMKitTextMessageCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F7F01A07173FE579F0CDAD52D1CA51C /* ZIMKitGroupMember.h in Headers */ = {isa = PBXBuildFile; fileRef = 58C41F4CA041D8F38B3F700E0ACCE849 /* ZIMKitGroupMember.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		719A9A671FE9D22D16290F74673812CD /* ZIMKitGroupdetailView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F066101037757D7394C6D198591B725 /* ZIMKitGroupdetailView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76CB801A6E6CAEDA62ED43C704985407 /* UIView+Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = 541CCBEF410ED0CDB09EAC44177EAE7C /* UIView+Layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7809CEF6116A8CC6EB7FE5771F6BF8F6 /* ZIMKitConversationListVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE483C30FB7DDADD2DAF966D1054C3E /* ZIMKitConversationListVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B9BBBFFB4B80D07FB864FBF77F74C36 /* ZIMKitEventHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A3999316551EEBC0B442BDD8A9356635 /* ZIMKitEventHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8027BF465C932B7A60B2909D3A35A3A1 /* sendMessage_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B702AB97041AB353A3389AE3F56765D1 /* sendMessage_icon@3x.png */; };
+		8100B5956068C4840493828A81E992A9 /* UIImage+ZIMKitUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 86C058CA4566DC2A72DDA9791DCC2A7D /* UIImage+ZIMKitUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87190371A88D408F32F56C4236FC7210 /* ZIMKitRefreshAutoHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EBC7B7B9F2B17860D5D338F8C77BD0C /* ZIMKitRefreshAutoHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89005D8339DCCA6568FD4365640E1E2A /* NSObject+ZIMKitUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2880DE20F2B753D37BD79E3FFED832E8 /* NSObject+ZIMKitUtil.m */; };
+		8E7713338993C8B0E6B3676835594691 /* conversation_bar_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3460CCFCA32EABFE828173C422BF0C75 /* conversation_bar_close@3x.png */; };
+		8F72B14E07BC797791E16920D8D90E53 /* ZIMKitGroupVM.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FB2E2C1693429329B7E2C9F7446971 /* ZIMKitGroupVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9056C5E432F4C28BA5AC5A41B268D1DA /* ZIMKitInputBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9042AB3B41C30A6C1700AD80D78AE89C /* ZIMKitInputBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		986ABFC190C9A2D0B191402933022228 /* ZIMKitTextMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6817603628A9EB3934482EE28DF6C6B /* ZIMKitTextMessageCell.m */; };
+		999616CCF7384C903FCA81482988A526 /* ZIMKitNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = A6EA23DD3C2674B5366170EEE35F57ED /* ZIMKitNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99E38CCC37C15E4AAC7AD11D2F8EE625 /* ZIMKitSystemMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E573F18871A47CFB56CFF7935E6442AB /* ZIMKitSystemMessage.m */; };
+		9A29DD497CA9391A608B83363914535C /* ZIMKitNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C9F9A3670982D822A6B36A6A9E9B6F /* ZIMKitNavigationController.m */; };
+		A0D6784F04901F0AC4BC69F46A2F419A /* ZIMKitCreateChatController.h in Headers */ = {isa = PBXBuildFile; fileRef = B27E2481DD8C65A0578D08AB8571F4A6 /* ZIMKitCreateChatController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A16154FBDAB1C006BB5513B15A62CDB8 /* chat_nav_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF1E9D65446F6BF7AD46E806C267F878 /* chat_nav_left@3x.png */; };
+		A20B08A73172186143CCDF37342FC004 /* ZIMKitMessageModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E8ED3F70041FC61E306A167A51DC0 /* ZIMKitMessageModule.m */; };
+		A4CBADF3074E437ACC0F9DC0A38917CD /* message_selected-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84FA283AA243798AFEBBC566F7056E72 /* message_selected-1.png */; };
+		A847BAB7C6A4465A2889A33AC3902E1B /* ZIMKitUnReadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A06581ADFC0630B25079169F20B8E33B /* ZIMKitUnReadView.m */; };
+		AA3B1B69112DF47A9A9A5CE6AAAE73D0 /* ZIMKitDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = D805ACA7062B91D388AFD79A6D0E5C26 /* ZIMKitDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AED8278A24F812C89457BCC2D2262F8D /* message_selected@2x-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 50308C97DCBAA6C20E7D97E9C40CE631 /* message_selected@2x-1.png */; };
+		AF43282683AC0536738C51A8C524A6CD /* UIColor+ZIMKitUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 44461F75BEBD397A25671BB007E4095E /* UIColor+ZIMKitUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1FEA856FE60C1B42832B4894772454F /* ZIMKitRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 739776C6A29E5397A94A88669863C07D /* ZIMKitRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B46678066E36481B8BB5A96C3FFA67FB /* ZIMKitConversationVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 876A9972526716BDC8C1B9000280EA9B /* ZIMKitConversationVM.m */; };
+		B5D0DB1475DF403CE73CD872394A3246 /* ZIMKitMessagesVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B0CBE795CD5270E34F692A03FC36B2 /* ZIMKitMessagesVM.m */; };
+		B6447D6D22A904F73221764F54BE12A9 /* message_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2302C4C8938F9824731E2D3DD0FD0CF3 /* message_selected.png */; };
+		B764DEDFE5BE94113F604B4C354FB0D0 /* NSString+ZIMKitUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5074A39D3E0CBD846F47276F0E391E44 /* NSString+ZIMKitUtil.m */; };
+		B9C193B399427EB5553F5A226152B2DD /* NSObject+ZIMKitUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E4FB18438DF238D64F951CC702EF284 /* NSObject+ZIMKitUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9E745F889A6ED9570BE7B9F2B58B215 /* send_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 458174FB4FE420EE15E78FAE79B684E1 /* send_bubble.png */; };
+		BAB014921D8525650CABFE4FBAF2BED7 /* ZIMKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92FEEC3453149414F059B386AD4FDA29 /* ZIMKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDB841FE2816761272A7940712CC1599 /* conversation_bar_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CE0FE5141FA124251EE551110A9D06A /* conversation_bar_left@3x.png */; };
+		BE99E70D082D90117DF5FB1346C91576 /* receve_bubble@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B369E4FF9999A0316473FD3B7F48A3C7 /* receve_bubble@3x.png */; };
+		C0AE3E42A1F619EE5252796CCDFE7A18 /* ZIMKitConversationListNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B463657A288FF06E1C51CF05A8710E /* ZIMKitConversationListNoDataView.m */; };
+		C2453402026A0F9E9272094AE899DED0 /* ZIMKitSystemMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 935FA6D47AD1DBEBB37A12630F91B1CE /* ZIMKitSystemMessageCell.m */; };
+		C478C0DBA73E4C676D91966608D1093F /* ZIMKitCreateChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0395D5CE81135B83596FA629D32341C8 /* ZIMKitCreateChatController.m */; };
+		CCCF943F525452EACEA5C332F36341A3 /* ZIMKitGroupInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4648E0C8FDBEA0B87B36169E41F9B04 /* ZIMKitGroupInfo.m */; };
+		CD28E307BFE6AB4B8DBA09CAED521387 /* ZIMKitInputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 67706C1C089E990D29FF5440709A8C5A /* ZIMKitInputBar.m */; };
+		CD2A5C3909C1F34BFDF3F1773D189632 /* ZIMKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C0C5BFF12AE276326562AC1F2A67C9CA /* ZIMKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF7BF3B49768E25A53711857564BDE0D /* receve_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D33114D03BF3752562C5C339B6C812 /* receve_bubble@2x.png */; };
+		D01335E59CFE7371381F34B7293206CB /* ZIMKitMessageCellConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 717EFB4A5B5D75431EEF7AF3F2425839 /* ZIMKitMessageCellConfig.m */; };
+		D2AB954CA2BE9BD1F2C76DB4E9C48F31 /* ZIMKitMessageTool.h in Headers */ = {isa = PBXBuildFile; fileRef = AD2BA71F2339525C6E4072ACC4138909 /* ZIMKitMessageTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3351DC0636CF14DCA408206B61A0BF6 /* sendMessage_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC0E1C698D1A6425E57B6657CAEC88A /* sendMessage_icon.png */; };
+		D39988CE1B17E70230588BEC95100B14 /* ZIMKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 219C26D4F3A6EDB3F529FBB181DF0A94 /* ZIMKit-dummy.m */; };
+		D42FA631CE4359B3DD554B9E93261C37 /* ZegoRefreshAutoFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD7E7D8B5E6ECC0D22D2BCA2EE55181 /* ZegoRefreshAutoFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA15D23B185F6D4B238528A590CB10F1 /* chat_nav_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BE6FC6B80157AEAEB08C4590BC3F104 /* chat_nav_right.png */; };
+		DA2FFDE94A00B3148D42C732146A8EA9 /* ZIMKitConversationListNoDataView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D124ABD41FED314B07619C77CBF218F /* ZIMKitConversationListNoDataView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF0E7E4791C8947857178DD1F9EBEF66 /* ZIMKitGroupMember.m in Sources */ = {isa = PBXBuildFile; fileRef = F03AECB2C24FA30928442517954BB27E /* ZIMKitGroupMember.m */; };
+		DFDEF87C7EE123A6025A810B3E2B92F2 /* ZIMKitAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = EAF5183324E6793BC6E3AFCFE068EF39 /* ZIMKitAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0CE9B436E43144355F9B06DD1F3828D /* ZIMKitMessagesListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D45695B4768093211F0F24A8F88EB5 /* ZIMKitMessagesListVC.m */; };
+		E2EF0A9276D0B46A3CF50D0743DA9F03 /* ZIMKitTextMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = F8299D5EC2336E174FB49237ECF043AF /* ZIMKitTextMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5B8548849A77D3A49FE0DC7B7238092 /* send_bubble@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDF35272038B20DEECFB021F31D32E63 /* send_bubble@3x.png */; };
+		E5D76FC1613107369F1C34539381985C /* conversation_bar_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A395147866E408446D11D8DC8B922 /* conversation_bar_right@3x.png */; };
+		E9184FEAE94ACE4B47657A9BDFFE0922 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1B5F57C7AF953E16D0CDDF0BA16E5E9A /* en.lproj */; };
+		E91BE210EF2EEAC5561E43607BCBC647 /* UIColor+ZIMKitUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 525B4214E91239ED368556A6FC1355F1 /* UIColor+ZIMKitUtil.m */; };
+		EA7299F24A7BFD75857042DA626B7935 /* ZIMKitMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F49E2665D994297158AF3188F3181D84 /* ZIMKitMessageCell.m */; };
+		EA893906CA104A9E5876CE6C64B0C573 /* ZIMMessage+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 85419FE977CDC736DAE6A79579383CDB /* ZIMMessage+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC6468936E2564047FCFD21CF03F09BF /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 898BA49F9F6B5F936806BE8E51B628FF /* UIView+Layout.m */; };
+		EDD10849AF6214BA608FB49D1AE0EEF7 /* message_send_fail@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99307A96A1F2F572635B853F580F8D1A /* message_send_fail@3x.png */; };
+		EF50B9065030C06AD3D7578F3F31BF14 /* chat_nav_left.png in Resources */ = {isa = PBXBuildFile; fileRef = C9105E8B15033E73FCC11F4A8815D0E9 /* chat_nav_left.png */; };
+		EF7B6F49D33BCD14AF89CDA56FC2A3AE /* message_selected@3x-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 453C8A86191CAAB730D789C8A4A1C01E /* message_selected@3x-1.png */; };
+		F09CB60DF0B3E3B86ABD48EBA9646570 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F660C134AF21218504A650D6C0167DEF /* receve_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = CAB7C7AED100B6056D3F4467A4FBAF05 /* receve_bubble.png */; };
+		F727B006818BCA60F65ECEECE531EDC0 /* ZIMKitGroupInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2B2612788FDE09E6945BAB5EA3164A /* ZIMKitGroupInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F752EDDFD9AFAFD4A68D82557B927D09 /* chat_default_avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81FAE75E1F4BAE0947FB5EC182BCA8B2 /* chat_default_avatar@2x.png */; };
+		F836CF363BB2BE3D12CB4C2C973A6CBF /* conversation_bar_left.png in Resources */ = {isa = PBXBuildFile; fileRef = C20920494F500B9268CF1258865F8884 /* conversation_bar_left.png */; };
+		FA0D1A99CAF162C2273D724E0700304B /* sendMessage_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1348BC4936BD2856C1FB687C9A2AC6F6 /* sendMessage_icon@2x.png */; };
+		FA5086B389665EE5473253013643B395 /* ZIMKitBubbleMessageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2315118AA7EE35281176469CBC6BB053 /* ZIMKitBubbleMessageCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA9A90E01042D04671C52E6B145B3BDF /* chat_default_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C240B09B8F22498D24C0FF4FF6F3FF /* chat_default_avatar.png */; };
+		FAAC4A1E321D9CF69CD9C5B3B6A12147 /* ZIMKitMessageModule.h in Headers */ = {isa = PBXBuildFile; fileRef = A0866756D5B4FB290C159F76E8781234 /* ZIMKitMessageModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC8CBF40C412CC4DE12539C5548330D8 /* ZIMKitGroupDetailController.h in Headers */ = {isa = PBXBuildFile; fileRef = 407A54DDB8EA1CCF4B024FA7A2192BF2 /* ZIMKitGroupDetailController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26874369B3DAA35BF2A4D5F520AA650C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20D89284217AFA991E1FF73999765538;
+			remoteInfo = "ZIMKit-ZIMKitRecources";
+		};
+		715CF6718963889E2BECB4FBF69E6869 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A2209FC2E9BBCACFE4FDE00944AEA2E;
+			remoteInfo = ZIMKit;
+		};
+		8EDC09B5951F254E5C41A769F99CABF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A68CFD979D413A619DF631BB121D98F;
+			remoteInfo = Bugly;
+		};
+		CBEAEB180A117FB13F81EA9DD20E5DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ED83EBDD927474214D3054F9B793C51;
+			remoteInfo = "ZIMKit-ZIMKitConversation";
+		};
+		D7D55180DCC66D6183F7EE245A90DD1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E026B2AE3F8EE6325CE358E15675D76E;
+			remoteInfo = "ZIMKit-ZIMKItCommon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0395D5CE81135B83596FA629D32341C8 /* ZIMKitCreateChatController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitCreateChatController.m; sourceTree = "<group>"; };
+		044E18F61E1466F845826A422118D1F8 /* ZegoRefreshAutoFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZegoRefreshAutoFooter.m; sourceTree = "<group>"; };
+		04D51A9862CC68F287A4BB0DDD6DDA6A /* ZIMKitGroupModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitGroupModule.m; sourceTree = "<group>"; };
+		08C9F9A3670982D822A6B36A6A9E9B6F /* ZIMKitNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitNavigationController.m; sourceTree = "<group>"; };
+		08FB2E2C1693429329B7E2C9F7446971 /* ZIMKitGroupVM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitGroupVM.h; sourceTree = "<group>"; };
+		09E5B9463470B5BA42B2E4E583F2E6D8 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = ZIMKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		0BE0FF827D59BE6B9386AC58F49F4BF8 /* ZIMKitTextMessageCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitTextMessageCell.h; sourceTree = "<group>"; };
+		0C1E0ADB0FBFEDB7879AC101535E9C6F /* ZIMKitConversationListVC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitConversationListVC.m; sourceTree = "<group>"; };
+		0C6DD7AE6482DA1D26CC1C0368744A20 /* UIView+Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		0D25E2371B64D550E97C5ADA35268A7A /* ZIMMessage+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZIMMessage+Extension.m"; sourceTree = "<group>"; };
+		0DE483C30FB7DDADD2DAF966D1054C3E /* ZIMKitConversationListVC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitConversationListVC.h; sourceTree = "<group>"; };
+		0FCBC9BC64078D63332C83DC621CE786 /* ZIMKit-ZIMKItCommon */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ZIMKit-ZIMKItCommon"; path = ZIMKItCommon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1274D0BB00E7CED5EE140658D3F07495 /* ZIMKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZIMKit.release.xcconfig; sourceTree = "<group>"; };
+		1348BC4936BD2856C1FB687C9A2AC6F6 /* sendMessage_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "sendMessage_icon@2x.png"; sourceTree = "<group>"; };
+		1557DB2A4FEB985B167C0F08F409762A /* ZIMKitConversationCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitConversationCell.h; sourceTree = "<group>"; };
+		16CCB1DC6116F55E1C404C882DF1C7EF /* conversation_bar_left@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "conversation_bar_left@2x.png"; sourceTree = "<group>"; };
+		17F2E2793AE180143778C57A6059833A /* ZIMKitBaseModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitBaseModule.h; sourceTree = "<group>"; };
+		19EE3018DEB5AA04701E7512CE4634BE /* ZIMKitMessageTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitMessageTool.m; sourceTree = "<group>"; };
+		1A2608047DE8CAFADB99EB03EA8B9831 /* ZIMKitBubbleMessageCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitBubbleMessageCell.m; sourceTree = "<group>"; };
+		1B5F57C7AF953E16D0CDDF0BA16E5E9A /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = en.lproj; sourceTree = "<group>"; };
+		1C4B2E2A997656D20053AE1D004CA2DE /* Pods-ZIMKitDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZIMKitDemo-resources.sh"; sourceTree = "<group>"; };
+		20A21E1B3697426733D5CE20535E8D86 /* ZIMKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZIMKit; path = ZIMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		219C26D4F3A6EDB3F529FBB181DF0A94 /* ZIMKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZIMKit-dummy.m"; sourceTree = "<group>"; };
+		2302C4C8938F9824731E2D3DD0FD0CF3 /* message_selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = message_selected.png; sourceTree = "<group>"; };
+		2315118AA7EE35281176469CBC6BB053 /* ZIMKitBubbleMessageCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitBubbleMessageCell.h; sourceTree = "<group>"; };
+		23FC05CBA1C948F356DABD44128D4B24 /* ZIMKitMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitMessage.m; sourceTree = "<group>"; };
+		2880DE20F2B753D37BD79E3FFED832E8 /* NSObject+ZIMKitUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZIMKitUtil.m"; sourceTree = "<group>"; };
+		28EB322A33A079AC7F95A90B2CC06714 /* ZIMKitConversationModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitConversationModel.h; sourceTree = "<group>"; };
+		2CAF743BDD32047579CF290FB872B873 /* conversation_msg_fail.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = conversation_msg_fail.png; sourceTree = "<group>"; };
+		2F2B2612788FDE09E6945BAB5EA3164A /* ZIMKitGroupInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitGroupInfo.h; sourceTree = "<group>"; };
+		304C25C413785142C20F31BF7AF64FFD /* Bugly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bugly.debug.xcconfig; sourceTree = "<group>"; };
+		308B022182DC7E6C20F83B0CC49F6F87 /* NSString+ZIMKitUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+ZIMKitUtil.h"; sourceTree = "<group>"; };
+		3147E396ECF294794A26A442E72B0A8E /* Pods-ZIMKitDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZIMKitDemo-dummy.m"; sourceTree = "<group>"; };
+		329F5B90C9EEA7498F3C6C9C783FD4B1 /* chat_nav_left@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "chat_nav_left@2x.png"; sourceTree = "<group>"; };
+		3460CCFCA32EABFE828173C422BF0C75 /* conversation_bar_close@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "conversation_bar_close@3x.png"; sourceTree = "<group>"; };
+		407A54DDB8EA1CCF4B024FA7A2192BF2 /* ZIMKitGroupDetailController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitGroupDetailController.h; sourceTree = "<group>"; };
+		414A0C4193EF790E9287438AC3EDE90D /* ZIMKitMessageCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitMessageCell.h; sourceTree = "<group>"; };
+		44461F75BEBD397A25671BB007E4095E /* UIColor+ZIMKitUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZIMKitUtil.h"; sourceTree = "<group>"; };
+		4520287290BAA0680DDF60A0F6D8CF9F /* Bugly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bugly.release.xcconfig; sourceTree = "<group>"; };
+		453C8A86191CAAB730D789C8A4A1C01E /* message_selected@3x-1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "message_selected@3x-1.png"; sourceTree = "<group>"; };
+		458174FB4FE420EE15E78FAE79B684E1 /* send_bubble.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = send_bubble.png; sourceTree = "<group>"; };
+		4A9A395147866E408446D11D8DC8B922 /* conversation_bar_right@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "conversation_bar_right@3x.png"; sourceTree = "<group>"; };
+		4B6E8ED3F70041FC61E306A167A51DC0 /* ZIMKitMessageModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitMessageModule.m; sourceTree = "<group>"; };
+		4CE080C87D097B398A41F0933353168B /* ZIMKitAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitAlertView.m; sourceTree = "<group>"; };
+		4D124ABD41FED314B07619C77CBF218F /* ZIMKitConversationListNoDataView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitConversationListNoDataView.h; sourceTree = "<group>"; };
+		4EBC7B7B9F2B17860D5D338F8C77BD0C /* ZIMKitRefreshAutoHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitRefreshAutoHeader.h; sourceTree = "<group>"; };
+		50308C97DCBAA6C20E7D97E9C40CE631 /* message_selected@2x-1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "message_selected@2x-1.png"; sourceTree = "<group>"; };
+		5074A39D3E0CBD846F47276F0E391E44 /* NSString+ZIMKitUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZIMKitUtil.m"; sourceTree = "<group>"; };
+		525B4214E91239ED368556A6FC1355F1 /* UIColor+ZIMKitUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZIMKitUtil.m"; sourceTree = "<group>"; };
+		52AC29A0F41E193E017871F21A973458 /* ZIMKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZIMKit-prefix.pch"; sourceTree = "<group>"; };
+		541CCBEF410ED0CDB09EAC44177EAE7C /* UIView+Layout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		54B9371FC4C7878CDAF42CF2B108F742 /* ZIMKitPrefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitPrefix.pch; sourceTree = "<group>"; };
+		55AE8C93D1AAA113EE7FAB902494D116 /* NSBundle+ZIMKitUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSBundle+ZIMKitUtil.h"; sourceTree = "<group>"; };
+		560D3D1C181461A9B85AD25599728247 /* message_send_fail@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "message_send_fail@2x.png"; sourceTree = "<group>"; };
+		570767D2490C26B98A647DA6A8BD1C44 /* conversation_bar_close.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = conversation_bar_close.png; sourceTree = "<group>"; };
+		588D8CB2176F94FF05257A04244A189C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		58C41F4CA041D8F38B3F700E0ACCE849 /* ZIMKitGroupMember.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitGroupMember.h; sourceTree = "<group>"; };
+		5D074F6C7DEE897578B61FCBC524194C /* ResourceBundle-ZIMKItCommon-ZIMKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ZIMKItCommon-ZIMKit-Info.plist"; sourceTree = "<group>"; };
+		5D8F4BB31EE32259C55A7637CD1548DA /* ZIMKitMessagesListVC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitMessagesListVC.h; sourceTree = "<group>"; };
+		5DBF6D17C858A5E2ABB05273167B6320 /* conversation_msg_fail@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "conversation_msg_fail@2x.png"; sourceTree = "<group>"; };
+		5E302A74E9D4FA9F80A8736BB91440D6 /* ZIMKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZIMKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5E4FB18438DF238D64F951CC702EF284 /* NSObject+ZIMKitUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZIMKitUtil.h"; sourceTree = "<group>"; };
+		60C240B09B8F22498D24C0FF4FF6F3FF /* chat_default_avatar.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = chat_default_avatar.png; sourceTree = "<group>"; };
+		6398A67EFB439AD8170A9E5CCB504F44 /* Pods-ZIMKitDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZIMKitDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		67706C1C089E990D29FF5440709A8C5A /* ZIMKitInputBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitInputBar.m; sourceTree = "<group>"; };
+		6871104582FF56F18B96878D45869949 /* send_bubble@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "send_bubble@2x.png"; sourceTree = "<group>"; };
+		69479A94251086F991D17A75D083ED7C /* ZIMKitBaseModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitBaseModule.m; sourceTree = "<group>"; };
+		6A58338270A9E2F8E44DC33E55FC55EC /* Pods-ZIMKitDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZIMKitDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		6B877155E3604D4340FFA1FC010CAB69 /* conversation_bar_right.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = conversation_bar_right.png; sourceTree = "<group>"; };
+		6BED6D7D73D03E3AA5DB15E029EE4C35 /* ZIMKitRefreshAutoHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitRefreshAutoHeader.m; sourceTree = "<group>"; };
+		6F066101037757D7394C6D198591B725 /* ZIMKitGroupdetailView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitGroupdetailView.h; sourceTree = "<group>"; };
+		6F672B12D478D1BC32D536D23D820560 /* Pods-ZIMKitDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZIMKitDemo.modulemap"; sourceTree = "<group>"; };
+		707ED2EEF6357139CEE5FB2F99BB399F /* ZIMKitGroupDetailController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitGroupDetailController.m; sourceTree = "<group>"; };
+		717EFB4A5B5D75431EEF7AF3F2425839 /* ZIMKitMessageCellConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitMessageCellConfig.m; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		739776C6A29E5397A94A88669863C07D /* ZIMKitRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitRouter.h; sourceTree = "<group>"; };
+		74A2C3FAD789E6DF8D7EE0FBCC52B4FF /* chat_nav_right@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "chat_nav_right@3x.png"; sourceTree = "<group>"; };
+		799F3B4F2D3518D2219A72BC4109C379 /* ZIMKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZIMKit.modulemap; sourceTree = "<group>"; };
+		7A4EE753E13989D57B29AFFFEDE255DB /* ZIMKit-ZIMKitRecources */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ZIMKit-ZIMKitRecources"; path = ZIMKitRecources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5653DE5A11CEC2E6D222356B0338EB /* ZIMKitEventHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitEventHandler.m; sourceTree = "<group>"; };
+		81B0CBE795CD5270E34F692A03FC36B2 /* ZIMKitMessagesVM.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitMessagesVM.m; sourceTree = "<group>"; };
+		81FAE75E1F4BAE0947FB5EC182BCA8B2 /* chat_default_avatar@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "chat_default_avatar@2x.png"; sourceTree = "<group>"; };
+		83884DE118B13A92F1DD95B6545DFC40 /* ZIMKitConversationVM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitConversationVM.h; sourceTree = "<group>"; };
+		84FA283AA243798AFEBBC566F7056E72 /* message_selected-1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "message_selected-1.png"; sourceTree = "<group>"; };
+		853B9EA33C76548C1244561F593168E7 /* ZIMKitRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitRouter.m; sourceTree = "<group>"; };
+		85419FE977CDC736DAE6A79579383CDB /* ZIMMessage+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZIMMessage+Extension.h"; sourceTree = "<group>"; };
+		857EEBC787E1F5D87E5005E7EB9CC6C6 /* UIView+Toast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		86C058CA4566DC2A72DDA9791DCC2A7D /* UIImage+ZIMKitUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZIMKitUtil.h"; sourceTree = "<group>"; };
+		876A9972526716BDC8C1B9000280EA9B /* ZIMKitConversationVM.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitConversationVM.m; sourceTree = "<group>"; };
+		898BA49F9F6B5F936806BE8E51B628FF /* UIView+Layout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		8AF31B047E7A14AE6CF4D59EE2F03868 /* conversation_msg_fail@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "conversation_msg_fail@3x.png"; sourceTree = "<group>"; };
+		8BE6FC6B80157AEAEB08C4590BC3F104 /* chat_nav_right.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = chat_nav_right.png; sourceTree = "<group>"; };
+		8CE0FE5141FA124251EE551110A9D06A /* conversation_bar_left@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "conversation_bar_left@3x.png"; sourceTree = "<group>"; };
+		9042AB3B41C30A6C1700AD80D78AE89C /* ZIMKitInputBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitInputBar.h; sourceTree = "<group>"; };
+		92FEEC3453149414F059B386AD4FDA29 /* ZIMKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZIMKit-umbrella.h"; sourceTree = "<group>"; };
+		935FA6D47AD1DBEBB37A12630F91B1CE /* ZIMKitSystemMessageCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitSystemMessageCell.m; sourceTree = "<group>"; };
+		93AF1300BBD24A2B046E24E14C5AB48A /* ZIMKitConversationCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitConversationCell.m; sourceTree = "<group>"; };
+		99307A96A1F2F572635B853F580F8D1A /* message_send_fail@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "message_send_fail@3x.png"; sourceTree = "<group>"; };
+		9CBCCE7FA8CD27AA7CCAC17C1360760C /* ZIMKit-ZIMKitConversation */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ZIMKit-ZIMKitConversation"; path = ZIMKitConversation.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F73A5C4C5AE11EDE7D84F40E1D65723 /* Pods-ZIMKitDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZIMKitDemo-umbrella.h"; sourceTree = "<group>"; };
+		A06581ADFC0630B25079169F20B8E33B /* ZIMKitUnReadView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitUnReadView.m; sourceTree = "<group>"; };
+		A0866756D5B4FB290C159F76E8781234 /* ZIMKitMessageModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitMessageModule.h; sourceTree = "<group>"; };
+		A3999316551EEBC0B442BDD8A9356635 /* ZIMKitEventHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitEventHandler.h; sourceTree = "<group>"; };
+		A4648E0C8FDBEA0B87B36169E41F9B04 /* ZIMKitGroupInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitGroupInfo.m; sourceTree = "<group>"; };
+		A4D644031DA5560FF86E1159C96FA5D6 /* ZIMKitSystemMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitSystemMessage.h; sourceTree = "<group>"; };
+		A6EA23DD3C2674B5366170EEE35F57ED /* ZIMKitNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitNavigationController.h; sourceTree = "<group>"; };
+		A890C822FB415E0A797BD43AE269B9E1 /* ZIMKitGroupVM.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitGroupVM.m; sourceTree = "<group>"; };
+		AD2BA71F2339525C6E4072ACC4138909 /* ZIMKitMessageTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitMessageTool.h; sourceTree = "<group>"; };
+		B27E2481DD8C65A0578D08AB8571F4A6 /* ZIMKitCreateChatController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitCreateChatController.h; sourceTree = "<group>"; };
+		B369E4FF9999A0316473FD3B7F48A3C7 /* receve_bubble@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "receve_bubble@3x.png"; sourceTree = "<group>"; };
+		B38072BEF2C15712DCAA5B8137493793 /* Pods-ZIMKitDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZIMKitDemo-Info.plist"; sourceTree = "<group>"; };
+		B61F23512F8D2AC1EBE5A904A7FC4194 /* ZIMKitGroupdetailView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitGroupdetailView.m; sourceTree = "<group>"; };
+		B6A6873B4C7606DE10FEC29E7C05E108 /* message_selected@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "message_selected@3x.png"; sourceTree = "<group>"; };
+		B702AB97041AB353A3389AE3F56765D1 /* sendMessage_icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "sendMessage_icon@3x.png"; sourceTree = "<group>"; };
+		BD7C7BE64179875138BB0FEA5458EBC4 /* Pods-ZIMKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZIMKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BDF334F6B69770A2E9CFC059514A0B7B /* ZIMKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZIMKit-Info.plist"; sourceTree = "<group>"; };
+		BE309460396A90DC5528BB16D1DF28D2 /* UIImage+ZIMKitUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZIMKitUtil.m"; sourceTree = "<group>"; };
+		C0C5BFF12AE276326562AC1F2A67C9CA /* ZIMKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZIMKit.h; path = ZIMKit/Classes/ZIMKit.h; sourceTree = "<group>"; };
+		C20920494F500B9268CF1258865F8884 /* conversation_bar_left.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = conversation_bar_left.png; sourceTree = "<group>"; };
+		C3DC91B9719F2EAD7A5493A3473DB39A /* ZIMKitSystemMessageCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitSystemMessageCell.h; sourceTree = "<group>"; };
+		C69482B0ED010C72726F4B4EF204F7A4 /* ZIMKitConversationModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitConversationModel.m; sourceTree = "<group>"; };
+		C7D33114D03BF3752562C5C339B6C812 /* receve_bubble@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "receve_bubble@2x.png"; sourceTree = "<group>"; };
+		C7E8D37D64D7B5A5628B08B5DCBE719B /* ZIMKitMessageCellConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitMessageCellConfig.h; sourceTree = "<group>"; };
+		C84048A50EA1CDA7D293026D9DF76C46 /* chat_default_avatar@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "chat_default_avatar@3x.png"; sourceTree = "<group>"; };
+		C9105E8B15033E73FCC11F4A8815D0E9 /* chat_nav_left.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = chat_nav_left.png; sourceTree = "<group>"; };
+		CAB7C7AED100B6056D3F4467A4FBAF05 /* receve_bubble.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = receve_bubble.png; sourceTree = "<group>"; };
+		CBAA4CB94D613295F593E72A3228BDBF /* conversation_bar_close@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "conversation_bar_close@2x.png"; sourceTree = "<group>"; };
+		CBC2C4525B00EE75600A5666B12B93CF /* ZIMKitManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitManager.m; sourceTree = "<group>"; };
+		CEB48F9F2EE0FE848577F470ACB622C8 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
+		D0F9FA8FA03E460F27A956FE89929F11 /* ResourceBundle-ZIMKitRecources-ZIMKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ZIMKitRecources-ZIMKit-Info.plist"; sourceTree = "<group>"; };
+		D185EE98526E323E1F331D06F5030B83 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D53C1CBCC81D8001DABD9442BBC07574 /* ZIMKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZIMKit.debug.xcconfig; sourceTree = "<group>"; };
+		D805ACA7062B91D388AFD79A6D0E5C26 /* ZIMKitDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitDefine.h; sourceTree = "<group>"; };
+		DA58C54059C1BAE6E69AD515C2F49CCF /* ZIMKitTextMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitTextMessage.m; sourceTree = "<group>"; };
+		E21A9DC3B7278614D1152ED9F86A4736 /* ResourceBundle-ZIMKitConversation-ZIMKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ZIMKitConversation-ZIMKit-Info.plist"; sourceTree = "<group>"; };
+		E2856C334C7E410A9F6D913FAD99FC8D /* ZIMKitMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitMessage.h; sourceTree = "<group>"; };
+		E3D45695B4768093211F0F24A8F88EB5 /* ZIMKitMessagesListVC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitMessagesListVC.m; sourceTree = "<group>"; };
+		E4984886527037451B56A63DDFE0F349 /* chat_nav_right@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "chat_nav_right@2x.png"; sourceTree = "<group>"; };
+		E573F18871A47CFB56CFF7935E6442AB /* ZIMKitSystemMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitSystemMessage.m; sourceTree = "<group>"; };
+		E6817603628A9EB3934482EE28DF6C6B /* ZIMKitTextMessageCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitTextMessageCell.m; sourceTree = "<group>"; };
+		E7DDB4B5EDE6C03155DBB893B450ADED /* Pods-ZIMKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZIMKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EAF5183324E6793BC6E3AFCFE068EF39 /* ZIMKitAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitAlertView.h; sourceTree = "<group>"; };
+		EC4403D8E1FD5B58C9AD7A18D1D31925 /* message_send_fail.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = message_send_fail.png; sourceTree = "<group>"; };
+		ECD7E7D8B5E6ECC0D22D2BCA2EE55181 /* ZegoRefreshAutoFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZegoRefreshAutoFooter.h; sourceTree = "<group>"; };
+		EDC0E1C698D1A6425E57B6657CAEC88A /* sendMessage_icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = sendMessage_icon.png; sourceTree = "<group>"; };
+		EF1E9D65446F6BF7AD46E806C267F878 /* chat_nav_left@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "chat_nav_left@3x.png"; sourceTree = "<group>"; };
+		F03AECB2C24FA30928442517954BB27E /* ZIMKitGroupMember.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitGroupMember.m; sourceTree = "<group>"; };
+		F057DF4A2303E39B020BD5A4666C28B1 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
+		F2AF1F66A1B6ABCE1BFBA566E65808E9 /* message_selected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "message_selected@2x.png"; sourceTree = "<group>"; };
+		F2CF47C858B7B7F4D9AAB00899E0A3D5 /* ZIMKitMessagesVM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitMessagesVM.h; sourceTree = "<group>"; };
+		F49E2665D994297158AF3188F3181D84 /* ZIMKitMessageCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitMessageCell.m; sourceTree = "<group>"; };
+		F58ECA5C6104E1DD23546A23F0CAEC08 /* conversation_bar_right@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "conversation_bar_right@2x.png"; sourceTree = "<group>"; };
+		F5DE68D2B92BB502B6B726E7FEF08E76 /* Pods-ZIMKitDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZIMKitDemo"; path = Pods_ZIMKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F79E1DDBB5AC74B983917A8E6C07DB6A /* NSBundle+ZIMKitUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+ZIMKitUtil.m"; sourceTree = "<group>"; };
+		F7B463657A288FF06E1C51CF05A8710E /* ZIMKitConversationListNoDataView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitConversationListNoDataView.m; sourceTree = "<group>"; };
+		F8299D5EC2336E174FB49237ECF043AF /* ZIMKitTextMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitTextMessage.h; sourceTree = "<group>"; };
+		FD08287D8408DFB5BC61401692FA9015 /* ZIMKitManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitManager.h; sourceTree = "<group>"; };
+		FDF35272038B20DEECFB021F31D32E63 /* send_bubble@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "send_bubble@3x.png"; sourceTree = "<group>"; };
+		FF92C5AD33E11D3D11F2705A39DA5482 /* ZIMKitGroupModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitGroupModule.h; sourceTree = "<group>"; };
+		FFE08CF92587770B899AEC378C18C026 /* ZIMKitUnReadView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitUnReadView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A46DCE4723147702DE107AF59AFE605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852EBA4EFF77B9D6E138102AD93CF3AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90ECD75C7A7F0AE00CBAF742E319BA5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E3772685D94EB06E3AF904739F5621 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09CB60DF0B3E3B86ABD48EBA9646570 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B79979A9CD0C77C55A5EB5DB0F96B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E33BB73E8E08ECE4E353E7F821B556F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11072C43F4D16DD4E168D696CF675ABB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2856C334C7E410A9F6D913FAD99FC8D /* ZIMKitMessage.h */,
+				23FC05CBA1C948F356DABD44128D4B24 /* ZIMKitMessage.m */,
+				C7E8D37D64D7B5A5628B08B5DCBE719B /* ZIMKitMessageCellConfig.h */,
+				717EFB4A5B5D75431EEF7AF3F2425839 /* ZIMKitMessageCellConfig.m */,
+				A0866756D5B4FB290C159F76E8781234 /* ZIMKitMessageModule.h */,
+				4B6E8ED3F70041FC61E306A167A51DC0 /* ZIMKitMessageModule.m */,
+				A4D644031DA5560FF86E1159C96FA5D6 /* ZIMKitSystemMessage.h */,
+				E573F18871A47CFB56CFF7935E6442AB /* ZIMKitSystemMessage.m */,
+				F8299D5EC2336E174FB49237ECF043AF /* ZIMKitTextMessage.h */,
+				DA58C54059C1BAE6E69AD515C2F49CCF /* ZIMKitTextMessage.m */,
+			);
+			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15542D5B4CE712844D32B8E74D03FAA1 /* ZIMKitConversation */ = {
+			isa = PBXGroup;
+			children = (
+				A069051E6AE220695AFDEB76D7902153 /* Model */,
+				28FB076E151BAF1679586C2C1591C7F8 /* UI */,
+				84D1DF7001F9B2F6ED294EDB652C81E3 /* VM */,
+			);
+			name = ZIMKitConversation;
+			path = ZIMKit/Classes/ZIMKitConversation;
+			sourceTree = "<group>";
+		};
+		1762B087E8C77CF6C05D8DB17D93DF76 /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				9042AB3B41C30A6C1700AD80D78AE89C /* ZIMKitInputBar.h */,
+				67706C1C089E990D29FF5440709A8C5A /* ZIMKitInputBar.m */,
+			);
+			name = InputView;
+			path = InputView;
+			sourceTree = "<group>";
+		};
+		25AA7AD4B536715D7599B06F5782AF62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1762B087E8C77CF6C05D8DB17D93DF76 /* InputView */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		28FB076E151BAF1679586C2C1591C7F8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D4F2DEBCBEC71B0FBAA7E84B47B61E18 /* Cell */,
+				E5E6BBEAF67813D01E5D9063C0650348 /* View */,
+			);
+			name = UI;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		296B8419675B4AE385CB7964DE7C6A97 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				304C25C413785142C20F31BF7AF64FFD /* Bugly.debug.xcconfig */,
+				4520287290BAA0680DDF60A0F6D8CF9F /* Bugly.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Bugly";
+			sourceTree = "<group>";
+		};
+		4155618AA380673662EA6306317F67E7 /* Bugly */ = {
+			isa = PBXGroup;
+			children = (
+				5A004DB68CB4C2FB1D278B6EF4B4635D /* Frameworks */,
+				296B8419675B4AE385CB7964DE7C6A97 /* Support Files */,
+			);
+			name = Bugly;
+			path = Bugly;
+			sourceTree = "<group>";
+		};
+		4209A1C53C819C0ECB436171C232E9BD /* Pods-ZIMKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6F672B12D478D1BC32D536D23D820560 /* Pods-ZIMKitDemo.modulemap */,
+				6398A67EFB439AD8170A9E5CCB504F44 /* Pods-ZIMKitDemo-acknowledgements.markdown */,
+				6A58338270A9E2F8E44DC33E55FC55EC /* Pods-ZIMKitDemo-acknowledgements.plist */,
+				3147E396ECF294794A26A442E72B0A8E /* Pods-ZIMKitDemo-dummy.m */,
+				B38072BEF2C15712DCAA5B8137493793 /* Pods-ZIMKitDemo-Info.plist */,
+				1C4B2E2A997656D20053AE1D004CA2DE /* Pods-ZIMKitDemo-resources.sh */,
+				9F73A5C4C5AE11EDE7D84F40E1D65723 /* Pods-ZIMKitDemo-umbrella.h */,
+				E7DDB4B5EDE6C03155DBB893B450ADED /* Pods-ZIMKitDemo.debug.xcconfig */,
+				BD7C7BE64179875138BB0FEA5458EBC4 /* Pods-ZIMKitDemo.release.xcconfig */,
+			);
+			name = "Pods-ZIMKitDemo";
+			path = "Target Support Files/Pods-ZIMKitDemo";
+			sourceTree = "<group>";
+		};
+		45881D2A26FF123235DDA44325A96DA1 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				08FB2E2C1693429329B7E2C9F7446971 /* ZIMKitGroupVM.h */,
+				A890C822FB415E0A797BD43AE269B9E1 /* ZIMKitGroupVM.m */,
+			);
+			name = VM;
+			path = VM;
+			sourceTree = "<group>";
+		};
+		47FCA6EC490B5EE84BB412F81253F748 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4155618AA380673662EA6306317F67E7 /* Bugly */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4A52B13E98D2CFCF2916CDDBBBDCDEA4 /* ChatResources */ = {
+			isa = PBXGroup;
+			children = (
+				60C240B09B8F22498D24C0FF4FF6F3FF /* chat_default_avatar.png */,
+				81FAE75E1F4BAE0947FB5EC182BCA8B2 /* chat_default_avatar@2x.png */,
+				C84048A50EA1CDA7D293026D9DF76C46 /* chat_default_avatar@3x.png */,
+				C9105E8B15033E73FCC11F4A8815D0E9 /* chat_nav_left.png */,
+				329F5B90C9EEA7498F3C6C9C783FD4B1 /* chat_nav_left@2x.png */,
+				EF1E9D65446F6BF7AD46E806C267F878 /* chat_nav_left@3x.png */,
+				8BE6FC6B80157AEAEB08C4590BC3F104 /* chat_nav_right.png */,
+				E4984886527037451B56A63DDFE0F349 /* chat_nav_right@2x.png */,
+				74A2C3FAD789E6DF8D7EE0FBCC52B4FF /* chat_nav_right@3x.png */,
+				2302C4C8938F9824731E2D3DD0FD0CF3 /* message_selected.png */,
+				84FA283AA243798AFEBBC566F7056E72 /* message_selected-1.png */,
+				F2AF1F66A1B6ABCE1BFBA566E65808E9 /* message_selected@2x.png */,
+				50308C97DCBAA6C20E7D97E9C40CE631 /* message_selected@2x-1.png */,
+				B6A6873B4C7606DE10FEC29E7C05E108 /* message_selected@3x.png */,
+				453C8A86191CAAB730D789C8A4A1C01E /* message_selected@3x-1.png */,
+				EC4403D8E1FD5B58C9AD7A18D1D31925 /* message_send_fail.png */,
+				560D3D1C181461A9B85AD25599728247 /* message_send_fail@2x.png */,
+				99307A96A1F2F572635B853F580F8D1A /* message_send_fail@3x.png */,
+				CAB7C7AED100B6056D3F4467A4FBAF05 /* receve_bubble.png */,
+				C7D33114D03BF3752562C5C339B6C812 /* receve_bubble@2x.png */,
+				B369E4FF9999A0316473FD3B7F48A3C7 /* receve_bubble@3x.png */,
+				458174FB4FE420EE15E78FAE79B684E1 /* send_bubble.png */,
+				6871104582FF56F18B96878D45869949 /* send_bubble@2x.png */,
+				FDF35272038B20DEECFB021F31D32E63 /* send_bubble@3x.png */,
+				EDC0E1C698D1A6425E57B6657CAEC88A /* sendMessage_icon.png */,
+				1348BC4936BD2856C1FB687C9A2AC6F6 /* sendMessage_icon@2x.png */,
+				B702AB97041AB353A3389AE3F56765D1 /* sendMessage_icon@3x.png */,
+			);
+			name = ChatResources;
+			path = ZIMKit/Assets/ChatResources;
+			sourceTree = "<group>";
+		};
+		4FE9143E4A0D061EF8C84EAB1AA01310 /* ZIMKitRouter */ = {
+			isa = PBXGroup;
+			children = (
+				17F2E2793AE180143778C57A6059833A /* ZIMKitBaseModule.h */,
+				69479A94251086F991D17A75D083ED7C /* ZIMKitBaseModule.m */,
+				739776C6A29E5397A94A88669863C07D /* ZIMKitRouter.h */,
+				853B9EA33C76548C1244561F593168E7 /* ZIMKitRouter.m */,
+			);
+			name = ZIMKitRouter;
+			path = ZIMKitRouter;
+			sourceTree = "<group>";
+		};
+		532E896A8DD95363F1E8B4AEEC754786 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6F066101037757D7394C6D198591B725 /* ZIMKitGroupdetailView.h */,
+				B61F23512F8D2AC1EBE5A904A7FC4194 /* ZIMKitGroupdetailView.m */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5A004DB68CB4C2FB1D278B6EF4B4635D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEB48F9F2EE0FE848577F470ACB622C8 /* Bugly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C798E6B2E89123E3BF51CB2EC285B09 /* ConversationResources */ = {
+			isa = PBXGroup;
+			children = (
+				570767D2490C26B98A647DA6A8BD1C44 /* conversation_bar_close.png */,
+				CBAA4CB94D613295F593E72A3228BDBF /* conversation_bar_close@2x.png */,
+				3460CCFCA32EABFE828173C422BF0C75 /* conversation_bar_close@3x.png */,
+				C20920494F500B9268CF1258865F8884 /* conversation_bar_left.png */,
+				16CCB1DC6116F55E1C404C882DF1C7EF /* conversation_bar_left@2x.png */,
+				8CE0FE5141FA124251EE551110A9D06A /* conversation_bar_left@3x.png */,
+				6B877155E3604D4340FFA1FC010CAB69 /* conversation_bar_right.png */,
+				F58ECA5C6104E1DD23546A23F0CAEC08 /* conversation_bar_right@2x.png */,
+				4A9A395147866E408446D11D8DC8B922 /* conversation_bar_right@3x.png */,
+				2CAF743BDD32047579CF290FB872B873 /* conversation_msg_fail.png */,
+				5DBF6D17C858A5E2ABB05273167B6320 /* conversation_msg_fail@2x.png */,
+				8AF31B047E7A14AE6CF4D59EE2F03868 /* conversation_msg_fail@3x.png */,
+			);
+			name = ConversationResources;
+			path = ZIMKit/Assets/ConversationResources;
+			sourceTree = "<group>";
+		};
+		5F27C5A83167BCA87251F84BB422F887 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				588D8CB2176F94FF05257A04244A189C /* LICENSE */,
+				D185EE98526E323E1F331D06F5030B83 /* README.md */,
+				5E302A74E9D4FA9F80A8736BB91440D6 /* ZIMKit.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		6E44554D205424DE69430C9A5BF46B19 /* CommonResources */ = {
+			isa = PBXGroup;
+			children = (
+				1B5F57C7AF953E16D0CDDF0BA16E5E9A /* en.lproj */,
+				F057DF4A2303E39B020BD5A4666C28B1 /* zh-Hans.lproj */,
+			);
+			name = CommonResources;
+			path = ZIMKit/Assets/CommonResources;
+			sourceTree = "<group>";
+		};
+		6EC6FD5CCB212075FFC4CF3FF2E9D9D1 /* Vc */ = {
+			isa = PBXGroup;
+			children = (
+				5D8F4BB31EE32259C55A7637CD1548DA /* ZIMKitMessagesListVC.h */,
+				E3D45695B4768093211F0F24A8F88EB5 /* ZIMKitMessagesListVC.m */,
+			);
+			name = Vc;
+			path = Vc;
+			sourceTree = "<group>";
+		};
+		79B6FFC051327784AD76580F24211E77 /* ZIMKitToolUtil */ = {
+			isa = PBXGroup;
+			children = (
+				55AE8C93D1AAA113EE7FAB902494D116 /* NSBundle+ZIMKitUtil.h */,
+				F79E1DDBB5AC74B983917A8E6C07DB6A /* NSBundle+ZIMKitUtil.m */,
+				5E4FB18438DF238D64F951CC702EF284 /* NSObject+ZIMKitUtil.h */,
+				2880DE20F2B753D37BD79E3FFED832E8 /* NSObject+ZIMKitUtil.m */,
+				308B022182DC7E6C20F83B0CC49F6F87 /* NSString+ZIMKitUtil.h */,
+				5074A39D3E0CBD846F47276F0E391E44 /* NSString+ZIMKitUtil.m */,
+				44461F75BEBD397A25671BB007E4095E /* UIColor+ZIMKitUtil.h */,
+				525B4214E91239ED368556A6FC1355F1 /* UIColor+ZIMKitUtil.m */,
+				86C058CA4566DC2A72DDA9791DCC2A7D /* UIImage+ZIMKitUtil.h */,
+				BE309460396A90DC5528BB16D1DF28D2 /* UIImage+ZIMKitUtil.m */,
+				541CCBEF410ED0CDB09EAC44177EAE7C /* UIView+Layout.h */,
+				898BA49F9F6B5F936806BE8E51B628FF /* UIView+Layout.m */,
+				0C6DD7AE6482DA1D26CC1C0368744A20 /* UIView+Toast.h */,
+				857EEBC787E1F5D87E5005E7EB9CC6C6 /* UIView+Toast.m */,
+				85419FE977CDC736DAE6A79579383CDB /* ZIMMessage+Extension.h */,
+				0D25E2371B64D550E97C5ADA35268A7A /* ZIMMessage+Extension.m */,
+			);
+			name = ZIMKitToolUtil;
+			path = ZIMKitToolUtil;
+			sourceTree = "<group>";
+		};
+		7A40674ECF20F9EAD9FB828D159598F5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E265EF63BC4B18D8FF25A2255E978449 /* Cell */,
+				6EC6FD5CCB212075FFC4CF3FF2E9D9D1 /* Vc */,
+				25AA7AD4B536715D7599B06F5782AF62 /* View */,
+			);
+			name = UI;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		84D1DF7001F9B2F6ED294EDB652C81E3 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				0DE483C30FB7DDADD2DAF966D1054C3E /* ZIMKitConversationListVC.h */,
+				0C1E0ADB0FBFEDB7879AC101535E9C6F /* ZIMKitConversationListVC.m */,
+				83884DE118B13A92F1DD95B6545DFC40 /* ZIMKitConversationVM.h */,
+				876A9972526716BDC8C1B9000280EA9B /* ZIMKitConversationVM.m */,
+			);
+			name = VM;
+			path = VM;
+			sourceTree = "<group>";
+		};
+		96E3BDC8F49188DAEAB09DE22BAE86A2 /* Vc */ = {
+			isa = PBXGroup;
+			children = (
+				B27E2481DD8C65A0578D08AB8571F4A6 /* ZIMKitCreateChatController.h */,
+				0395D5CE81135B83596FA629D32341C8 /* ZIMKitCreateChatController.m */,
+				407A54DDB8EA1CCF4B024FA7A2192BF2 /* ZIMKitGroupDetailController.h */,
+				707ED2EEF6357139CEE5FB2F99BB399F /* ZIMKitGroupDetailController.m */,
+			);
+			name = Vc;
+			path = Vc;
+			sourceTree = "<group>";
+		};
+		9DB49922F2BE09A10991D790B6BE7C06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5DE68D2B92BB502B6B726E7FEF08E76 /* Pods-ZIMKitDemo */,
+				20A21E1B3697426733D5CE20535E8D86 /* ZIMKit */,
+				0FCBC9BC64078D63332C83DC621CE786 /* ZIMKit-ZIMKItCommon */,
+				9CBCCE7FA8CD27AA7CCAC17C1360760C /* ZIMKit-ZIMKitConversation */,
+				7A4EE753E13989D57B29AFFFEDE255DB /* ZIMKit-ZIMKitRecources */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A069051E6AE220695AFDEB76D7902153 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28EB322A33A079AC7F95A90B2CC06714 /* ZIMKitConversationModel.h */,
+				C69482B0ED010C72726F4B4EF204F7A4 /* ZIMKitConversationModel.m */,
+			);
+			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC5375ADABC015A34F29202738F3C39C /* ZIMKit */ = {
+			isa = PBXGroup;
+			children = (
+				09E5B9463470B5BA42B2E4E583F2E6D8 /* ReplaceMe.m */,
+				C0C5BFF12AE276326562AC1F2A67C9CA /* ZIMKit.h */,
+				4A52B13E98D2CFCF2916CDDBBBDCDEA4 /* ChatResources */,
+				6E44554D205424DE69430C9A5BF46B19 /* CommonResources */,
+				5C798E6B2E89123E3BF51CB2EC285B09 /* ConversationResources */,
+				5F27C5A83167BCA87251F84BB422F887 /* Pod */,
+				D0493EC4E0CF08D523796E0C4264C68C /* Support Files */,
+				E759D149DAE4BD5FF7FEBB2132D857AD /* ZIMKitCommon */,
+				15542D5B4CE712844D32B8E74D03FAA1 /* ZIMKitConversation */,
+				C9E75FE90C38D184E53535DAB681729F /* ZIMKitGroup */,
+				F22427D42756BCF2706D2DABAF9E460D /* ZIMKitMessages */,
+			);
+			name = ZIMKit;
+			path = ../../ZIMKit;
+			sourceTree = "<group>";
+		};
+		B3ECC1799B20FB2B286CFE2AB114ECB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F2B2612788FDE09E6945BAB5EA3164A /* ZIMKitGroupInfo.h */,
+				A4648E0C8FDBEA0B87B36169E41F9B04 /* ZIMKitGroupInfo.m */,
+				58C41F4CA041D8F38B3F700E0ACCE849 /* ZIMKitGroupMember.h */,
+				F03AECB2C24FA30928442517954BB27E /* ZIMKitGroupMember.m */,
+				FF92C5AD33E11D3D11F2705A39DA5482 /* ZIMKitGroupModule.h */,
+				04D51A9862CC68F287A4BB0DDD6DDA6A /* ZIMKitGroupModule.m */,
+			);
+			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6CC5786484CC228D70C945A4C08A34A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC5375ADABC015A34F29202738F3C39C /* ZIMKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B8D44148CCC58AB32D0B70D654D2338D /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				F2CF47C858B7B7F4D9AAB00899E0A3D5 /* ZIMKitMessagesVM.h */,
+				81B0CBE795CD5270E34F692A03FC36B2 /* ZIMKitMessagesVM.m */,
+			);
+			name = VM;
+			path = VM;
+			sourceTree = "<group>";
+		};
+		BD54BFB16E458DDB36AA5F7DB12F2985 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4209A1C53C819C0ECB436171C232E9BD /* Pods-ZIMKitDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C9E75FE90C38D184E53535DAB681729F /* ZIMKitGroup */ = {
+			isa = PBXGroup;
+			children = (
+				B3ECC1799B20FB2B286CFE2AB114ECB0 /* Model */,
+				DE373B0488D610B077AFF6A5344BE3DF /* UI */,
+				45881D2A26FF123235DDA44325A96DA1 /* VM */,
+			);
+			name = ZIMKitGroup;
+			path = ZIMKit/Classes/ZIMKitGroup;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B6CC5786484CC228D70C945A4C08A34A /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				47FCA6EC490B5EE84BB412F81253F748 /* Pods */,
+				9DB49922F2BE09A10991D790B6BE7C06 /* Products */,
+				BD54BFB16E458DDB36AA5F7DB12F2985 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D0493EC4E0CF08D523796E0C4264C68C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D074F6C7DEE897578B61FCBC524194C /* ResourceBundle-ZIMKItCommon-ZIMKit-Info.plist */,
+				E21A9DC3B7278614D1152ED9F86A4736 /* ResourceBundle-ZIMKitConversation-ZIMKit-Info.plist */,
+				D0F9FA8FA03E460F27A956FE89929F11 /* ResourceBundle-ZIMKitRecources-ZIMKit-Info.plist */,
+				799F3B4F2D3518D2219A72BC4109C379 /* ZIMKit.modulemap */,
+				219C26D4F3A6EDB3F529FBB181DF0A94 /* ZIMKit-dummy.m */,
+				BDF334F6B69770A2E9CFC059514A0B7B /* ZIMKit-Info.plist */,
+				52AC29A0F41E193E017871F21A973458 /* ZIMKit-prefix.pch */,
+				92FEEC3453149414F059B386AD4FDA29 /* ZIMKit-umbrella.h */,
+				D53C1CBCC81D8001DABD9442BBC07574 /* ZIMKit.debug.xcconfig */,
+				1274D0BB00E7CED5EE140658D3F07495 /* ZIMKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../ZIMKitDemo/Pods/Target Support Files/ZIMKit";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4F2DEBCBEC71B0FBAA7E84B47B61E18 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1557DB2A4FEB985B167C0F08F409762A /* ZIMKitConversationCell.h */,
+				93AF1300BBD24A2B046E24E14C5AB48A /* ZIMKitConversationCell.m */,
+				FFE08CF92587770B899AEC378C18C026 /* ZIMKitUnReadView.h */,
+				A06581ADFC0630B25079169F20B8E33B /* ZIMKitUnReadView.m */,
+			);
+			name = Cell;
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DE373B0488D610B077AFF6A5344BE3DF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				96E3BDC8F49188DAEAB09DE22BAE86A2 /* Vc */,
+				532E896A8DD95363F1E8B4AEEC754786 /* View */,
+			);
+			name = UI;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E265EF63BC4B18D8FF25A2255E978449 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2315118AA7EE35281176469CBC6BB053 /* ZIMKitBubbleMessageCell.h */,
+				1A2608047DE8CAFADB99EB03EA8B9831 /* ZIMKitBubbleMessageCell.m */,
+				414A0C4193EF790E9287438AC3EDE90D /* ZIMKitMessageCell.h */,
+				F49E2665D994297158AF3188F3181D84 /* ZIMKitMessageCell.m */,
+				C3DC91B9719F2EAD7A5493A3473DB39A /* ZIMKitSystemMessageCell.h */,
+				935FA6D47AD1DBEBB37A12630F91B1CE /* ZIMKitSystemMessageCell.m */,
+				0BE0FF827D59BE6B9386AC58F49F4BF8 /* ZIMKitTextMessageCell.h */,
+				E6817603628A9EB3934482EE28DF6C6B /* ZIMKitTextMessageCell.m */,
+			);
+			name = Cell;
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E5E6BBEAF67813D01E5D9063C0650348 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECD7E7D8B5E6ECC0D22D2BCA2EE55181 /* ZegoRefreshAutoFooter.h */,
+				044E18F61E1466F845826A422118D1F8 /* ZegoRefreshAutoFooter.m */,
+				EAF5183324E6793BC6E3AFCFE068EF39 /* ZIMKitAlertView.h */,
+				4CE080C87D097B398A41F0933353168B /* ZIMKitAlertView.m */,
+				4D124ABD41FED314B07619C77CBF218F /* ZIMKitConversationListNoDataView.h */,
+				F7B463657A288FF06E1C51CF05A8710E /* ZIMKitConversationListNoDataView.m */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		E759D149DAE4BD5FF7FEBB2132D857AD /* ZIMKitCommon */ = {
+			isa = PBXGroup;
+			children = (
+				D805ACA7062B91D388AFD79A6D0E5C26 /* ZIMKitDefine.h */,
+				A3999316551EEBC0B442BDD8A9356635 /* ZIMKitEventHandler.h */,
+				7B5653DE5A11CEC2E6D222356B0338EB /* ZIMKitEventHandler.m */,
+				FD08287D8408DFB5BC61401692FA9015 /* ZIMKitManager.h */,
+				CBC2C4525B00EE75600A5666B12B93CF /* ZIMKitManager.m */,
+				A6EA23DD3C2674B5366170EEE35F57ED /* ZIMKitNavigationController.h */,
+				08C9F9A3670982D822A6B36A6A9E9B6F /* ZIMKitNavigationController.m */,
+				54B9371FC4C7878CDAF42CF2B108F742 /* ZIMKitPrefix.pch */,
+				4FE9143E4A0D061EF8C84EAB1AA01310 /* ZIMKitRouter */,
+				79B6FFC051327784AD76580F24211E77 /* ZIMKitToolUtil */,
+			);
+			name = ZIMKitCommon;
+			path = ZIMKit/Classes/ZIMKitCommon;
+			sourceTree = "<group>";
+		};
+		F22427D42756BCF2706D2DABAF9E460D /* ZIMKitMessages */ = {
+			isa = PBXGroup;
+			children = (
+				11072C43F4D16DD4E168D696CF675ABB /* Model */,
+				7A40674ECF20F9EAD9FB828D159598F5 /* UI */,
+				B8D44148CCC58AB32D0B70D654D2338D /* VM */,
+				FB2687811688DD1BDDE747C3E00DCC55 /* ZIMKitMessageUtil */,
+			);
+			name = ZIMKitMessages;
+			path = ZIMKit/Classes/ZIMKitMessages;
+			sourceTree = "<group>";
+		};
+		FB2687811688DD1BDDE747C3E00DCC55 /* ZIMKitMessageUtil */ = {
+			isa = PBXGroup;
+			children = (
+				AD2BA71F2339525C6E4072ACC4138909 /* ZIMKitMessageTool.h */,
+				19EE3018DEB5AA04701E7512CE4634BE /* ZIMKitMessageTool.m */,
+				4EBC7B7B9F2B17860D5D338F8C77BD0C /* ZIMKitRefreshAutoHeader.h */,
+				6BED6D7D73D03E3AA5DB15E029EE4C35 /* ZIMKitRefreshAutoHeader.m */,
+			);
+			name = ZIMKitMessageUtil;
+			path = ZIMKitMessageUtil;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		233D760F5135790E15CCBE4B7153D76B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55241E2B0AD95E30982A8D25BE48563C /* NSBundle+ZIMKitUtil.h in Headers */,
+				B9C193B399427EB5553F5A226152B2DD /* NSObject+ZIMKitUtil.h in Headers */,
+				5DE3B71B8F1BFF300745951B16487C86 /* NSString+ZIMKitUtil.h in Headers */,
+				AF43282683AC0536738C51A8C524A6CD /* UIColor+ZIMKitUtil.h in Headers */,
+				8100B5956068C4840493828A81E992A9 /* UIImage+ZIMKitUtil.h in Headers */,
+				76CB801A6E6CAEDA62ED43C704985407 /* UIView+Layout.h in Headers */,
+				4A02A474774AE5CC922C6C7BC5C62D4E /* UIView+Toast.h in Headers */,
+				D42FA631CE4359B3DD554B9E93261C37 /* ZegoRefreshAutoFooter.h in Headers */,
+				CD2A5C3909C1F34BFDF3F1773D189632 /* ZIMKit.h in Headers */,
+				BAB014921D8525650CABFE4FBAF2BED7 /* ZIMKit-umbrella.h in Headers */,
+				DFDEF87C7EE123A6025A810B3E2B92F2 /* ZIMKitAlertView.h in Headers */,
+				6C8FE6AD5CAC75921C46931AAB852827 /* ZIMKitBaseModule.h in Headers */,
+				FA5086B389665EE5473253013643B395 /* ZIMKitBubbleMessageCell.h in Headers */,
+				141FCB692CDAA8F0DE386B7E749B610C /* ZIMKitConversationCell.h in Headers */,
+				DA2FFDE94A00B3148D42C732146A8EA9 /* ZIMKitConversationListNoDataView.h in Headers */,
+				7809CEF6116A8CC6EB7FE5771F6BF8F6 /* ZIMKitConversationListVC.h in Headers */,
+				0DED5ECBE2015544ED0A00041859417D /* ZIMKitConversationModel.h in Headers */,
+				4C9919082C0F4ADAF1FEA9FCF3AED540 /* ZIMKitConversationVM.h in Headers */,
+				A0D6784F04901F0AC4BC69F46A2F419A /* ZIMKitCreateChatController.h in Headers */,
+				AA3B1B69112DF47A9A9A5CE6AAAE73D0 /* ZIMKitDefine.h in Headers */,
+				7B9BBBFFB4B80D07FB864FBF77F74C36 /* ZIMKitEventHandler.h in Headers */,
+				FC8CBF40C412CC4DE12539C5548330D8 /* ZIMKitGroupDetailController.h in Headers */,
+				719A9A671FE9D22D16290F74673812CD /* ZIMKitGroupdetailView.h in Headers */,
+				F727B006818BCA60F65ECEECE531EDC0 /* ZIMKitGroupInfo.h in Headers */,
+				6F7F01A07173FE579F0CDAD52D1CA51C /* ZIMKitGroupMember.h in Headers */,
+				32FA6B0A7026E19601B0F332CED54CF3 /* ZIMKitGroupModule.h in Headers */,
+				8F72B14E07BC797791E16920D8D90E53 /* ZIMKitGroupVM.h in Headers */,
+				9056C5E432F4C28BA5AC5A41B268D1DA /* ZIMKitInputBar.h in Headers */,
+				1AA56FC3457B2B57B999FCB40F175375 /* ZIMKitManager.h in Headers */,
+				1FC220EA7F7D242B3273789C4827FF65 /* ZIMKitMessage.h in Headers */,
+				363AFAC71FD206D0227A36E307C71466 /* ZIMKitMessageCell.h in Headers */,
+				372E0B7B7EFF6F14FEE2EC137A796160 /* ZIMKitMessageCellConfig.h in Headers */,
+				FAAC4A1E321D9CF69CD9C5B3B6A12147 /* ZIMKitMessageModule.h in Headers */,
+				23223B415FEAD9836BC789FA40D818BD /* ZIMKitMessagesListVC.h in Headers */,
+				192B9FE067BDA7BCB3C60846E7A3527B /* ZIMKitMessagesVM.h in Headers */,
+				D2AB954CA2BE9BD1F2C76DB4E9C48F31 /* ZIMKitMessageTool.h in Headers */,
+				999616CCF7384C903FCA81482988A526 /* ZIMKitNavigationController.h in Headers */,
+				87190371A88D408F32F56C4236FC7210 /* ZIMKitRefreshAutoHeader.h in Headers */,
+				B1FEA856FE60C1B42832B4894772454F /* ZIMKitRouter.h in Headers */,
+				10646281D95EF61AA71BE81A414FB3C8 /* ZIMKitSystemMessage.h in Headers */,
+				2D7D0196267C521ED8FF7A80BFF476A8 /* ZIMKitSystemMessageCell.h in Headers */,
+				E2EF0A9276D0B46A3CF50D0743DA9F03 /* ZIMKitTextMessage.h in Headers */,
+				6D16E428BE95D229B29D1632C0178624 /* ZIMKitTextMessageCell.h in Headers */,
+				55B2D6B30796B9DF394F52EF8E8E8650 /* ZIMKitUnReadView.h in Headers */,
+				EA893906CA104A9E5876CE6C64B0C573 /* ZIMMessage+Extension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64162E4D8270C5E5107E3274A4A6BAA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352C6282CF86E33FC0866C19A31CC991 /* Pods-ZIMKitDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		20D89284217AFA991E1FF73999765538 /* ZIMKit-ZIMKitRecources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E757EF46388E9C5324AB8742433502A /* Build configuration list for PBXNativeTarget "ZIMKit-ZIMKitRecources" */;
+			buildPhases = (
+				841DDC4E599E3F1587A1EF09AE4E55E0 /* Sources */,
+				0A46DCE4723147702DE107AF59AFE605 /* Frameworks */,
+				EB6BCA76C9218DCFA214AEF2207DD63A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZIMKit-ZIMKitRecources";
+			productName = ZIMKitRecources;
+			productReference = 7A4EE753E13989D57B29AFFFEDE255DB /* ZIMKit-ZIMKitRecources */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4998DDA595EA6ED6393DDAB01EB01889 /* Pods-ZIMKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1626D471B6682DD17DCB43AC793612F /* Build configuration list for PBXNativeTarget "Pods-ZIMKitDemo" */;
+			buildPhases = (
+				A64162E4D8270C5E5107E3274A4A6BAA /* Headers */,
+				B043B06CB82BB4FD72E91EC3609891EB /* Sources */,
+				A8E3772685D94EB06E3AF904739F5621 /* Frameworks */,
+				8EDE7A66E373B1E21B0218668CA24FAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				349836D13008488FC53B7EB31100213C /* PBXTargetDependency */,
+				4EB80E8BA6142645A8909DFDFCCB4CF8 /* PBXTargetDependency */,
+			);
+			name = "Pods-ZIMKitDemo";
+			productName = Pods_ZIMKitDemo;
+			productReference = F5DE68D2B92BB502B6B726E7FEF08E76 /* Pods-ZIMKitDemo */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A2209FC2E9BBCACFE4FDE00944AEA2E /* ZIMKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF19BC62AC3EE30F720163C95C65C16F /* Build configuration list for PBXNativeTarget "ZIMKit" */;
+			buildPhases = (
+				233D760F5135790E15CCBE4B7153D76B /* Headers */,
+				E5F14E105E5E4793D4C52A1563D5AC74 /* Sources */,
+				F2B79979A9CD0C77C55A5EB5DB0F96B7 /* Frameworks */,
+				F6BA871696224429299D18E42F434AE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6047416CEB24502BB82FE87C126281AD /* PBXTargetDependency */,
+				1689D43D4A17C0EE90FD923308199D9A /* PBXTargetDependency */,
+				DE4F8E54919828FC668153A926E18A7B /* PBXTargetDependency */,
+			);
+			name = ZIMKit;
+			productName = ZIMKit;
+			productReference = 20A21E1B3697426733D5CE20535E8D86 /* ZIMKit */;
+			productType = "com.apple.product-type.framework";
+		};
+		9ED83EBDD927474214D3054F9B793C51 /* ZIMKit-ZIMKitConversation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D50BC88E4D152F95D63F9CCE79DC9A15 /* Build configuration list for PBXNativeTarget "ZIMKit-ZIMKitConversation" */;
+			buildPhases = (
+				5DD69B36197022259492BB3F9B2DEFE4 /* Sources */,
+				90ECD75C7A7F0AE00CBAF742E319BA5C /* Frameworks */,
+				B23B905E0004ED9D10C18DAC5663F67A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZIMKit-ZIMKitConversation";
+			productName = ZIMKitConversation;
+			productReference = 9CBCCE7FA8CD27AA7CCAC17C1360760C /* ZIMKit-ZIMKitConversation */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E026B2AE3F8EE6325CE358E15675D76E /* ZIMKit-ZIMKItCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3813046E8EAC5AEB97A80E43603C5188 /* Build configuration list for PBXNativeTarget "ZIMKit-ZIMKItCommon" */;
+			buildPhases = (
+				B1AA85E62F6393DB3954AA21CA754F82 /* Sources */,
+				852EBA4EFF77B9D6E138102AD93CF3AF /* Frameworks */,
+				C0B7D134541F62AAB3D3A3D4F654612F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZIMKit-ZIMKItCommon";
+			productName = ZIMKItCommon;
+			productReference = 0FCBC9BC64078D63332C83DC621CE786 /* ZIMKit-ZIMKItCommon */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				"zh-Hans",
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9DB49922F2BE09A10991D790B6BE7C06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A68CFD979D413A619DF631BB121D98F /* Bugly */,
+				4998DDA595EA6ED6393DDAB01EB01889 /* Pods-ZIMKitDemo */,
+				6A2209FC2E9BBCACFE4FDE00944AEA2E /* ZIMKit */,
+				E026B2AE3F8EE6325CE358E15675D76E /* ZIMKit-ZIMKItCommon */,
+				9ED83EBDD927474214D3054F9B793C51 /* ZIMKit-ZIMKitConversation */,
+				20D89284217AFA991E1FF73999765538 /* ZIMKit-ZIMKitRecources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EDE7A66E373B1E21B0218668CA24FAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23B905E0004ED9D10C18DAC5663F67A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2431DF953A51CF284DB576FB2EDC65ED /* conversation_bar_close.png in Resources */,
+				69389B6D410A699F5EA293E386CCB0DC /* conversation_bar_close@2x.png in Resources */,
+				8E7713338993C8B0E6B3676835594691 /* conversation_bar_close@3x.png in Resources */,
+				F836CF363BB2BE3D12CB4C2C973A6CBF /* conversation_bar_left.png in Resources */,
+				514CDA0150834DB4459787858D09C64E /* conversation_bar_left@2x.png in Resources */,
+				BDB841FE2816761272A7940712CC1599 /* conversation_bar_left@3x.png in Resources */,
+				68586C913424C6FF0AB042BD8679D598 /* conversation_bar_right.png in Resources */,
+				40DF311C1B274126070B1763A53F42D6 /* conversation_bar_right@2x.png in Resources */,
+				E5D76FC1613107369F1C34539381985C /* conversation_bar_right@3x.png in Resources */,
+				63C162DD332A3EE294ECC49CB63AF871 /* conversation_msg_fail.png in Resources */,
+				50AB7346C6962EAEA31ABAA0D2E0745F /* conversation_msg_fail@2x.png in Resources */,
+				44F6F4DE1070AE6705F47CBDE1A2F1C6 /* conversation_msg_fail@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0B7D134541F62AAB3D3A3D4F654612F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9184FEAE94ACE4B47657A9BDFFE0922 /* en.lproj in Resources */,
+				0251982D102D73525F761ED9547E3D23 /* zh-Hans.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6BCA76C9218DCFA214AEF2207DD63A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9A90E01042D04671C52E6B145B3BDF /* chat_default_avatar.png in Resources */,
+				F752EDDFD9AFAFD4A68D82557B927D09 /* chat_default_avatar@2x.png in Resources */,
+				3AB63D8A358DEAA89B41D3B020E3B6E1 /* chat_default_avatar@3x.png in Resources */,
+				EF50B9065030C06AD3D7578F3F31BF14 /* chat_nav_left.png in Resources */,
+				35710B31B98E8D8675EB38E3081AD5CF /* chat_nav_left@2x.png in Resources */,
+				A16154FBDAB1C006BB5513B15A62CDB8 /* chat_nav_left@3x.png in Resources */,
+				DA15D23B185F6D4B238528A590CB10F1 /* chat_nav_right.png in Resources */,
+				031CBB38892046E3B2A8ECF9BF82AB9B /* chat_nav_right@2x.png in Resources */,
+				3270A9F81E864F0B37BC02EC53B1B7B7 /* chat_nav_right@3x.png in Resources */,
+				B6447D6D22A904F73221764F54BE12A9 /* message_selected.png in Resources */,
+				A4CBADF3074E437ACC0F9DC0A38917CD /* message_selected-1.png in Resources */,
+				205017A314C184CB02A6EA9F5BB3F7B5 /* message_selected@2x.png in Resources */,
+				AED8278A24F812C89457BCC2D2262F8D /* message_selected@2x-1.png in Resources */,
+				55000BC90720E14AA53C6A879E31AD9C /* message_selected@3x.png in Resources */,
+				EF7B6F49D33BCD14AF89CDA56FC2A3AE /* message_selected@3x-1.png in Resources */,
+				26A45227BBD7A71C52C1CD65BB985A51 /* message_send_fail.png in Resources */,
+				5910623D4FBDE9AC7892ED8EE69CAA63 /* message_send_fail@2x.png in Resources */,
+				EDD10849AF6214BA608FB49D1AE0EEF7 /* message_send_fail@3x.png in Resources */,
+				F660C134AF21218504A650D6C0167DEF /* receve_bubble.png in Resources */,
+				CF7BF3B49768E25A53711857564BDE0D /* receve_bubble@2x.png in Resources */,
+				BE99E70D082D90117DF5FB1346C91576 /* receve_bubble@3x.png in Resources */,
+				B9E745F889A6ED9570BE7B9F2B58B215 /* send_bubble.png in Resources */,
+				3A96B1C06B1B467454D7693C76798831 /* send_bubble@2x.png in Resources */,
+				E5B8548849A77D3A49FE0DC7B7238092 /* send_bubble@3x.png in Resources */,
+				D3351DC0636CF14DCA408206B61A0BF6 /* sendMessage_icon.png in Resources */,
+				FA0D1A99CAF162C2273D724E0700304B /* sendMessage_icon@2x.png in Resources */,
+				8027BF465C932B7A60B2909D3A35A3A1 /* sendMessage_icon@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6BA871696224429299D18E42F434AE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DD69B36197022259492BB3F9B2DEFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841DDC4E599E3F1587A1EF09AE4E55E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B043B06CB82BB4FD72E91EC3609891EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4F2D38B3813A7F76A6AF9434698AA2 /* Pods-ZIMKitDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1AA85E62F6393DB3954AA21CA754F82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5F14E105E5E4793D4C52A1563D5AC74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34BD6C2258C3198C2B93FD97F16AE703 /* NSBundle+ZIMKitUtil.m in Sources */,
+				89005D8339DCCA6568FD4365640E1E2A /* NSObject+ZIMKitUtil.m in Sources */,
+				B764DEDFE5BE94113F604B4C354FB0D0 /* NSString+ZIMKitUtil.m in Sources */,
+				31F3C736E62737251B5E9274A3DD6D22 /* ReplaceMe.m in Sources */,
+				E91BE210EF2EEAC5561E43607BCBC647 /* UIColor+ZIMKitUtil.m in Sources */,
+				53D1F3B918DC63F9BF488EC66311309E /* UIImage+ZIMKitUtil.m in Sources */,
+				EC6468936E2564047FCFD21CF03F09BF /* UIView+Layout.m in Sources */,
+				5FBB3DD00FA0CF172743C0EF22A78C59 /* UIView+Toast.m in Sources */,
+				1FEC14575D7FEDC13CC7831893AE1F5F /* ZegoRefreshAutoFooter.m in Sources */,
+				D39988CE1B17E70230588BEC95100B14 /* ZIMKit-dummy.m in Sources */,
+				26DB8DF9F3AD372A8904EA0418E30FC8 /* ZIMKitAlertView.m in Sources */,
+				69E6AB54692A9406DCDBE5C378FBABD2 /* ZIMKitBaseModule.m in Sources */,
+				3DF15636DE6533150AFA4B6A6CE0E377 /* ZIMKitBubbleMessageCell.m in Sources */,
+				37F60C1C8944B733F99A8B9D3A33C90C /* ZIMKitConversationCell.m in Sources */,
+				C0AE3E42A1F619EE5252796CCDFE7A18 /* ZIMKitConversationListNoDataView.m in Sources */,
+				5CD369EBCC60192527ADFAFCBF94D535 /* ZIMKitConversationListVC.m in Sources */,
+				15B707FCB63AA66771CD3BAF88180B1C /* ZIMKitConversationModel.m in Sources */,
+				B46678066E36481B8BB5A96C3FFA67FB /* ZIMKitConversationVM.m in Sources */,
+				C478C0DBA73E4C676D91966608D1093F /* ZIMKitCreateChatController.m in Sources */,
+				3E834F83113BED6F7D2BCBA4CEEC5051 /* ZIMKitEventHandler.m in Sources */,
+				45369BF479BB8E82058593FEA6BBE319 /* ZIMKitGroupDetailController.m in Sources */,
+				67704F5E5FEFAB46CB9C84EBB329731F /* ZIMKitGroupdetailView.m in Sources */,
+				CCCF943F525452EACEA5C332F36341A3 /* ZIMKitGroupInfo.m in Sources */,
+				DF0E7E4791C8947857178DD1F9EBEF66 /* ZIMKitGroupMember.m in Sources */,
+				5E584C23EDA854CE9B2BD93207CF7AFD /* ZIMKitGroupModule.m in Sources */,
+				6858A71CF5992E1D64397768AAC2D713 /* ZIMKitGroupVM.m in Sources */,
+				CD28E307BFE6AB4B8DBA09CAED521387 /* ZIMKitInputBar.m in Sources */,
+				2C0EDB0303A03E1EA0170CD21BEF7309 /* ZIMKitManager.m in Sources */,
+				1EFBB6885B3811F6B9E7E5B964589B1B /* ZIMKitMessage.m in Sources */,
+				EA7299F24A7BFD75857042DA626B7935 /* ZIMKitMessageCell.m in Sources */,
+				D01335E59CFE7371381F34B7293206CB /* ZIMKitMessageCellConfig.m in Sources */,
+				A20B08A73172186143CCDF37342FC004 /* ZIMKitMessageModule.m in Sources */,
+				E0CE9B436E43144355F9B06DD1F3828D /* ZIMKitMessagesListVC.m in Sources */,
+				B5D0DB1475DF403CE73CD872394A3246 /* ZIMKitMessagesVM.m in Sources */,
+				3D852B78880409CE90DA3C1951ECAEF9 /* ZIMKitMessageTool.m in Sources */,
+				9A29DD497CA9391A608B83363914535C /* ZIMKitNavigationController.m in Sources */,
+				5E8C7B1941A0657024EDC4EB135DDB72 /* ZIMKitPrefix.pch in Sources */,
+				5F3091A0CB1C08599A75B5390386C6A1 /* ZIMKitRefreshAutoHeader.m in Sources */,
+				3A9DC1702CD38FFA4C033F4673DB7AEF /* ZIMKitRouter.m in Sources */,
+				99E38CCC37C15E4AAC7AD11D2F8EE625 /* ZIMKitSystemMessage.m in Sources */,
+				C2453402026A0F9E9272094AE899DED0 /* ZIMKitSystemMessageCell.m in Sources */,
+				5C12CA56B0EBA91A21D42472B5554288 /* ZIMKitTextMessage.m in Sources */,
+				986ABFC190C9A2D0B191402933022228 /* ZIMKitTextMessageCell.m in Sources */,
+				A847BAB7C6A4465A2889A33AC3902E1B /* ZIMKitUnReadView.m in Sources */,
+				5CDB432045A99706D76AE40EA1D14722 /* ZIMMessage+Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1689D43D4A17C0EE90FD923308199D9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ZIMKit-ZIMKitConversation";
+			target = 9ED83EBDD927474214D3054F9B793C51 /* ZIMKit-ZIMKitConversation */;
+			targetProxy = CBEAEB180A117FB13F81EA9DD20E5DB3 /* PBXContainerItemProxy */;
+		};
+		349836D13008488FC53B7EB31100213C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bugly;
+			target = 4A68CFD979D413A619DF631BB121D98F /* Bugly */;
+			targetProxy = 8EDC09B5951F254E5C41A769F99CABF0 /* PBXContainerItemProxy */;
+		};
+		4EB80E8BA6142645A8909DFDFCCB4CF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZIMKit;
+			target = 6A2209FC2E9BBCACFE4FDE00944AEA2E /* ZIMKit */;
+			targetProxy = 715CF6718963889E2BECB4FBF69E6869 /* PBXContainerItemProxy */;
+		};
+		6047416CEB24502BB82FE87C126281AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ZIMKit-ZIMKItCommon";
+			target = E026B2AE3F8EE6325CE358E15675D76E /* ZIMKit-ZIMKItCommon */;
+			targetProxy = D7D55180DCC66D6183F7EE245A90DD1E /* PBXContainerItemProxy */;
+		};
+		DE4F8E54919828FC668153A926E18A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ZIMKit-ZIMKitRecources";
+			target = 20D89284217AFA991E1FF73999765538 /* ZIMKit-ZIMKitRecources */;
+			targetProxy = 26874369B3DAA35BF2A4D5F520AA650C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0698948243EE3C64CB27C6F1B160B111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D53C1CBCC81D8001DABD9442BBC07574 /* ZIMKit.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit";
+				IBSC_MODULE = ZIMKit;
+				INFOPLIST_FILE = "Target Support Files/ZIMKit/ResourceBundle-ZIMKitRecources-ZIMKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ZIMKitRecources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		0D403275D6AA0C15A7EF1ED3AFA3F5AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1274D0BB00E7CED5EE140658D3F07495 /* ZIMKit.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit";
+				IBSC_MODULE = ZIMKit;
+				INFOPLIST_FILE = "Target Support Files/ZIMKit/ResourceBundle-ZIMKItCommon-ZIMKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ZIMKItCommon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		181E19DBBD19E44939DA2D8330B311D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D53C1CBCC81D8001DABD9442BBC07574 /* ZIMKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZIMKit/ZIMKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZIMKit/ZIMKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ZIMKit/ZIMKit.modulemap";
+				PRODUCT_MODULE_NAME = ZIMKit;
+				PRODUCT_NAME = ZIMKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		20772BD35022567EC44458FEDA3E0226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1274D0BB00E7CED5EE140658D3F07495 /* ZIMKit.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit";
+				IBSC_MODULE = ZIMKit;
+				INFOPLIST_FILE = "Target Support Files/ZIMKit/ResourceBundle-ZIMKitConversation-ZIMKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ZIMKitConversation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		63217D27C4EC925426BE84E75C98844A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD7C7BE64179875138BB0FEA5458EBC4 /* Pods-ZIMKitDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZIMKitDemo/Pods-ZIMKitDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZIMKitDemo/Pods-ZIMKitDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8321406B955E7EDAFA0EA0EA992A8E67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 304C25C413785142C20F31BF7AF64FFD /* Bugly.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9274F377D13551DEE94FA19B2399A047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1274D0BB00E7CED5EE140658D3F07495 /* ZIMKit.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit";
+				IBSC_MODULE = ZIMKit;
+				INFOPLIST_FILE = "Target Support Files/ZIMKit/ResourceBundle-ZIMKitRecources-ZIMKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ZIMKitRecources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		97873B0CE4FA3792F2A9C9D1F507436D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1274D0BB00E7CED5EE140658D3F07495 /* ZIMKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZIMKit/ZIMKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZIMKit/ZIMKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ZIMKit/ZIMKit.modulemap";
+				PRODUCT_MODULE_NAME = ZIMKit;
+				PRODUCT_NAME = ZIMKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A4EEB7570613B5558AF18867CEB3A8B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4520287290BAA0680DDF60A0F6D8CF9F /* Bugly.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B05652C3B141465DFF6CBB15B6D51A7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D53C1CBCC81D8001DABD9442BBC07574 /* ZIMKit.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit";
+				IBSC_MODULE = ZIMKit;
+				INFOPLIST_FILE = "Target Support Files/ZIMKit/ResourceBundle-ZIMKitConversation-ZIMKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ZIMKitConversation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EE36923B3D513786F0178A0C47B4EFDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7DDB4B5EDE6C03155DBB893B450ADED /* Pods-ZIMKitDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZIMKitDemo/Pods-ZIMKitDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZIMKitDemo/Pods-ZIMKitDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F2629A778A315A6C46A9426364160084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D53C1CBCC81D8001DABD9442BBC07574 /* ZIMKit.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit";
+				IBSC_MODULE = ZIMKit;
+				INFOPLIST_FILE = "Target Support Files/ZIMKit/ResourceBundle-ZIMKItCommon-ZIMKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ZIMKItCommon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3813046E8EAC5AEB97A80E43603C5188 /* Build configuration list for PBXNativeTarget "ZIMKit-ZIMKItCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2629A778A315A6C46A9426364160084 /* Debug */,
+				0D403275D6AA0C15A7EF1ED3AFA3F5AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E757EF46388E9C5324AB8742433502A /* Build configuration list for PBXNativeTarget "ZIMKit-ZIMKitRecources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0698948243EE3C64CB27C6F1B160B111 /* Debug */,
+				9274F377D13551DEE94FA19B2399A047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CC7AA793D9397C15E010F8242EE1046 /* Build configuration list for PBXAggregateTarget "Bugly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8321406B955E7EDAFA0EA0EA992A8E67 /* Debug */,
+				A4EEB7570613B5558AF18867CEB3A8B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1626D471B6682DD17DCB43AC793612F /* Build configuration list for PBXNativeTarget "Pods-ZIMKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE36923B3D513786F0178A0C47B4EFDC /* Debug */,
+				63217D27C4EC925426BE84E75C98844A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF19BC62AC3EE30F720163C95C65C16F /* Build configuration list for PBXNativeTarget "ZIMKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181E19DBBD19E44939DA2D8330B311D1 /* Debug */,
+				97873B0CE4FA3792F2A9C9D1F507436D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D50BC88E4D152F95D63F9CCE79DC9A15 /* Build configuration list for PBXNativeTarget "ZIMKit-ZIMKitConversation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B05652C3B141465DFF6CBB15B6D51A7D /* Debug */,
+				20772BD35022567EC44458FEDA3E0226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

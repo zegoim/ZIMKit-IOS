@@ -1,0 +1,50 @@
+{
+  "name": "ZIMKit",
+  "version": "0.1.0",
+  "summary": "A short description of ZIMKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wukun/ZIMKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wukun": "wukun@zego.im"
+  },
+  "source": {
+    "git": "https://github.com/wukun/ZIMKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "ZIMKit/Classes/**/*",
+  "static_framework": true,
+  "xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC",
+    "ENABLE_BITCODE": "NO"
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
+    "GCC_PREPROCESSOR_DEFINITIONS[config=Debug]": "$(inherited) _ZX_ENVIRONMENT_DEBUG_=1001",
+    "GCC_PREPROCESSOR_DEFINITIONS": "GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "public_header_files": "ZIMKit/Classes/**/*.h",
+  "prefix_header_file": "ZIMKit/Classes/ZIMKitCommon/ZIMKitPrefix.pch",
+  "ios": {
+    "resource_bundles": {
+      "ZIMKitRecources": [
+        "ZIMKit/Assets/ChatResources/*"
+      ],
+      "ZIMKItCommon": [
+        "ZIMKit/Assets/CommonResources/*"
+      ],
+      "ZIMKitConversation": [
+        "ZIMKit/Assets/ConversationResources/*"
+      ]
+    }
+  }
+}

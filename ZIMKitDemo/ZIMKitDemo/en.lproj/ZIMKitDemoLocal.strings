@@ -1,0 +1,20 @@
+/* 
+  ZIMKitDemoLocal.strings
+  ZIMKitDemo
+
+  Created by zego on 2022/6/29.
+  
+*/
+
+"demo_message" = "Chats";
+"demo_login_hint" = "User ID";
+"demo_login" = "Log in";
+"demo_user_name" = "Username: ";
+"demo_welcome" = "Hi, \nwelcome to ZEGOCLOUD \nIn-app Chat.";
+"demo_input_user_id_error_tips" = "The userID must be between 6-12 characters using letters and numbers.";
+"demo_user_id_login" = "User Login";
+"confirm" = "confirm";
+
+"conversation_start_single_chat" = "One-on-one chat";
+"conversation_start_group_chat" = "Group chat";
+"conversation_join_group_chat" = "Join a group";

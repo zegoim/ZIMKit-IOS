@@ -1,0 +1,6 @@
+framework module Pods_ZIMKitDemo {
+  umbrella header "Pods-ZIMKitDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
