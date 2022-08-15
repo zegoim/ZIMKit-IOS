@@ -1,0 +1,1 @@
+../../../../../ZIMKit/Classes/ZIMKitConversation/Model/ZIMKitConversationModel.h

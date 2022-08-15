@@ -1,0 +1,1 @@
+../../../../../ZIMKit/Classes/ZIMKitMessages/Vendor/GKPhotoBrowser/Core/GKPhotoBrowserConfigure.h

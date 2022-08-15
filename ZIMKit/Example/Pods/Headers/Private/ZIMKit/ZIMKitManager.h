@@ -1,0 +1,1 @@
+../../../../../ZIMKit/Classes/ZIMKitCommon/ZIMKitManager.h

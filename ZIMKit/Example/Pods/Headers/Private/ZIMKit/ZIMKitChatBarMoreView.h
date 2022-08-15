@@ -1,0 +1,1 @@
+../../../../../ZIMKit/Classes/ZIMKitMessages/UI/View/InputView/MoreFunctionView/ZIMKitChatBarMoreView.h

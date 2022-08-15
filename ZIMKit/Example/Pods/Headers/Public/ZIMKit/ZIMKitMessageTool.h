@@ -1,0 +1,1 @@
+../../../../../ZIMKit/Classes/ZIMKitMessages/ZIMKitMessageUtil/ZIMKitMessageTool.h

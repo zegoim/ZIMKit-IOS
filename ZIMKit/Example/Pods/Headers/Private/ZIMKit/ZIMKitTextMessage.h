@@ -1,0 +1,1 @@
+../../../../../ZIMKit/Classes/ZIMKitMessages/Model/ZIMKitTextMessage.h
