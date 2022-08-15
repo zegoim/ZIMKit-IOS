@@ -157,6 +157,4 @@
     }
     return contentView;
 }
-
-
 @end

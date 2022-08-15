@@ -270,18 +270,18 @@
 		86EEDB33286C6CFC002E6C29 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				86EEDB34286C6CFC002E6C29 /* ZIMKitDemoNavigationController.h */,
-				86EEDB35286C6CFC002E6C29 /* UIView+KitDemo.m */,
-				86EEDB36286C6CFC002E6C29 /* NSObject+KitDemo.m */,
 				86EEDB37286C6CFC002E6C29 /* HelpCenter.h */,
-				86EEDB38286C6CFC002E6C29 /* NSString+KitDemo.h */,
-				86EEDB39286C6CFC002E6C29 /* UIImage+KitDemo.h */,
-				86EEDB3A286C6CFC002E6C29 /* ZIMKitDemoNavigationController.m */,
-				86EEDB3B286C6CFC002E6C29 /* NSObject+KitDemo.h */,
-				86EEDB3C286C6CFC002E6C29 /* UIView+KitDemo.h */,
 				86EEDB3D286C6CFC002E6C29 /* HelpCenter.mm */,
-				86EEDB3E286C6CFC002E6C29 /* UIImage+KitDemo.m */,
+				86EEDB3B286C6CFC002E6C29 /* NSObject+KitDemo.h */,
+				86EEDB36286C6CFC002E6C29 /* NSObject+KitDemo.m */,
+				86EEDB38286C6CFC002E6C29 /* NSString+KitDemo.h */,
 				86EEDB3F286C6CFC002E6C29 /* NSString+KitDemo.m */,
+				86EEDB39286C6CFC002E6C29 /* UIImage+KitDemo.h */,
+				86EEDB3E286C6CFC002E6C29 /* UIImage+KitDemo.m */,
+				86EEDB3C286C6CFC002E6C29 /* UIView+KitDemo.h */,
+				86EEDB35286C6CFC002E6C29 /* UIView+KitDemo.m */,
+				86EEDB34286C6CFC002E6C29 /* ZIMKitDemoNavigationController.h */,
+				86EEDB3A286C6CFC002E6C29 /* ZIMKitDemoNavigationController.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -478,16 +478,16 @@
 		86EEDB9C286C94F3002E6C29 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
-				86EEDB9D286C94F3002E6C29 /* ZegoTabBarController.h */,
-				86EEDB9E286C94F3002E6C29 /* ZegoBadgeButton.m */,
-				86EEDB9F286C94F3002E6C29 /* ZegoTabBar.h */,
-				86EEDBA0286C94F3002E6C29 /* ZegoTabBarButton.h */,
-				86EEDBA1286C94F3002E6C29 /* ZegoBadgeView.h */,
-				86EEDBA2286C94F3002E6C29 /* ZegoTabBarController.m */,
 				86EEDBA3286C94F3002E6C29 /* ZegoBadgeButton.h */,
-				86EEDBA4286C94F3002E6C29 /* ZegoTabBar.m */,
-				86EEDBA5286C94F3002E6C29 /* ZegoTabBarButton.m */,
+				86EEDB9E286C94F3002E6C29 /* ZegoBadgeButton.m */,
+				86EEDBA1286C94F3002E6C29 /* ZegoBadgeView.h */,
 				86EEDBA6286C94F3002E6C29 /* ZegoBadgeView.m */,
+				86EEDB9F286C94F3002E6C29 /* ZegoTabBar.h */,
+				86EEDBA4286C94F3002E6C29 /* ZegoTabBar.m */,
+				86EEDBA0286C94F3002E6C29 /* ZegoTabBarButton.h */,
+				86EEDBA5286C94F3002E6C29 /* ZegoTabBarButton.m */,
+				86EEDB9D286C94F3002E6C29 /* ZegoTabBarController.h */,
+				86EEDBA2286C94F3002E6C29 /* ZegoTabBarController.m */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -908,12 +908,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 52;
 				DEVELOPMENT_TEAM = B82BHJ5H89;
 				GCC_PREFIX_HEADER = ZIMKitDemo/ZIMKitDemoPrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ZIMKitDemo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ZIMKitDemo;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ZIMKit want access Photo Library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -939,12 +940,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 52;
 				DEVELOPMENT_TEAM = B82BHJ5H89;
 				GCC_PREFIX_HEADER = ZIMKitDemo/ZIMKitDemoPrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ZIMKitDemo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ZIMKitDemo;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ZIMKit want access Photo Library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

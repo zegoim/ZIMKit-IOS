@@ -8,6 +8,8 @@
 #import "ZIMKitMessagesVM.h"
 #import "ZIMKitMessage.h"
 #import "ZIMKitTextMessage.h"
+#import "ZIMKitMediaMessage.h"
+#import "ZIMKitImageMessage.h"
 #import "ZIMKitSystemMessage.h"
 #import "ZIMKitEventHandler.h"
 #import "ZIMKitMessageTool.h"
@@ -53,8 +55,8 @@
                 sysMessage.content = [NSString stringWithFormat:@"%@ %@ %@",[NSBundle ZIMKitlocalizedStringForKey:@"message_user_not_exit_please_again_w_1"] ,toUserID, [NSBundle ZIMKitlocalizedStringForKey:@"message_user_not_exit_please_again_w_2"]];
                 sysMessage.zimMsg = kitMessage.zimMsg;
                 [self addKitMessage:sysMessage];
-                
             }
+            
             [self addKitMessage:kitMessage];
             
             callBack(kitMessage, errorInfo);
@@ -70,6 +72,25 @@
     ZIMMessage *sendMessage = [ZIMKitMessageTool fromZIMKitMessageConvert:message];
     @weakify(self);
     [ZIMKitManagerZIM sendGroupMesage:sendMessage toGroupID:toGroupID config:config callback:^(ZIMMessage * _Nonnull message, ZIMError * _Nonnull errorInfo) {
+        @strongify(self);
+        if (callBack) {
+            ZIMKitMessage *kitMessage = [ZIMKitMessageTool fromZIMMessageConvert:message];
+            [self addKitMessage:kitMessage];
+            
+            callBack(kitMessage, errorInfo);
+        }
+    }];
+}
+
+- (void)sendMeidaMessage:(ZIMKitMediaMessage *)message
+          conversationID:(NSString *)conversationID
+        conversationType:(ZIMConversationType)conversationType
+                  config:(ZIMMessageSendConfig *)config
+                progress:(ZIMMediaUploadingProgress)progress
+                callBack:(ZIMKitMessageCallback)callBack  {
+    ZIMMediaMessage *meidaMessage = (ZIMMediaMessage *) [ZIMKitMessageTool fromZIMKitMessageConvert:message];
+    @weakify(self);
+    [ZIMKitManagerZIM sendMediaMessage:meidaMessage toConversationID:conversationID conversationType:conversationType config:config progress:progress callback:^(ZIMMessage * _Nonnull message, ZIMError * _Nonnull errorInfo) {
         @strongify(self);
         if (callBack) {
             ZIMKitMessage *kitMessage = [ZIMKitMessageTool fromZIMMessageConvert:message];
@@ -159,6 +180,12 @@
     NSAssert(groupID,  @"queryqueryGroupMemberListByGroupID The groupID should not be nil.");
     
     [ZIMKitManagerZIM queryGroupMemberListByGroupID:groupID config:config callback:callback];
+}
+
+- (void)queryGroupInfoWithGroupID:(NSString *)groupID callback:(ZIMGroupInfoQueriedCallback)callback {
+    NSAssert(groupID,  @"queryGroupInfoWithGroupID The groupID should not be nil.");
+    
+    [ZIMKitManagerZIM queryGroupInfoByGroupID:groupID callback:callback];
 }
 
 - (void)addConversationEventHadle {
@@ -263,11 +290,15 @@
     [self removeConversationEventHadle];
 }
 
+/// 获取本地图片路径
+- (NSString *)getImagepath {
+    return [[ZIMKitManager shared] getImagepath];
+}
 #pragma mark private
 - (void)addKitMessage:(ZIMKitMessage *)message {
     ZIMKitMessage *preMessage = self.messages.lastObject;
-    BOOL isSHowTime = [message isNeedshowtime:preMessage.timestamp];
-    message.needShowTime = isSHowTime;
+    BOOL isShowTime = [message isNeedshowtime:preMessage.timestamp];
+    message.needShowTime = isShowTime;
     [self.messages addObject:message];
 }
 @end

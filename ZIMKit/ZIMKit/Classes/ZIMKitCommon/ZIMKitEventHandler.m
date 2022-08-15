@@ -54,7 +54,7 @@
     if (!listenerArray) {
         NSLog(@"not found listener with key is %@", key);
     }else {
-        for (NSDictionary *dic in listenerArray) {
+        for (NSDictionary *dic in listenerArray.reverseObjectEnumerator) {
             if ([dic[kZIMKitListener] isEqual:listener]) {
                 [listenerArray removeObject:dic];
             }
@@ -72,6 +72,7 @@
 
 #pragma mark ZIMEventHandler
 - (void)zim:(ZIM *)zim connectionStateChanged:(ZIMConnectionState)state event:(ZIMConnectionEvent)event extendedData:(NSDictionary *)extendedData {
+    NSLog(@"-----------------connectionStateChanged %ld", state);
     [self eventhandlerWith:KEY_CONNECTION_STATE_CHANGED param:@{PARAM_STATE : @(state),
                                                                 PARAM_EVENT : @(event),
                                                                 PARAM_EXTENDED_DATA : extendedData ? extendedData : [NSDictionary dictionary]

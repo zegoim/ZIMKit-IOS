@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZIMKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of ZIMKit.'
 
 # This description is used to generate tags and improve search results.
@@ -25,10 +25,11 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wukun' => 'wukun@zego.im' }
-  s.source           = { :git => 'https://github.com/wukun/ZIMKit.git', :tag => s.version.to_s }
+#  s.source           = { :git => 'https://github.com/wukun/ZIMKit.git', :tag => s.version.to_s }
+  s.source           = { :git => '/Users/zego/Documents/IMKit/ZIMKit_CoCoPod/ZIMKit-IOS/ZIMKit'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'ZIMKit/Classes/**/*'
   
@@ -42,7 +43,7 @@ TODO: Add long description of the pod here.
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }  #必须
   
   
-  s.public_header_files = 'ZIMKit/Classes/**/*.h'
+#  s.public_header_files = 'ZIMKit/Classes/**/*.h'
   
   s.prefix_header_file = 'ZIMKit/Classes/ZIMKitCommon/ZIMKitPrefix.pch'
   
@@ -51,9 +52,12 @@ TODO: Add long description of the pod here.
   # }
   s.ios.resource_bundles = {
     'ZIMKitRecources' => ['ZIMKit/Assets/ChatResources/*'],
-    'ZIMKItCommon' => ['ZIMKit/Assets/CommonResources/*'],
-    'ZIMKitConversation' => ['ZIMKit/Assets/ConversationResources/*']
+    'ZIMKitCommon' => ['ZIMKit/Assets/CommonResources/*'],
+    'ZIMKitConversation' => ['ZIMKit/Assets/ConversationResources/*'],
+    'ZIMKitGroup' => ['ZIMKit/Assets/GroupResources/*'],
+    'GKPhotoBrowser' => ['ZIMKit/Assets/GKPhotoBrowser/*']
   }
+  s.ios.public_header_files = 'ZIMKit/Classes/**/*.h'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
@@ -62,5 +66,8 @@ TODO: Add long description of the pod here.
    s.dependency 'Masonry', '1.1.0'
    s.dependency 'YYText', '1.0.7'
    s.dependency 'MJRefresh', '3.1.15.3'
-   s.dependency 'ZIM', '2.2.0'
+   s.dependency 'TZImagePickerController', '3.8.3'
+   s.dependency 'SDWebImage'
+   s.dependency 'YYWebImage', '~> 1.0.5'
+   s.dependency 'ZIM', '2.3.0'
 end

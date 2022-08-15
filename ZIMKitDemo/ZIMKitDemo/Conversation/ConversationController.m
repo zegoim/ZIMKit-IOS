@@ -8,7 +8,7 @@
 #import "ConversationController.h"
 
 @interface ConversationController ()<ZIMKitConversationListVCDelegate>
-
+@property (nonatomic, strong) ZIMKitAlertView *alertView;
 @end
 
 @implementation ConversationController
@@ -29,11 +29,25 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     self.tabBarController.tabBar.hidden = YES;
+    [self.alertView dismiss];
 }
 
 #pragma mark ZIMKitConversationListVCDelegate
 - (void)onTotalUnreadMessageCountChange:(NSInteger)totalCount {
     self.tabBarItem.badgeValue = totalCount ? [NSString stringWithFormat:@"%@", totalCount > 99 ? @"99+" : @(totalCount)] : nil;
+}
+
+- (void)userAccountKickedOut {
+    UIAlertController *alter = [UIAlertController alertControllerWithTitle:nil message:KitDemoLocalizedString(@"demo_user_kick_out", LocalizedDemoKey, nil) preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *sure = [UIAlertAction actionWithTitle:KitDemoLocalizedString(@"confirm", LocalizedDemoKey, nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self leftBarButtonClick:nil];
+    }];
+    [alter addAction:sure];
+    [self presentViewController:alter animated:true completion:nil];
+}
+
+- (void)titleContentChange:(NSString *)content {
+    self.navigationItem.title = content;
 }
 
 - (void)setupNav {
@@ -77,6 +91,7 @@
         [self createChatWithIndex:index];
     };
     [alertView show];
+    _alertView = alertView;
 }
 
 - (void)createChatWithIndex:(NSInteger)index {
@@ -96,5 +111,4 @@
         [self.navigationController pushViewController:vc animated:true];
     }
 }
-
 @end

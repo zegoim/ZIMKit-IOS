@@ -206,63 +206,6 @@
     
 }
 
-
-- (CGSize)sizeAttributedWithFont:(UIFont *)font width:(CGFloat)width  wordWap:(NSLineBreakMode)lineBreadMode {
-    NSAttributedString *string = [self processCommentContentWithFont:font wordWap:lineBreadMode];
-    
-    // 利用YYTextLayout计算高度
-    YYTextContainer *container = [YYTextContainer containerWithSize:CGSizeMake(width, MAXFLOAT)];
-    YYTextLayout *textLayout = [YYTextLayout layoutWithContainer:container text:string];
-    CGSize textSize = textLayout.textBoundingSize;
-    CGFloat textWidth = textSize.width;
-    CGFloat textHeight = textSize.height;
-
-    return  CGSizeMake(ceil(textWidth), ceil(textHeight));
-}
-
-- (NSMutableAttributedString *)processCommentContentWithFont:(UIFont *)font wordWap:(NSLineBreakMode)lineBreadMode {
-    //转成可变属性字符串
-    NSMutableAttributedString *mAttributedString = [[NSMutableAttributedString alloc]init];
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-//    [paragraphStyle setLineSpacing:2];
-//    [paragraphStyle setParagraphSpacing:2];
-    paragraphStyle.lineBreakMode = lineBreadMode;
-    NSDictionary *attri = [NSDictionary dictionaryWithObjects:@[font, paragraphStyle] forKeys:@[NSFontAttributeName, NSParagraphStyleAttributeName]];
-    [mAttributedString appendAttributedString:[[NSAttributedString alloc] initWithString:self attributes:attri]];
-    //创建匹配正则表达式的类型描述模板
-    NSString *pattern = @"\\[[a-zA-Z0-9\\u4e00-\\u9fa5]+\\]";
-    //创建匹配对象
-    NSError *error;
-    NSRegularExpression *regularExpression = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:&error];
-    //判断
-    if (!regularExpression) { //如果匹配规则对象为nil
-        NSLog(@"正则创建失败！");
-        NSLog(@"error = %@",[error localizedDescription]);
-        return nil;
-    } else {
-        NSArray *resultArray = [regularExpression matchesInString:mAttributedString.string options:NSMatchingReportCompletion range:NSMakeRange(0, mAttributedString.string.length)];
-        //开始遍历 逆序遍历
-        for (NSInteger i = resultArray.count - 1; i >= 0; i--) {
-            //获取检查结果，里面有range
-            NSTextCheckingResult *result = resultArray[i];
-            //根据range获取字符串
-            NSString *rangeString = [mAttributedString.string substringWithRange:result.range];
-            //获取图片
-            UIImage *image = [self getExpressionWithName:rangeString];//这是个自定义的方法
-            
-            if (image != nil) {
-                NSMutableAttributedString *attachText = [NSMutableAttributedString yy_attachmentStringWithEmojiImage:image fontSize:15.0f];
-                attachText.yy_lineBreakMode = lineBreadMode;
-                //开始替换
-                [mAttributedString replaceCharactersInRange:result.range withAttributedString:attachText];
-            }
-        }
-    }
-    
-    return mAttributedString;
-}
-
-
 - (UIImage *)getExpressionWithName:(NSString *)name {
     UIImage *image; //二期表情用
     return image;
@@ -280,6 +223,15 @@
             return NO;
         }
     }
+}
+
++ (NSString *)getCurrentThumbFileName:(NSString *)extension
+{
+    /**
+     *  由于同时发多张图片 使用时间戳 导致所有的图片文件名都是一个  ->添加随机数
+     */
+  
+    return [NSString stringWithFormat:@"%d%0.0f_thumb_%@", arc4random() % 10000,[[NSDate date] timeIntervalSince1970] *1000,extension];
 }
 
 @end

@@ -18,26 +18,40 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>ZIMKit-ZIMKItCommon.xcscheme</key>
+		<key>ZIMKit-GKPhotoBrowser.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>ZIMKit-ZIMKitConversation.xcscheme</key>
+		<key>ZIMKit-ZIMKitCommon.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>ZIMKit-ZIMKitRecources.xcscheme</key>
+		<key>ZIMKit-ZIMKitConversation.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>5</integer>
+		</dict>
+		<key>ZIMKit-ZIMKitGroup.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>ZIMKit-ZIMKitRecources.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 		<key>ZIMKit.xcscheme</key>
 		<dict>

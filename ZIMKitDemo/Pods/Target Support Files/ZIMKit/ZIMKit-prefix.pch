@@ -24,6 +24,8 @@
 #define strongify(obj) autoreleasepool{} __strong typeof(obj) obj = obj##Weak;
 
 #import <Masonry/Masonry.h>
+#import <TZImagePickerController/TZImagePickerController.h>
+#import <SDWebImage/SDWebImage.h>
 #import <YYText/YYText.h>
 #import "UIView+Layout.h"
 #import "UIView+Toast.h"

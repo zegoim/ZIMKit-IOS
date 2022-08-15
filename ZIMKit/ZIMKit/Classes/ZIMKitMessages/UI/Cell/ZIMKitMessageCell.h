@@ -18,9 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 头像
 @property (nonatomic, strong) UIImageView *avatarImageView;
 
-/// 头像先用首字母(后续直接URL)
-@property (nonatomic, strong) UILabel *headLabel;
-
 /// 昵称
 @property (nonatomic, strong) UILabel *nameLabel;
 

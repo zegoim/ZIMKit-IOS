@@ -149,20 +149,27 @@
     ZIMUserInfo *userinfo = [[ZIMUserInfo alloc] init];
     userinfo.userID = userId;
     userinfo.userName = userName;
-    
-    NSString *token = [HelpCenter getTokenWithUserID:userinfo.userID];
-    
+        
     __weak typeof(self) weakSelf = self;
-    [[ZIMKitManager shared] login:userinfo token:token callback:^(ZIMError * _Nonnull errorInfo) {
+    
+    [self.view makeToastActivity:CSToastPositionCenter];
+    [[ZIMKitManager shared] login:userinfo callback:^(ZIMError * _Nonnull errorInfo) {
+        [self.view hideToastActivity];
         if (errorInfo.code) {
             weakSelf.phoneTipL.hidden = NO;
-            weakSelf.btLoginBtn.enabled = NO;
-            weakSelf.btLoginBtn.backgroundColor = [BSRGBColor(0x3478FC) colorWithAlphaComponent:0.5];
+//            weakSelf.btLoginBtn.enabled = NO;
+//            weakSelf.btLoginBtn.backgroundColor = [BSRGBColor(0x3478FC) colorWithAlphaComponent:0.5];
             [weakSelf resetLayout];
+            [self.view makeToast:errorInfo.message];
         } else {
             [[NSNotificationCenter defaultCenter] postNotificationName:@"loginSuccess" object:nil];
             weakSelf.btUserNameLabel.text = KitDemoLocalizedString(@"demo_user_name", LocalizedDemoKey, nil);
             weakSelf.btPhoneField.text = @"";
+            NSString *avatarUrl = [HelpCenter getUserAvatar:userinfo.userID];
+            [[ZIMKitManager shared] updateupdateUserAvatarUrl:avatarUrl
+                                                     callback:^(NSString * _Nonnull userAvatarUrl, ZIMError * _Nonnull errorInfo) {
+                NSLog(@"-------%@", userAvatarUrl);
+            }];
         }
     }];
 }
@@ -284,7 +291,7 @@
 - (UILabel *)phoneTipL {
     if (!_phoneTipL) {
         _phoneTipL = [[UILabel alloc] init];
-        _phoneTipL.text =KitDemoLocalizedString(@"demo_input_user_id_error_tips", LocalizedDemoKey, nil);
+        _phoneTipL.text =KitDemoLocalizedString(@"demo_login_error_tips", LocalizedDemoKey, nil);
         _phoneTipL.textColor = BSRGBColor(0xFF4A50);
         _phoneTipL.numberOfLines = 0;
         _phoneTipL.font = [UIFont systemFontOfSize:14.0 weight:UIFontWeightMedium];

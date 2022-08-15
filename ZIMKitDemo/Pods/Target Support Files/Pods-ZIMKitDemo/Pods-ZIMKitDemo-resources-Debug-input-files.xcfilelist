@@ -1,4 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-ZIMKitDemo/Pods-ZIMKitDemo-resources.sh
 ${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/ZIMKitRecources.bundle
-${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/ZIMKItCommon.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/ZIMKitCommon.bundle
 ${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/ZIMKitConversation.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/ZIMKitGroup.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/GKPhotoBrowser.bundle

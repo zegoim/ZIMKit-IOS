@@ -10,10 +10,12 @@
 "demo_login_hint" = "User ID";
 "demo_login" = "Log in";
 "demo_user_name" = "Username: ";
-"demo_welcome" = "Hi, \nwelcome to ZEGOCLOUD \nIn-app Chat.";
-"demo_input_user_id_error_tips" = "The userID must be between 6-12 characters using letters and numbers.";
+"demo_welcome" = "Hi, \nwelcome to ZEGOCLOUD \nIn-app chat";
+"demo_input_user_id_error_tips" = "6-12 bit userID using letters and numbers.";
+"demo_login_error_tips" = "The userID must be between 6-12 characters using letters and numbers.";
 "demo_user_id_login" = "User Login";
 "confirm" = "confirm";
+"demo_user_kick_out" = "The user is kicked out because the ID is reused for login. ";
 
 "conversation_start_single_chat" = "One-on-one chat";
 "conversation_start_group_chat" = "Group chat";

@@ -20,17 +20,6 @@
         self.backgroundColor = [UIColor dynamicColor:ZIMKitHexColor(0xFFFFFF) lightColor:ZIMKitHexColor(0xFFFFFF)];
         _headImageView = [[UIImageView alloc] init];
         [self.contentView addSubview:_headImageView];
-        
-        _headLabel = [[UILabel alloc] init];
-        _headLabel.font = [UIFont systemFontOfSize:24];
-        _headLabel.textAlignment = NSTextAlignmentCenter;
-        _headLabel.backgroundColor = [UIColor whiteColor];
-        _headLabel.textColor = [UIColor dynamicColor:ZIMKitHexColor(0x2A2A2A) lightColor:ZIMKitHexColor(0x2A2A2A)];;
-        _headLabel.layer.masksToBounds = YES;
-        _headLabel.layer.borderWidth=1.0;
-        _headLabel.layer.borderColor=[UIColor grayColor].CGColor;
-        _headLabel.layer.cornerRadius=8.0;
-        [self.contentView addSubview:_headLabel];
 
         _timeLabel = [[UILabel alloc] init];
         _timeLabel.font = [UIFont systemFontOfSize:10];
@@ -38,7 +27,7 @@
         _timeLabel.layer.masksToBounds = YES;
         [self.contentView addSubview:_timeLabel];
         
-        _msgFailImageView = [[UIImageView alloc] initWithImage:[NSBundle ZIMKitConversationImage:@"conversation_msg_fail"]];
+        _msgFailImageView = [[UIImageView alloc] initWithImage:[UIImage ZIMKitConversationImage:@"conversation_msg_fail"]];
         _msgFailImageView.hidden = YES;
         [self.contentView addSubview:_msgFailImageView];
         
@@ -52,6 +41,7 @@
         [self.contentView addSubview:_unReadView];
 
         _subTitleLabel = [[UILabel alloc] init];
+        _subTitleLabel.numberOfLines = 1;
         _subTitleLabel.layer.masksToBounds = YES;
         _subTitleLabel.font = [UIFont systemFontOfSize:12];
         _subTitleLabel.textColor = [UIColor dynamicColor:ZIMKitHexColor(0xA4A4A4) lightColor:ZIMKitHexColor(0xA4A4A4)];
@@ -72,17 +62,20 @@
     self.headImageView.image = nil;
     
     if (data.type == ZIMConversationTypePeer) {
-        NSArray *pinyin = [NSString transformSpell2Pinyin:data.conversationName];
-        self.headLabel.text = pinyin.lastObject;
+        [self.headImageView sd_setImageWithURL:[NSURL URLWithString:data.conversationAvatar] placeholderImage:[UIImage ZIMKitConversationImage:@"avatar_default"]];
     } else {
-        self.headLabel.text = @"G";
+        self.headImageView.image = [UIImage ZIMKitConversationImage:@"groupAvatar_default"];
     }
     
     self.titleLabel.text = data.conversationName;
     
-    NSString *time = [NSString conversationConvertDateToStr:data.lastMessage.timestamp];
-    self.timeLabel.hidden = time.length ? NO : YES;
-    self.timeLabel.text = time;
+    if (data.lastMessage.timestamp == 0) {
+        self.timeLabel.text = @" ";
+    } else {
+        NSString *time = [NSString conversationConvertDateToStr:data.lastMessage.timestamp];
+        self.timeLabel.hidden = time.length ? NO : YES;
+        self.timeLabel.text = time;
+    }
     
     self.subTitleLabel.text = [data.lastMessage getMessageTypeShorStr];
     
@@ -101,16 +94,6 @@
     self.headImageView.height = headImageWH;
     self.headImageView.x = ZIMKitConversationCell_Margin;
     self.headImageView.y = ZIMKitConversationCell_Margin;
-
-    self.headImageView.layer.masksToBounds = YES;
-    self.headImageView.layer.cornerRadius = 3;
-    
-    /// 后续要去掉
-    self.headLabel.width = headImageWH;
-    self.headLabel.height = headImageWH;
-    self.headLabel.x = ZIMKitConversationCell_Margin;
-    self.headLabel.y = ZIMKitConversationCell_Margin;
-
     self.headImageView.layer.masksToBounds = YES;
     self.headImageView.layer.cornerRadius = 4;
     
@@ -122,7 +105,9 @@
     self.timeLabel.centerY = self.titleLabel.centerY;
     self.timeLabel.x = self.width - self.timeLabel.width - ZIMKitConversationCell_Margin;
     
-    if (self.data.lastMessage.sentStatus == ZIMMessageSentStatusSendFailed) {
+    if (self.data.lastMessage.sentStatus == ZIMMessageSentStatusSendFailed ||
+        self.data.conversationEvent == ZIMConversationEventDisabled) {
+        
         self.msgFailImageView.hidden = NO;
         self.msgFailImageView.x = self.titleLabel.x;
         self.msgFailImageView.height = 16;

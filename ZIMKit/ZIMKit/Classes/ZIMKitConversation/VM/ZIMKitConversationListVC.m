@@ -38,6 +38,7 @@
     self.navigationItem.title = @"Zego IM";
     [self setupViews];
     [self loadData];
+    [[ZIMKitLocalAPNS shared] setupLocalAPNS];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -58,9 +59,10 @@
 {
     self.view.backgroundColor = [UIColor whiteColor];
     CGRect rect = self.view.bounds;
-    if (![UINavigationBar appearance].isTranslucent && [[[UIDevice currentDevice] systemVersion] doubleValue]<15.0) {
-        rect = CGRectMake(rect.origin.x, rect.origin.y  + 0, rect.size.width, rect.size.height - StatusBar_Height - NavBar_Height );
-    }
+//    if (![UINavigationBar appearance].isTranslucent && [[[UIDevice currentDevice] systemVersion] doubleValue]<15.0) {
+//        rect = CGRectMake(rect.origin.x, rect.origin.y  + 0, rect.size.width, rect.size.height - StatusBar_Height - NavBar_Height );
+//    }
+    rect = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width, rect.size.height - StatusBar_Height - NavBar_Height );
     _tableView = [[UITableView alloc] initWithFrame:rect];
     _tableView.tableFooterView = [[UIView alloc] init];
     _tableView.backgroundColor = self.view.backgroundColor;
@@ -71,7 +73,7 @@
     _tableView.estimatedRowHeight = ZIMKitConversationCell_Height;
     _tableView.rowHeight = ZIMKitConversationCell_Height;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    
+    _tableView.showsHorizontalScrollIndicator = NO;
     _tableView.delaysContentTouches = NO;
     [self.view addSubview:_tableView];
     
@@ -239,12 +241,27 @@
 
 /// 连接状态
 - (void)onConnectionStateChange:(ZIMConnectionState)state event:(ZIMConnectionEvent)event extendedData:(NSDictionary *)extendedData {
+    [self setTitleContent:state];
+    
     if (event == ZIMConnectionEventKickedOut) {
-        UIAlertController *alter = [UIAlertController alertControllerWithTitle:nil message:[NSBundle ZIMKitlocalizedStringForKey:@"common_user_kick_out"] preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *sure = [UIAlertAction actionWithTitle:[NSBundle ZIMKitlocalizedStringForKey:@"common_sure"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        }];
-        [alter addAction:sure];
-        [self presentViewController:alter animated:true completion:nil];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(userAccountKickedOut)]) {
+            [self.delegate userAccountKickedOut];
+        }
+    }
+}
+
+- (void)setTitleContent:(ZIMConnectionState)state {
+    NSString *title = @"Zego IM";
+    if (state == ZIMConnectionStateConnecting || state == ZIMConnectionStateReconnecting) {
+        title = [NSString stringWithFormat:@"%@(%@)",title,[NSBundle ZIMKitlocalizedStringForKey:@"conversation_connecting"]];
+    } else if (state == ZIMConnectionStateDisconnected) {
+        title = [NSString stringWithFormat:@"%@(%@)",title,[NSBundle ZIMKitlocalizedStringForKey:@"conversation_disconnected"]];
+    } else {
+        title = @"Zego IM";
+    }
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(titleContentChange:)]) {
+        [self.delegate titleContentChange:title];
     }
 }
 

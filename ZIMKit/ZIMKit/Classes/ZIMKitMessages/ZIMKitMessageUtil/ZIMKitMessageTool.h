@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import "ZIMKitMessage.h"
 #import "ZIMKitTextMessage.h"
+#import "ZIMKitImageMessage.h"
+#import "ZIMKitUnknowMessage.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

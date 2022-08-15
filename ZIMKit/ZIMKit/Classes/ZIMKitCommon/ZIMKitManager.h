@@ -14,24 +14,36 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) ZIM *zim;
 
-@property (nonatomic, strong, readonly) ZIMUserInfo *userInfo;
+@property (nonatomic, strong, readonly) ZIMUserFullInfo *userfullinfo;
 
 /*!
  *  获取实例
  */
 + (instancetype)shared;
 
-- (void)createZIM:(int)appID;
+- (void)createZIM:(int)appID appSign:(NSString *)appSign;
 
 - (void)login:(ZIMUserInfo *)userInfo
-        token:(NSString *)token
      callback:(ZIMLoggedInCallback)callback;
 
 - (void)logout;
 
+/// 查询个人信息
+/// @param userIDs 用户ID集合
+/// @param callback callback
+- (void)queryUsersInfo:(NSArray<NSString *>*)userIDs callback:(ZIMUsersInfoQueriedCallback)callback;
+
+
+/// 更新用户头像
+/// @param avatarUrl avatarUrl
+/// @param callback callback
+- (void)updateupdateUserAvatarUrl:(NSString *)avatarUrl callback:(ZIMUserAvatarUrlUpdatedCallback)callback;
+
+/// 获取本地图片路径
+- (NSString *)getImagepath;
+
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
-
 @end
 
 NS_ASSUME_NONNULL_END

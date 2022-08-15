@@ -9,8 +9,31 @@
 #import "KeyCenter.h"
 #import "ZegoServerAssistant.h"
 #import "ZegoRTCServerAssistant.h"
+#import <CommonCrypto/CommonDigest.h>
 
 @implementation HelpCenter
+
++ (NSString *)getUserAvatar:(NSString *)userID {
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSDictionary *userinfo = [defaults objectForKey:HelperCenterCacheKey(userID)];
+    NSString *userAvatar = userinfo[@"userAvatar"];
+    if (!userAvatar) {
+        
+        NSString *firstStr = [userID substringToIndex:1];
+        int asciiCode = [firstStr characterAtIndex:0];
+        NSInteger index = asciiCode % 9;
+        
+        userAvatar = [NSString stringWithFormat:@"https://storage.zego.im/IMKit/avatar/avatar-%ld.png", (long)index];
+        if (userAvatar) {
+            NSMutableDictionary *info = [NSMutableDictionary dictionaryWithDictionary:userinfo];
+            info[@"userAvatar"] = userAvatar;
+            [defaults setObject:info forKey:HelperCenterCacheKey(userID)];
+        }
+    }
+    
+    return userAvatar;
+}
 
 + (NSString *)getTokenWithUserID:(NSString *)userID {
     NSString *token = [[NSString alloc] init];
@@ -24,7 +47,8 @@
 + (NSString *)getUserNameWith:(NSString *)userID {
     NSString *userName;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    userName = [defaults objectForKey:HelperCenterCacheKey(userID)];
+    NSDictionary *userinfo = [defaults objectForKey:HelperCenterCacheKey(userID)];
+    userName = userinfo[@"userName"];
     /// 随机生成
     if (!userName) {
         // 获取文件路径
@@ -34,10 +58,51 @@
         int port = arc4random() % (names.count -1);
         userName = names[port];
         if (userName) {
-            [defaults setObject:userName forKey:HelperCenterCacheKey(userID)];
+            NSMutableDictionary *info = [NSMutableDictionary dictionaryWithDictionary:userinfo];
+            info[@"userName"] = userName;
+            [defaults setObject:info forKey:HelperCenterCacheKey(userID)];
         }
     }
     
     return userName;
+}
+
+//获取手机当前显示的ViewController
++ (UIViewController *)currentViewController {
+    UIViewController* vc = [UIApplication sharedApplication].keyWindow.rootViewController;
+
+    while (1) {
+    
+        if ([vc isKindOfClass:[UITabBarController class]]) {
+        
+            vc = ((UITabBarController*)vc).selectedViewController;
+        }
+
+        if ([vc isKindOfClass:[UINavigationController class]]) {
+            vc = ((UINavigationController*)vc).visibleViewController;
+        }
+        
+        if (vc.presentedViewController) {
+            vc = vc.presentedViewController;
+        }else {
+            break;
+        }
+    }
+    return vc;
+}
+
+
++ (NSString *)md5:(NSString *)string{
+  const char *cStr = [string UTF8String];
+  unsigned char digest[CC_MD5_DIGEST_LENGTH];
+  
+  CC_MD5(cStr, (CC_LONG)strlen(cStr), digest);
+  
+  NSMutableString *result = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+  for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+    [result appendFormat:@"%02X", digest[i]];
+  }
+  
+  return result;
 }
 @end

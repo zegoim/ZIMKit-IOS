@@ -12,9 +12,11 @@
 #import "ZIMKitManager.h"
 #import "ZIMKitConversationListVC.h"
 #import "ZIMKitNavigationController.h"
+#import "ZIMKitBaseViewController.h"
 #import "UIView+Toast.h"
 #import "ZIMKitRouter.h"
 #import "ZIMKitBaseModule.h"
+#import "ZIMKitLocalAPNS.h"
 
 #import "ZIMKitCreateChatController.h"
 #import "ZIMKitGroupDetailController.h"
@@ -73,6 +75,10 @@
 //输入框的高度
 #define ZIMKitChatToolBarHeight 61
 
+#define minScaleIphone (([UIScreen mainScreen].bounds.size.height / [UIScreen mainScreen].bounds.size.width)< 2.1) //屏幕高宽比例小于2.1
+
+#define kMessageFaceViewHeight  (minScaleIphone ? [UIScreen mainScreen].bounds.size.height *0.55 - 50.0 -Bottom_SafeHeight : [UIScreen mainScreen].bounds.size.height *0.5 - 50.0 - Bottom_SafeHeight)
+
 /**
  Conversation event key
  */
@@ -121,4 +127,7 @@ static NSString * const router_chatListUrl = @"ZIMKit://ZIMKitMessages/ZIMKitMes
 static NSString * const router_groupDetailUrl = @"ZIMKit://ZIMKitGroup/ZIMKitGroupDetailController";
 
 static NSString * const router_CreateChatUrl = @"ZIMKit://ZIMKitGroup/ZIMKitCreateChatController";
+
+
+#define ZIMKit_Image_Path [NSHomeDirectory() stringByAppendingString:@"/Documents/ZIMKitSDK/image/"]
 #endif /* ZIMKitDefine_h */

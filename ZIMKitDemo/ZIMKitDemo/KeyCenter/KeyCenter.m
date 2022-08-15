@@ -17,5 +17,8 @@
     return @"";
 }
 
++ (NSString *)appSign {
+    return @"";
+}
 
 @end

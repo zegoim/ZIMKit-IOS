@@ -12,11 +12,10 @@
     "wukun": "wukun@zego.im"
   },
   "source": {
-    "git": "https://github.com/wukun/ZIMKit.git",
-    "tag": "0.1.0"
+    "git": "/Users/zego/Documents/IMKit/ZIMKit_CoCoPod/ZIMKit-IOS/ZIMKit"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   },
   "source_files": "ZIMKit/Classes/**/*",
   "static_framework": true,
@@ -32,19 +31,25 @@
   "user_target_xcconfig": {
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
-  "public_header_files": "ZIMKit/Classes/**/*.h",
   "prefix_header_file": "ZIMKit/Classes/ZIMKitCommon/ZIMKitPrefix.pch",
   "ios": {
     "resource_bundles": {
       "ZIMKitRecources": [
         "ZIMKit/Assets/ChatResources/*"
       ],
-      "ZIMKItCommon": [
+      "ZIMKitCommon": [
         "ZIMKit/Assets/CommonResources/*"
       ],
       "ZIMKitConversation": [
         "ZIMKit/Assets/ConversationResources/*"
+      ],
+      "ZIMKitGroup": [
+        "ZIMKit/Assets/GroupResources/*"
+      ],
+      "GKPhotoBrowser": [
+        "ZIMKit/Assets/GKPhotoBrowser/*"
       ]
-    }
+    },
+    "public_header_files": "ZIMKit/Classes/**/*.h"
   }
 }

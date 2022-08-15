@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *senderUsername;
 
+@property (nonatomic, copy) NSString *senderUserAvatar;
+
 /// Description: Session ID. Ids of the same session type are unique.
 @property (nonatomic, copy) NSString *conversationID;
 
@@ -70,6 +72,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 重新计算高度
 - (CGFloat)resetCellHeight;
+
+/// 计算文本消息size
+- (CGSize)sizeAttributedWithFont:(UIFont *)font width:(CGFloat)width  wordWap:(NSLineBreakMode)lineBreadMode string:(NSString *)contentString;
+
 @end
 
 NS_ASSUME_NONNULL_END

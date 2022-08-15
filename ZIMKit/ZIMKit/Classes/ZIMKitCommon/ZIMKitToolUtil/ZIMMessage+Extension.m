@@ -22,22 +22,27 @@
         }
         case ZIMMessageTypeImage:
         {
-            shorStr = @"[图片]";
+            shorStr = [NSBundle ZIMKitlocalizedStringForKey:@"common_message_photo"];
             break;
         }
-        case ZIMMessageTypeFile:
+//        case ZIMMessageTypeFile:
+//        {
+//            shorStr = @"[文件]";
+//            break;
+//        }
+//        case ZIMMessageTypeVideo:
+//        {
+//            shorStr = @"[视频]";
+//            break;
+//        }
+//        case ZIMMessageTypeAudio:
+//        {
+//            shorStr = @"[语音]";
+//            break;
+//        }
+        case ZIMMessageTypeUnknown:
         {
-            shorStr = @"[文件]";
-            break;
-        }
-        case ZIMMessageTypeVideo:
-        {
-            shorStr = @"[视频]";
-            break;
-        }
-        case ZIMMessageTypeAudio:
-        {
-            shorStr = @"[语音]";
+            shorStr = [NSString stringWithFormat:@"[%@]",[NSBundle ZIMKitlocalizedStringForKey:@"common_message_unknown"]];
             break;
         }
         default:

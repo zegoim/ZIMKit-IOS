@@ -17,8 +17,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// 会话名称
 @property (nonatomic, copy) NSString *conversationName;
 
+/// 会话头像
+@property (nonatomic, copy) NSString *conversationAvatar;
+
 /// 会话类型
 @property (nonatomic, assign) ZIMConversationType type;
+
+/// 会话状态
+@property (nonatomic, assign) ZIMConversationEvent conversationEvent;
 
 /// 会话的未读数
 @property (nonatomic, assign) int unreadMessageCount;

@@ -11,8 +11,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSBundle (ZIMKitUtil)
 
-+ (UIImage *)ZIMKitConversationImage:(NSString *)imageName;
-
 + (NSString *)ZIMKitlocalizedStringForKey:(NSString *)key;
 @end
 

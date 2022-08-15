@@ -13,7 +13,7 @@
 - (CGSize)contentSize {
     CGSize size = [super contentSize];
     
-    size = [self.content sizeAttributedWithFont:[UIFont systemFontOfSize:[ZIMKitMessageCellConfig messageTextFontSize]] width:ZIMKitMessageCell_Sys_MaxW wordWap:NSLineBreakByCharWrapping];
+    size = [self sizeAttributedWithFont:[UIFont systemFontOfSize:[ZIMKitMessageCellConfig messageTextFontSize]] width:ZIMKitMessageCell_Sys_MaxW wordWap:NSLineBreakByCharWrapping string:self.content];
     
     return size;
 }

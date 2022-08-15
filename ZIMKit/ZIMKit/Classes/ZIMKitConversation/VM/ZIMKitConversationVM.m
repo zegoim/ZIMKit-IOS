@@ -114,6 +114,11 @@
         if (completeBlock) {
             completeBlock(errorInfo);
         }
+//        ZIMMessageDeleteConfig *config = [ZIMMessageDeleteConfig new];
+//        config.isAlsoDeleteServerMessage = YES;
+//        [ZIMKitManagerZIM deleteAllMessageByConversationID:conversationID conversationType:conversationType config:config callback:^(NSString * _Nonnull conversationID, ZIMConversationType conversationType, ZIMError * _Nonnull errorInfo) {
+//
+//        }];
     }];
 }
 
@@ -191,6 +196,8 @@
         }
     }
     
+    temModel.conversationEvent = changinfo.event;
+    
     if (changinfo.event == ZIMConversationEventAdded || changinfo.event == ZIMConversationEventUpdated) {
         
         if (isExit) { /// 存在更新
@@ -201,9 +208,7 @@
         }
         
     } else if (changinfo.event == ZIMConversationEventDisabled) {
-        if (isExit) {
-            [list  removeObject:temModel];
-        }
+        
     }
     
     // orderKey 重新排序
@@ -225,5 +230,6 @@
 - (void)dealloc {
     NSLog(@"ZIMKitConversationVM delloc");
 }
+
 
 @end

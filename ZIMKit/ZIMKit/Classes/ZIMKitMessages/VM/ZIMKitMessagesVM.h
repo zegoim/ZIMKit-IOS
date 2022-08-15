@@ -7,13 +7,12 @@
 
 #import <Foundation/Foundation.h>
 
-@class ZIMKitMessage, ZIMKitMessagesVM;
+@class ZIMKitMessage,ZIMKitMediaMessage, ZIMKitMessagesVM;
 
 typedef void (^ZIMKitMessageCallback)(ZIMKitMessage * _Nullable message, ZIMError * _Nullable errorInfo);
 typedef void (^ZIMKitLoadMessagesCallback)(NSArray<ZIMKitMessage *> * _Nullable messageList, ZIMError * _Nullable errorInfo);
 typedef void (^ZIMKitMessageCallback2)(ZIMError * _Nullable errorInfo);
 typedef void(^ZIMKitCallBlock) (ZIMError * _Nullable errorInfo);
-
 
 NS_ASSUME_NONNULL_BEGIN
 @protocol ZIMKitMessagesVMDelegate <NSObject>
@@ -59,6 +58,21 @@ NS_ASSUME_NONNULL_BEGIN
                callBack:(ZIMKitMessageCallback)callBack;
 
 
+/// 发送媒体消息
+/// @param message 消息
+/// @param conversationID 会话ID
+/// @param conversationType 会话类型
+/// @param config 发送消息配置
+/// @param progress 媒体进度
+/// @param callBack callBack
+- (void)sendMeidaMessage:(ZIMKitMediaMessage *)message
+          conversationID:(NSString *)conversationID
+        conversationType:(ZIMConversationType)conversationType
+                  config:(ZIMMessageSendConfig *)config
+                progress:(ZIMMediaUploadingProgress)progress
+                callBack:(ZIMKitMessageCallback)callBack;
+
+
 /// 查询历史消息
 /// @param conversationID 会话ID
 /// @param type 会话类型
@@ -102,6 +116,12 @@ NS_ASSUME_NONNULL_BEGIN
                              callback:(ZIMGroupMemberListQueriedCallback)callback;
 
 
+/// 查询群信息
+/// @param groupID 群ID
+/// @param callback callback
+- (void)queryGroupInfoWithGroupID:(NSString *)groupID callback:(ZIMGroupInfoQueriedCallback)callback;
+
+
 /// 清空会话未读数
 - (void)clearConversationUnreadMessageCount:(NSString *)coversationID
                            conversationType:(ZIMConversationType)conversationType
@@ -109,6 +129,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 清空数据(外界VC 持有VM ,在销毁的时候需要调用,要不VM释放不了)
 - (void)clearAllCacheData;
+
+
+/// 获取本地图片路径
+- (NSString *)getImagepath;
 @end
 
 NS_ASSUME_NONNULL_END

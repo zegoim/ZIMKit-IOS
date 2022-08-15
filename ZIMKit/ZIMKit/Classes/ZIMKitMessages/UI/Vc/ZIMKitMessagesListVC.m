@@ -10,13 +10,18 @@
 #import "ZIMKitTextMessageCell.h"
 #import "ZIMKitSystemMessageCell.h"
 #import "ZIMKitMessageCell.h"
+#import "ZIMKitImageMessageCell.h"
+#import "ZIMKitUnKnowMessageCell.h"
 #import "ZIMKitRefreshAutoHeader.h"
-#import "ZIMKitInputBar.h"
 #import "ZIMKitGroupDetailController.h"
 #import "NSString+ZIMKitUtil.h"
+#import "ZIMKitMessagesListVC+InputBar.h"
+#import "ZIMKitImageMessage.h"
+#import "GKPhotoBrowser.h"
 
-@interface ZIMKitMessagesListVC () <ZIMKitMessagesVMDelegate, UITableViewDelegate, UITableViewDataSource,
-                                    ZIMKitInputBarDelegate>
+@interface ZIMKitMessagesListVC ()
+            <ZIMKitMessagesVMDelegate, UITableViewDelegate, UITableViewDataSource,
+            UIGestureRecognizerDelegate,TZImagePickerControllerDelegate,GKPhotoBrowserDelegate>
 
 @property (nonatomic, copy) NSString *conversationID;
 
@@ -39,8 +44,9 @@
 /// 群成员列表
 @property (nonatomic, strong) NSMutableDictionary *memberListDic;
 
-/// 消息输入框
-@property (nonatomic, strong) ZIMKitInputBar *inputBar;
+/// 单聊时对方的信息
+@property (nonatomic, strong) ZIMUserFullInfo *otherInfo;
+
 @end
 
 @implementation ZIMKitMessagesListVC
@@ -64,13 +70,19 @@
     [self loadData];
     [self initLoadMoreUI];
     [self loadGroupMember];
+    [self loadConversationInfo];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapViewController)];
+    tap.delegate = self;
     [self.view addGestureRecognizer:tap];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+}
+
+- (UITableView *)messageTableView {
+    return _messageTableView;
 }
 
 - (void)setupViews {
@@ -91,21 +103,17 @@
     _messageTableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _messageTableView.backgroundColor = [UIColor dynamicColor:ZIMKitHexColor(0xF2F2F2) lightColor:ZIMKitHexColor(0xF2F2F2)];
 
-    [_messageTableView registerClass:[ZIMKitTextMessageCell class] forCellReuseIdentifier:NSStringFromClass([ZIMKitTextMessageCell class])];
+    [_messageTableView registerClass:[ZIMKitTextMessageCell class]
+              forCellReuseIdentifier:NSStringFromClass([ZIMKitTextMessageCell class])];
+    [_messageTableView registerClass:[ZIMKitImageMessageCell class] forCellReuseIdentifier:NSStringFromClass([ZIMKitImageMessageCell class])];
     [_messageTableView registerClass:[ZIMKitSystemMessageCell class] forCellReuseIdentifier:NSStringFromClass([ZIMKitSystemMessageCell class])];
+    [_messageTableView registerClass:[ZIMKitUnKnowMessageCell class] forCellReuseIdentifier:NSStringFromClass([ZIMKitUnKnowMessageCell class])];
     _messageTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
     [self.view addSubview:_messageTableView];
     
-    CGRect inputRect = CGRectMake(0, self.view.frame.size.height - ZIMKitChatToolBarHeight - Bottom_SafeHeight, self.view.frame.size.width, ZIMKitChatToolBarHeight + Bottom_SafeHeight);
-    _inputBar = [[ZIMKitInputBar alloc] initWithFrame:inputRect];
-    _inputBar.delegate = self;
-    [self.view addSubview:_inputBar];
-    [_inputBar mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.messageTableView.mas_bottom).offset(0);
-        make.left.mas_equalTo(self.view.mas_left);
-        make.right.mas_equalTo(self.view.mas_right);
-        make.height.mas_equalTo(ZIMKitChatToolBarHeight + Bottom_SafeHeight);
-    }];
+    _messageToolbar = [[ZIMKitMessageSendToolbar alloc] initWithSuperView:self.view];
+    _messageToolbar.delegate = self;
     
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [leftButton setImage:[UIImage zegoImageNamed:@"chat_nav_left"] forState:UIControlStateNormal];
@@ -122,7 +130,6 @@
         [rightButton addTarget:self action:@selector(rightBarButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         [rightButton.widthAnchor constraintEqualToConstant:40].active = YES;
         [rightButton.heightAnchor constraintEqualToConstant:40].active = YES;
-//        [rightButton setContentEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 20)];
         UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
         self.navigationItem.rightBarButtonItem = rightItem;
     }
@@ -181,12 +188,6 @@
                 [self.messageTableView reloadData];
                 [self.messageTableView layoutIfNeeded];
                 
-                BOOL isNOMoreMessage = NO;
-                if (messageList.count < config.count) {
-                    isNOMoreMessage = YES;
-//                    self.messageTableView.mj_header = nil;
-                }
-                
                 if (!self.isFirstLoad) {
                     [self scrollToBottom:NO];
                     self.isFirstLoad = YES;
@@ -195,16 +196,6 @@
                         NSInteger index =  [self.messageVM.messageList indexOfObject:lastMessage];
                         [self.messageTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
                     }
-//                    CGFloat visibleHeight = 0;
-//                    for (NSInteger i = 0; i < messageList.count; ++i) {
-//                        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
-//                        visibleHeight += [self tableView:self.messageTableView heightForRowAtIndexPath:indexPath];
-//                    }
-//                    if(isNOMoreMessage) {
-//                        visibleHeight -= 50;
-//                    }
-//                    [self.messageTableView setContentOffset:CGPointMake(0, self.messageTableView.contentOffset.y + visibleHeight) animated:NO];
-                
                 }
                 
             }
@@ -242,7 +233,29 @@
             }
         }];
     }
-    
+}
+
+- (void)loadConversationInfo {
+    if (self.conversationType == ZIMConversationTypePeer) {
+        @weakify(self);
+        [[ZIMKitManager shared] queryUsersInfo:@[self.conversationID] callback:^(NSArray<ZIMUserFullInfo *> * _Nonnull userList, NSArray<ZIMErrorUserInfo *> * _Nonnull errorUserList, ZIMError * _Nonnull errorInfo) {
+            @strongify(self);
+            ZIMUserFullInfo *userinfo = userList.firstObject;
+            if (userinfo) {
+                self.title = userinfo.baseInfo.userName;
+                self.otherInfo = userinfo;
+                [self.messageTableView reloadData];
+            }
+        }];
+    } else if (self.conversationType == ZIMConversationTypeGroup && !self.title) {
+        @weakify(self);
+        [self.messageVM queryGroupInfoWithGroupID:self.conversationID callback:^(ZIMGroupFullInfo * _Nonnull groupInfo, ZIMError * _Nonnull errorInfo) {
+            @strongify(self);
+            if (groupInfo) {
+                self.title = groupInfo.baseInfo.groupName;
+            }
+        }];
+    }
 }
 
 #pragma mark UITableViewDataSource
@@ -257,24 +270,29 @@
     if (self.conversationType == ZIMConversationTypeGroup) {
         ZIMGroupMemberInfo *member = [self.memberListDic objectForKey:message.senderUserID];
         message.senderUsername = member.userName;
+        message.senderUserAvatar = member.memberAvatarUrl;
     } else if (self.conversationType == ZIMConversationTypePeer) {
         if (message.direction == ZIMMessageDirectionReceive) {
             message.senderUsername = self.conversationName;
+            message.senderUserAvatar = self.otherInfo.userAvatarUrl;
         } else {
-            message.senderUsername = ZIMKitManager.shared.userInfo.userName;
+            message.senderUsername = ZIMKitManager.shared.userfullinfo.baseInfo.userName;
+            message.senderUserAvatar = ZIMKitManager.shared.userfullinfo.userAvatarUrl;
         }
     }
     
-    if (message.type == ZIMKitSystemMessageType) {
-        ZIMKitSystemMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:message.reuseId];
-        [cell fillWithMessage:(ZIMKitSystemMessage *)message];
-        return cell;
-    } else {
-        ZIMKitMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:message.reuseId];
-        [cell fillWithMessage:message];
-        return cell;
-    }
+    ZIMKitMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:message.reuseId];
+    [cell fillWithMessage:message];
     
+    if (message.type == ZIMMessageTypeImage) {
+        ZIMKitImageMessageCell *cellImage = (ZIMKitImageMessageCell *)cell;
+        @weakify(self);
+        cellImage.browseImageBlock = ^(ZIMKitImageMessage * _Nonnull msg, ZIMKitImageMessageCell * _Nonnull cell) {
+            @strongify(self);
+            [self browseImageW:msg sourceView:cell.thumbnailImageView];
+        };
+    }
+    return cell;
 }
 
 #pragma mark UITableViewDelegate
@@ -315,37 +333,11 @@
 #pragma mark ZIMKitInputBarDelegate
 /// 重置键盘
 - (void)didTapViewController {
-    [self.inputBar reset];
-}
-
-- (void)inputBar:(ZIMKitInputBar *)inputView keyboardWillShow:(CGFloat)height {
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-        CGRect msgFrame = self.messageTableView.frame;
-//        msgFrame.size.height = self.view.frame.size.height - GetNavAndStatusHight - height - ZIMKitChatToolBarHeight;
-        msgFrame.size.height = self.view.frame.size.height  - height - ZIMKitChatToolBarHeight ;
-        self.messageTableView.frame = msgFrame;
-
-        CGRect inputFrame = self.inputBar.frame;
-        inputFrame.origin.y = self.view.frame.size.height - height - ZIMKitChatToolBarHeight;
-        self.inputBar.frame = inputFrame;
-                
-        [self scrollToBottom:NO];
-    } completion:nil];
-}
-
-- (void)inputBar:(ZIMKitInputBar *_Nullable)inputView keyboardWillHide:(CGFloat)height {
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-
-        self.messageTableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - ZIMKitChatToolBarHeight - Bottom_SafeHeight);
-
-        self.inputBar.frame = CGRectMake(0, self.view.frame.size.height - ZIMKitChatToolBarHeight-Bottom_SafeHeight , self.view.frame.size.width, ZIMKitChatToolBarHeight + Bottom_SafeHeight);
-        [self scrollToBottom:NO];
-    } completion:nil];
+    [self.messageToolbar hiddeKeyborad];
 }
 
 - (void)sendAction:(NSString *)text {
     /// 不能发送空消息, 和全是空格
-    
     if ([NSString isEmpty:text]) {
         UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:nil message:[NSBundle ZIMKitlocalizedStringForKey:@"message_cant_send_empty_msg"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:[NSBundle ZIMKitlocalizedStringForKey:@"common_sure"] style:UIAlertActionStyleCancel handler:nil];
@@ -362,31 +354,140 @@
     if (self.conversationType == ZIMConversationTypePeer) {
         [self.messageVM sendPeerMessage:msg toUserID:self.conversationID config:msgConfig callBack:^(ZIMKitMessage * _Nullable message, ZIMError * _Nullable errorInfo) {
             [self reloaddataAndScrolltoBottom];
+            [self showErrorinfo:errorInfo];
         }];
     } else if (self.conversationType == ZIMConversationTypeGroup) {
         [self.messageVM sendGroupMessage:msg toGroupID:self.conversationID config:msgConfig callBack:^(ZIMKitMessage * _Nullable message, ZIMError * _Nullable errorInfo) {
             [self reloaddataAndScrolltoBottom];
+            [self showErrorinfo:errorInfo];
         }];
     }
+}
+
+- (void)sendImageMessage:(NSData *)data fileName:(NSString *)fileName{
+    NSString *path = [self.messageVM getImagepath];
+    [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
+    NSString *filePath = [path stringByAppendingPathComponent:[NSString getCurrentThumbFileName:fileName]];
     
+    UIImage *image;
+    if ([NSData sd_imageFormatForImageData:data] == SDImageFormatGIF) {
+        [data writeToFile:filePath atomically:YES];
+        image = [UIImage sd_imageWithGIFData:data];
+        
+    } else if ([NSData sd_imageFormatForImageData:data] == SDImageFormatHEIC ||
+               [NSData sd_imageFormatForImageData:data] == SDImageFormatHEIF) {
+        image = [UIImage imageWithData:data];
+        NSData *temData = UIImageJPEGRepresentation(image, 0.75);
+        filePath = [NSString stringWithFormat:@"%@.JPG", [filePath stringByDeletingPathExtension]];
+        [temData writeToFile:filePath atomically:YES];
+        CGSize size = image.size;
+        image = [image originImage:image size:CGSizeMake(size.width/10, size.height/10)];
+        
+    }else  {
+       image = [UIImage imageWithData:data];
+       [data writeToFile:filePath atomically:YES];
+       CGSize size = image.size;
+       image = [image originImage:image size:CGSizeMake(size.width/10, size.height/10)];
+   }
+    
+    [[SDImageCache sharedImageCache] storeImage:image forKey:filePath completion:nil];
+    
+    ZIMKitMediaMessage *imageMessage = [[ZIMKitImageMessage alloc] init];
+    imageMessage.fileLocalPath = filePath;
+    imageMessage.type = ZIMMessageTypeImage;
+    ZIMMessageSendConfig *msgConfig = [[ZIMMessageSendConfig alloc] init];
+    
+    @weakify(self);
+    [self.messageVM sendMeidaMessage:imageMessage conversationID:self.conversationID conversationType:self.conversationType config:msgConfig progress:^(ZIMMediaMessage * _Nonnull message, unsigned long long currentFileSize, unsigned long long totalFileSize) {
+        NSLog(@"------------");
+    } callBack:^(ZIMKitMessage * _Nullable message, ZIMError * _Nullable errorInfo) {
+        @strongify(self);
+        [self reloaddataAndScrolltoBottom];
+        
+        if (errorInfo.code == ZIMErrorCodeSuccess) {
+            [[NSFileManager defaultManager] removeItemAtPath:filePath error:nil];
+            [[SDImageCache sharedImageCache] removeImageForKey:filePath withCompletion:nil];
+        } else {
+            [self showErrorinfo:errorInfo];
+        }
+    }];
+}
+
+- (void)showErrorinfo:(ZIMError *)errorInfo {
+    UIWindow *keyWindow = [self.view getKeyWindow];
+    if (errorInfo.code == 6000104) {
+        [keyWindow makeToast:[NSBundle ZIMKitlocalizedStringForKey:@"message_sendMessage_tip1"] duration:1.5 position:CSToastPositionCenter];
+    } else if (errorInfo.code == 6000214) {
+        [keyWindow makeToast:[NSBundle ZIMKitlocalizedStringForKey:@"message_sendMessage_image_tip"] duration:1.5 position:CSToastPositionCenter];
+    } else {
+        [keyWindow makeToast:errorInfo.message duration:1.5 position:CSToastPositionCenter];
+    }
+}
+
+#pragma mark 浏览图片
+- (void)browseImageW:(ZIMKitImageMessage*)message sourceView:(UIImageView *)sourceView {
+    if (message.sentStatus == ZIMMessageSentStatusSendSuccess) {
+        NSMutableArray *photos = [NSMutableArray new];
+        
+        GKPhoto *photo = [GKPhoto new];
+        photo.url = [NSURL URLWithString:message.largeImageDownloadUrl];
+        photo.originUrl = [NSURL URLWithString:message.fileDownloadUrl];
+        photo.sourceImageView = sourceView;
+        UIImage *image = [[SDImageCache sharedImageCache] imageFromCacheForKey:message.largeImageDownloadUrl];
+        photo.placeholderImage = image ? image : [UIImage zegoImageNamed:@"chat_image_fail_bg"];
+        [photos addObject:photo];
+        
+        GKPhotoBrowser *browser = [GKPhotoBrowser photoBrowserWithPhotos:photos currentIndex:0];
+        browser.showStyle = GKPhotoBrowserShowStyleZoom;
+        browser.hideStyle = GKPhotoBrowserHideStyleZoomScale;
+        browser.failStyle = GKPhotoBrowserFailStyleOnlyImage;
+        browser.loadStyle = GKPhotoBrowserLoadStyleKit;
+        browser.failureImage = [UIImage zegoImageNamed:@"chat_image_fail_bg"];
+//        browser.downloadBtn.hidden = NO;
+        browser.delegate = self;
+        
+        [browser showFromVC:self];
+    }
+}
+
+#pragma mark GKPhotoBrowserDelegate
+- (void)photoBrowser:(GKPhotoBrowser *)browser onDwonloadBtnClick:(NSInteger)index image:(UIImage *)image photo:(id)photo {
+    GKPhoto *temPhoto = (GKPhoto *)photo;
+    
+    browser.loadingImageView.hidden = NO;
+    browser.loadingImageView.loadingLabel.text = [NSBundle ZIMKitlocalizedStringForKey:@"message_album_downloading_txt"];
+    __typeof(browser) __weak weakbrowser = browser;
+    [[SDWebImageDownloader sharedDownloader] downloadImageWithURL:temPhoto.originUrl completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
+        
+        [weakbrowser.loadingImageView removeFromSuperview];
+        weakbrowser.loadingImageView = nil;
+        
+        if (finished && !error) {
+            [[PHPhotoLibrary sharedPhotoLibrary] performChangesAndWait:^{
+                PHAssetResourceCreationOptions *options = [[PHAssetResourceCreationOptions alloc] init];
+                [[PHAssetCreationRequest creationRequestForAsset] addResourceWithType:PHAssetResourceTypePhoto data:data options:options];
+            } error:&error];
+            
+            [weakbrowser.contentView makeToast:[NSBundle ZIMKitlocalizedStringForKey:@"message_album_save_success"]];
+        } else {
+            [weakbrowser.contentView makeToast:[NSBundle ZIMKitlocalizedStringForKey:@"message_album_save_fail"]];
+        }
+    }];
 }
 
 - (void)reloaddataAndScrolltoBottom {
     [self.messageTableView reloadData];
-    [self scrollToBottom:NO];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self updateTableViewLayout];
+    });
 }
 
-- (void)scrollToBottom:(BOOL)animate
-{
-//    if (self.messageVM.messageList.count > 0) {
-//        [self.messageTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.messageVM.messageList.count - 1 inSection:0]
-//                              atScrollPosition:UITableViewScrollPositionBottom
-//                                      animated:animate];
-//    }
+- (void)scrollToBottom:(BOOL)animate {
     [self scrollToBottomWithAnimated:animate];
 }
 
--(void)scrollToBottomWithAnimated: (BOOL)animated{
+- (void)scrollToBottomWithAnimated: (BOOL)animated {
     if(self.messageVM.messageList.count > 0){
         NSInteger lastRowIndex = [self.messageTableView numberOfRowsInSection:0] - 1;
         if(lastRowIndex > 0){
@@ -406,8 +507,6 @@
         [_messageVM clearConversationUnreadMessageCount:self.conversationID conversationType:self.conversationType completeBlock:nil];
     }
 }
-
-
 
 - (void)dealloc {
     

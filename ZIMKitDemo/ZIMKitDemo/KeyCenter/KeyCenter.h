@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (class, assign, readonly) unsigned int appID;
 
-//@property (class, copy, readonly,nonnull) NSString *appSign;
+@property (class, copy, readonly,nonnull) NSString *appSign;
 
 @property (class, copy, readonly,nonnull) NSString *Secret;
 @end

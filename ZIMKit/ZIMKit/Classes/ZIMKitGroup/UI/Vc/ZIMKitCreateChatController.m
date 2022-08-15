@@ -127,9 +127,17 @@
                 [alter addAction:sure];
                 [self presentViewController:alter animated:true completion:nil];
             } else {
-                [self.view makeToast:errorInfo.message];
+                [self showErrorinfo:errorInfo];
             }
         }];
+    }
+}
+
+- (void)showErrorinfo:(ZIMError *)errorInfo {
+    if (errorInfo.code == 6000522) {
+        [self.view makeToast:[NSBundle ZIMKitlocalizedStringForKey:@"group_join_error_tip"]];
+    } else {
+        [self.view makeToast:errorInfo.message];
     }
 }
 
@@ -172,11 +180,7 @@
 }
 
 - (void)layout {
-    CGFloat topMargin = GetNavAndStatusHight;
-    if (![UINavigationBar appearance].isTranslucent && [[[UIDevice currentDevice] systemVersion] doubleValue]<15.0) {
-        topMargin = 0;
-    }
-    
+    CGFloat topMargin = 0;
     if (self.createType == ZIMKitCreateChatTypeSingle) {
         [self.userIDFiled mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self.view.mas_top).offset(64.0+topMargin);
@@ -262,7 +266,7 @@
 
 - (void)setupNav {
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftButton setImage:[NSBundle ZIMKitConversationImage:@"conversation_bar_close"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage ZIMKitGroupImage:@"group_bar_close"] forState:UIControlStateNormal];
     [leftButton addTarget:self action:@selector(leftBarButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     leftButton.imageView.contentMode = UIViewContentModeScaleAspectFit;
     leftButton.frame = CGRectMake(-15, 0, 44, 44);
@@ -404,7 +408,7 @@
         [_createBtn setTitleColor:[UIColor dynamicColor:ZIMKitHexColor(0xFFFFFF) lightColor:ZIMKitHexColor(0xFFFFFF)] forState:UIControlStateNormal];
         _createBtn.backgroundColor = [[UIColor dynamicColor:ZIMKitHexColor(0x3478FC) lightColor:ZIMKitHexColor(0x3478FC)] colorWithAlphaComponent:0.5];
         _createBtn.enabled = NO;
-        _createBtn.layer.cornerRadius = 12.0;
+        _createBtn.layer.cornerRadius = 16.0;
         [_createBtn addTarget:self action:@selector(createChatAction) forControlEvents:UIControlEventTouchUpInside];
     }
     return _createBtn;

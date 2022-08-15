@@ -18,6 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 获取用户名
 + (NSString *)getUserNameWith:(NSString *)userID;
+
+// 获取用户头像
++ (NSString *)getUserAvatar:(NSString *)userID;
+
++ (UIViewController *)currentViewController;
 @end
 
 NS_ASSUME_NONNULL_END

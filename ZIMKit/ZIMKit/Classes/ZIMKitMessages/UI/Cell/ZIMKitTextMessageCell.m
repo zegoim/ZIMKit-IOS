@@ -20,7 +20,8 @@
         _yyLabel = [[YYLabel alloc] init];
         _yyLabel.numberOfLines = 0;
         _yyLabel.textAlignment = NSTextAlignmentLeft;
-        _yyLabel.lineBreakMode = NSLineBreakByCharWrapping;
+        ///NSLineBreakByTruncatingMiddle 其他的值输入表情换行存在问题
+        _yyLabel.lineBreakMode = NSLineBreakByTruncatingMiddle;
         _yyLabel.backgroundColor = [UIColor clearColor];
         [_yyLabel setFont:[UIFont systemFontOfSize:[ZIMKitMessageCellConfig messageTextFontSize]]];
         _yyLabel.numberOfLines = 0;

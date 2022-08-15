@@ -26,13 +26,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param hanzi 需要转换的字符串
 + (NSArray *)transformSpell2Pinyin:(NSString *)hanzi;
 
-/// 利用YYKit 布局
-- (CGSize)sizeAttributedWithFont:(UIFont *)font width:(CGFloat)width  wordWap:(NSLineBreakMode)lineBreadMode;
-
 
 /// 字符串是否为空
 /// @param str str
 + (BOOL) isEmpty:(NSString *)str;
+
+/// 重新生成图片名称
+/// @param extension 图片后缀
++ (NSString *)getCurrentThumbFileName:(NSString *)extension;
 
 @end
 

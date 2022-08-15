@@ -37,19 +37,10 @@
     
     _avatarImageView = [[UIImageView alloc] init];
     _avatarImageView.contentMode = UIViewContentModeScaleAspectFit;
-    _avatarImageView.image = [UIImage zegoImageNamed:@"chat_default_avatar"];
+    _avatarImageView.image = [UIImage zegoImageNamed:@"avatar_default"];
+    _avatarImageView.layer.cornerRadius = 8.0;
+    _avatarImageView.layer.masksToBounds = YES;
     [self.contentView addSubview:_avatarImageView];
-    
-    _headLabel = [[UILabel alloc] init];
-    _headLabel.font = [UIFont systemFontOfSize:24];
-    _headLabel.textAlignment = NSTextAlignmentCenter;
-    _headLabel.backgroundColor = [UIColor dynamicColor:ZIMKitHexColor(0xFFFFFF) lightColor:ZIMKitHexColor(0xFFFFFF)];
-    _headLabel.textColor = [UIColor dynamicColor:ZIMKitHexColor(0x2A2A2A) lightColor:ZIMKitHexColor(0x2A2A2A)];
-    _headLabel.layer.masksToBounds = YES;
-    _headLabel.layer.borderWidth=1.0;
-    _headLabel.layer.borderColor=[UIColor grayColor].CGColor;
-    _headLabel.layer.cornerRadius =8.0;
-    [self.contentView addSubview:_headLabel];
     
     _nameLabel = [[UILabel alloc] init];
     _nameLabel.font = [UIFont systemFontOfSize:11];
@@ -76,16 +67,9 @@
     _message = message;
     
     if (message.direction == ZIMMessageDirectionReceive) {
-        if (message.senderUsername.length) {
-            NSArray *pinyin = [NSString transformSpell2Pinyin:message.senderUsername];
-            self.headLabel.text = pinyin.lastObject;
-        } else { //没有昵称默认用ID展示
-            NSArray *pinyin = [NSString transformSpell2Pinyin:message.senderUserID];
-            self.headLabel.text = pinyin.lastObject;
-        }
+        [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString:message.senderUserAvatar] placeholderImage:[UIImage zegoImageNamed:@"avatar_default"]];
     } else {
-        NSArray *pinyin = [NSString transformSpell2Pinyin: ZIMKitManager.shared.userInfo.userName ? ZIMKitManager.shared.userInfo.userName : message.senderUserID];
-        self.headLabel.text = pinyin.lastObject;
+        [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString:[ZIMKitManager shared].userfullinfo.userAvatarUrl] placeholderImage:[UIImage zegoImageNamed:@"avatar_default"]];
     }
     
     if (message.sentStatus == ZIMMessageSentStatusSending) {
@@ -199,7 +183,6 @@
         _retryButton.centerY = _containerView.centerY;
     }
     
-    self.headLabel.frame = self.avatarImageView.frame;
 }
 
 - (void)prepareForReuse{

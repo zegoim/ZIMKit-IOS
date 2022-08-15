@@ -9,31 +9,12 @@
 
 @implementation NSBundle (ZIMKitUtil)
 
-+ (instancetype)ZIMKitConversationBundle
-{
-    static NSBundle *conversationBundle = nil;
-    if (conversationBundle == nil) {
-        // 这里不使用mainBundle是为了适配pod 1.x和0.x
-        conversationBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"ZIMKitNavigationController")] pathForResource:@"ZIMKitConversation" ofType:@"bundle"]];
-    }
-    return conversationBundle;
-}
-
-+ (UIImage *)ZIMKitConversationImage:(NSString *)imageName
-{
-    UIImage *image = nil;
-    if (image == nil) {
-        image = [[UIImage imageWithContentsOfFile:[[self ZIMKitConversationBundle] pathForResource:imageName ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    }
-    return image;
-}
-
 + (instancetype)ZIMKitCommonBundle
 {
     static NSBundle *commonBundle = nil;
     if (commonBundle == nil) {
         // 这里不使用mainBundle是为了适配pod 1.x和0.x
-        commonBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"ZIMKitNavigationController")] pathForResource:@"ZIMKItCommon" ofType:@"bundle"]];
+        commonBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"ZIMKitNavigationController")] pathForResource:@"ZIMKitCommon" ofType:@"bundle"]];
     }
     return commonBundle;
 }
@@ -66,8 +47,6 @@
         } else {
             language = @"en";
         }
-        
-        // 从MJRefresh.bundle中查找资源
         bundle = [NSBundle bundleWithPath:[[NSBundle ZIMKitCommonBundle] pathForResource:language ofType:@"lproj"]];
     }
     value = [bundle localizedStringForKey:key value:value table:nil];

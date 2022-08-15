@@ -15,6 +15,7 @@
     if (!self.conversationName.length) {
         self.conversationName = con.conversationID;
     }
+    self.conversationAvatar = con.conversationAvatarUrl;
     self.type = con.type;
     self.unreadMessageCount = con.unreadMessageCount;
     self.lastMessage = con.lastMessage;
@@ -26,6 +27,7 @@
     ZIMConversation *con = [[ZIMConversation alloc] init];
     con.conversationID = self.conversationID;
     con.conversationName = self.conversationName;
+    con.conversationAvatarUrl = self.conversationAvatar;
     con.type = self.type;
     con.unreadMessageCount = self.unreadMessageCount;
     con.lastMessage = self.lastMessage;

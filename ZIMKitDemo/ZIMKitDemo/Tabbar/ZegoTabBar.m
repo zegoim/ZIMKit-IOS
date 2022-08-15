@@ -21,21 +21,15 @@
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
         
-        UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kSCREEN_WIDTH, 0.5)];
-        line.backgroundColor = BSRGBColor(0xE6E6E6);
-        [self addSubview:line];
-        
+//        UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kSCREEN_WIDTH, 0.5)];
+//        line.backgroundColor = [BSRGBColor(0xE6E6E6) colorWithAlphaComponent:0.5];
+//        [self addSubview:line];
+        self.layer.shadowColor = [BSRGBColor(0x000000) colorWithAlphaComponent:0.2].CGColor;
+        self.layer.shadowOffset = CGSizeMake(0,0.5);
+        self.layer.shadowOpacity = 1;
+        self.layer.shadowRadius = 2;
     }
     return self;
-}
-
-- (UIImage *)imageResize :(UIImage*)img andResizeTo:(CGSize)newSize {
-    CGFloat scale = [[UIScreen mainScreen]scale];
-    UIGraphicsBeginImageContextWithOptions(newSize, NO, scale);
-    [img drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
-    UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return newImage;
 }
 
 - (void)addTabBarButtonWithItem:(UITabBarItem *)item
@@ -80,16 +74,14 @@
     
     // 按钮的frame数据
     CGFloat buttonH = self.frame.size.height;
-    CGFloat buttonW = self.frame.size.width / (self.subviews.count -1); // 减去上面的UIView *line
+    CGFloat buttonW = self.frame.size.width / self.subviews.count;
     CGFloat buttonY = 6;
     
     NSMutableArray *subViews = [NSMutableArray arrayWithArray:self.subviews];
     [subViews removeObjectAtIndex:0];
-//    for (int index = 0; index<self.subviews.count -1; index++) {
-    for (int index = 0; index < subViews.count; index++) {
-        
+    for (int index = 0; index<self.subviews.count; index++){
         // 1.取出按钮
-        ZegoTabBarButton *button = subViews[index];
+        ZegoTabBarButton *button = self.subviews[index];
         if ([button isKindOfClass:[ZegoTabBarButton class]]) {
             // 2.设置按钮的frame
             CGFloat buttonX = index * buttonW;

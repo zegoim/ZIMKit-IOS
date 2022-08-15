@@ -39,7 +39,7 @@
         self.navigationBar.standardAppearance = appearance;
         //iOS15新增特性：滑动边界样式
         self.navigationBar.scrollEdgeAppearance = appearance;
-
+        [[UINavigationBar appearance] setTranslucent:NO];
     }
     else {
         self.navigationBar.backgroundColor = self.tintColor;
