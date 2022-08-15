@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9DCC2AD08CA8EA816DD1649F840FAB8A"
+               BlueprintIdentifier = "22BD49715AD50C7020492B5A2A36D6B1"
                BuildableName = "ZIMKitCommon.bundle"
-               BlueprintName = "ZIMKit-ZIMKitCommon"
+               BlueprintName = "ZIMKit-OC-ZIMKitCommon"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -63,11 +63,11 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
-   s.dependency 'Masonry', '1.1.0'
-   s.dependency 'YYText', '1.0.7'
-   s.dependency 'MJRefresh', '3.1.15.3'
-   s.dependency 'TZImagePickerController', '3.8.3'
-   s.dependency 'SDWebImage'
-   s.dependency 'YYWebImage', '~> 1.0.5'
-   s.dependency 'ZIM', '2.3.0'
+#   s.dependency 'Masonry', '1.1.0'
+#   s.dependency 'YYText', '1.0.7'
+#   s.dependency 'MJRefresh', '3.1.15.3'
+#   s.dependency 'TZImagePickerController', '3.8.3'
+#   s.dependency 'SDWebImage'
+#   s.dependency 'YYWebImage', '~> 1.0.5'
+#   s.dependency 'ZIM', '2.3.0'
 end

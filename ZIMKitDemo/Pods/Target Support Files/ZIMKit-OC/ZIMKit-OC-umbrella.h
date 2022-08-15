@@ -81,6 +81,6 @@
 #import "ZIMKitMessageTool.h"
 #import "ZIMKitRefreshAutoHeader.h"
 
-FOUNDATION_EXPORT double ZIMKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char ZIMKitVersionString[];
+FOUNDATION_EXPORT double ZIMKit_OCVersionNumber;
+FOUNDATION_EXPORT const unsigned char ZIMKit_OCVersionString[];
 

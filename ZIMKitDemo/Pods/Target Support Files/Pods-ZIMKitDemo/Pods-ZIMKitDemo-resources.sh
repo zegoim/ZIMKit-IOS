@@ -97,18 +97,18 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/ZIMKitRecources.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/ZIMKitCommon.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/ZIMKitConversation.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/ZIMKitGroup.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/GKPhotoBrowser.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit-OC/ZIMKitRecources.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit-OC/ZIMKitCommon.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit-OC/ZIMKitConversation.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit-OC/ZIMKitGroup.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit-OC/GKPhotoBrowser.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/ZIMKitRecources.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/ZIMKitCommon.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/ZIMKitConversation.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/ZIMKitGroup.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit/GKPhotoBrowser.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit-OC/ZIMKitRecources.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit-OC/ZIMKitCommon.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit-OC/ZIMKitConversation.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit-OC/ZIMKitGroup.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit-OC/GKPhotoBrowser.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

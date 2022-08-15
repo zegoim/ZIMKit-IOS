@@ -48,7 +48,7 @@ THE SOFTWARE.
 			<key>License</key>
 			<string>MIT</string>
 			<key>Title</key>
-			<string>ZIMKit</string>
+			<string>ZIMKit-OC</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

@@ -1,23 +1,23 @@
 PODS:
   - Bugly (2.5.91)
-  - ZIMKit (0.1.0)
+  - ZIMKit-OC (0.1.1)
 
 DEPENDENCIES:
   - Bugly
-  - ZIMKit (from `../ZIMKit`)
+  - ZIMKit-OC (from `../ZIMKit`)
 
 SPEC REPOS:
   trunk:
     - Bugly
 
 EXTERNAL SOURCES:
-  ZIMKit:
+  ZIMKit-OC:
     :path: "../ZIMKit"
 
 SPEC CHECKSUMS:
   Bugly: afe841bba2ea6de6d432a3c125240a5e75949c55
-  ZIMKit: a28d276b613659e9c43422fb7d16f82de86d139a
+  ZIMKit-OC: cc8e8bcceea7f43c8041ace4734659709864f808
 
-PODFILE CHECKSUM: ef4df1e5acb20acbdd0f65029039bc976b2c6a45
+PODFILE CHECKSUM: 657efe5da1f7f9465894ae94cd68b1336dc6dec8
 
 COCOAPODS: 1.11.2
