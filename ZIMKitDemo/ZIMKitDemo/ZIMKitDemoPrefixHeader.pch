@@ -18,7 +18,7 @@
 #import "NSString+KitDemo.h"
 #import "NSObject+KitDemo.h"
 
-#import <ZIMKit/ZIMKit.h>
+#import <ZIMKit_OC/ZIMKit.h>
 
 #define LocalizedDemoKey @"ZIMKitDemoLocal"
 #define KitDemoLocalizedString(key,tbl,comment)  NSLocalizedStringFromTable(key, tbl, comment)

@@ -12,8 +12,7 @@
     "wukun": "wukun@zego.im"
   },
   "source": {
-    "git": "https://github.com/wukun/ZIMKit.git",
-    "tag": "0.1.1"
+    "git": "/Users/zego/Documents/IMKit/ZIMKit_CoCoPod/ZIMKit-IOS/ZIMKit"
   },
   "platforms": {
     "ios": "10.0"

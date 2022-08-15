@@ -5,7 +5,7 @@
 //  Created by zego on 2022/7/13.
 //
 
-#import <ZIMKit/ZIMKit.h>
+#import <ZIMKit_OC/ZIMKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
