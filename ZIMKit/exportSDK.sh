@@ -18,6 +18,6 @@ pod install
 
 # 回到上级目录
 cd ../
-pod package ZIMKit.podspec --force --embedded
+pod package ZIMKit-OC.podspec --force --embedded
 
 exit 0

@@ -1,4 +1,4 @@
-module Pods_ZIMKit_Tests {
+framework module Pods_ZIMKit_Tests {
   umbrella header "Pods-ZIMKit_Tests-umbrella.h"
 
   export *

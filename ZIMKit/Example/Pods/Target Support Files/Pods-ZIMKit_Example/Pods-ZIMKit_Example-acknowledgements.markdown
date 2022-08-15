@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## ZIMKit
+## ZIMKit-OC
 
 Copyright (c) 2022 wukun <wukun@zego.im>
 

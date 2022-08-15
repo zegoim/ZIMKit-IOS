@@ -7,7 +7,7 @@
 //
 
 #import "ZEGOAppDelegate.h"
-#import <ZIMKit/ZIMKit.h>
+#import <ZIMKit_OC/ZIMKit.h>
 @implementation ZEGOAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

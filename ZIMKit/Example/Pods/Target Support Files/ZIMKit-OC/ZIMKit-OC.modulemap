@@ -1,0 +1,6 @@
+framework module ZIMKit_OC {
+  umbrella header "ZIMKit-OC-umbrella.h"
+
+  export *
+  module * { export * }
+}
