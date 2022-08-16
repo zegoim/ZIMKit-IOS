@@ -25,8 +25,8 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wukun' => 'wukun@zego.im' }
-  s.source           = { :git => 'https://github.com/zegoim/ZIMKit-IOS.git', :tag => s.version.to_s }
-#  s.source           = { :git => '/Users/zego/Documents/IMKit/ZIMKit_CoCoPod/ZIMKit-IOS/ZIMKit'}
+#  s.source           = { :git => 'https://github.com/zegoim/ZIMKit-IOS.git', :tag => s.version.to_s }
+  s.source           = { :git => '/Users/zego/Documents/IMKit/ZIMKit_CoCoPod/ZIMKit-IOS/ZIMKit'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
@@ -41,16 +41,16 @@ TODO: Add long description of the pod here.
 #  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 'GCC_PREPROCESSOR_DEFINITIONS[config=Debug]' => '$(inherited) _ZX_ENVIRONMENT_DEBUG_=1001', 'GCC_PREPROCESSOR_DEFINITIONS' =>
 #  'GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }  #必须
-  
+
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  
-#  s.public_header_files = 'ZIMKit/Classes/**/*.h'
-  
+    
   s.prefix_header_file = 'ZIMKit/Classes/ZIMKitCommon/ZIMKitPrefix.pch'
+
+# 必须要加,ZIM 不支持i386
+  s.xcconfig = {
+  'VALID_ARCHS' =>  'arm64 x86_64',
+  }
   
-  # s.resource_bundles = {
-  #   'ZIMKit' => ['ZIMKit/Assets/*.png']
-  # }
   s.ios.resource_bundles = {
     'ZIMKitRecources' => ['ZIMKit/Assets/ChatResources/*'],
     'ZIMKitCommon' => ['ZIMKit/Assets/CommonResources/*'],
@@ -59,16 +59,12 @@ TODO: Add long description of the pod here.
     'GKPhotoBrowser' => ['ZIMKit/Assets/GKPhotoBrowser/*']
   }
   s.ios.public_header_files = 'ZIMKit/Classes/**/*.h'
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
   
-#   s.dependency 'Masonry', '1.1.0'
-#   s.dependency 'YYText', '1.0.7'
-#   s.dependency 'MJRefresh', '3.1.15.3'
-#   s.dependency 'TZImagePickerController', '3.8.3'
-#   s.dependency 'SDWebImage'
-#   s.dependency 'YYWebImage', '~> 1.0.5'
-#   s.dependency 'ZIM', '2.3.0'
+   s.dependency 'Masonry', '1.1.0'
+   s.dependency 'YYText', '1.0.7'
+   s.dependency 'MJRefresh', '3.1.15.3'
+   s.dependency 'TZImagePickerController', '3.8.3'
+   s.dependency 'SDWebImage'
+   s.dependency 'YYWebImage', '~> 1.0.5'
+   s.dependency 'ZIM', '2.3.0'
 end

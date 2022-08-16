@@ -14,7 +14,6 @@
 #import "ZIMKitBaseViewController.h"
 #import "ZIMKitDefine.h"
 #import "ZIMKitEventHandler.h"
-#import "ZIMKitLocalAPNS.h"
 #import "ZIMKitManager.h"
 #import "ZIMKitNavigationController.h"
 #import "ZIMKitBaseModule.h"
@@ -78,6 +77,7 @@
 #import "GKSDWebImageManager.h"
 #import "GKYYWebImageManager.h"
 #import "ZIMKitMessagesVM.h"
+#import "ZIMKitLocalAPNS.h"
 #import "ZIMKitMessageTool.h"
 #import "ZIMKitRefreshAutoHeader.h"
 
