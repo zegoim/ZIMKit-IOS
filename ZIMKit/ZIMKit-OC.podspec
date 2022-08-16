@@ -51,20 +51,29 @@ TODO: Add long description of the pod here.
   'VALID_ARCHS' =>  'arm64 x86_64',
   }
   
-  s.ios.resource_bundles = {
+#  s.ios.resource_bundles = {
+#    'ZIMKitRecources' => ['ZIMKit/Assets/ChatResources/*'],
+#    'ZIMKitCommon' => ['ZIMKit/Assets/CommonResources/*'],
+#    'ZIMKitConversation' => ['ZIMKit/Assets/ConversationResources/*'],
+#    'ZIMKitGroup' => ['ZIMKit/Assets/GroupResources/*'],
+#    'GKPhotoBrowser' => ['ZIMKit/Assets/GKPhotoBrowser/*']
+#  }
+
+  s.resource_bundles = {
     'ZIMKitRecources' => ['ZIMKit/Assets/ChatResources/*'],
     'ZIMKitCommon' => ['ZIMKit/Assets/CommonResources/*'],
     'ZIMKitConversation' => ['ZIMKit/Assets/ConversationResources/*'],
     'ZIMKitGroup' => ['ZIMKit/Assets/GroupResources/*'],
     'GKPhotoBrowser' => ['ZIMKit/Assets/GKPhotoBrowser/*']
-  }
+    }
+  
   s.ios.public_header_files = 'ZIMKit/Classes/**/*.h'
   
-   s.dependency 'Masonry', '1.1.0'
-   s.dependency 'YYText', '1.0.7'
-   s.dependency 'MJRefresh', '3.1.15.3'
-   s.dependency 'TZImagePickerController', '3.8.3'
-   s.dependency 'SDWebImage'
-   s.dependency 'YYWebImage', '~> 1.0.5'
-   s.dependency 'ZIM', '2.3.0'
+#   s.dependency 'Masonry', '1.1.0'
+#   s.dependency 'YYText', '1.0.7'
+#   s.dependency 'MJRefresh', '3.1.15.3'
+#   s.dependency 'TZImagePickerController', '3.8.3'
+#   s.dependency 'SDWebImage'
+#   s.dependency 'YYWebImage', '~> 1.0.5'
+#   s.dependency 'ZIM', '2.3.0'
 end
