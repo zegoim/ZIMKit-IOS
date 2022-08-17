@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
 
 #  s.source_files = 'ZIMKit/Classes/**/*'
  s.subspec 'Common' do |common|
-     common.source_files = 'ZIMKit/Classes/ZIMKitCommon/*.{h,m}'
+     common.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitCommon/*.{h,m}'
  end
   # 是否是静态库 这个地方很重要 假如不写这句打出来的包 就是动态库 不能使用 一运行会报错 image not found
 #  s.static_framework = true
