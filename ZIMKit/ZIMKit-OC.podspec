@@ -29,9 +29,9 @@ TODO: Add long description of the pod here.
 #  s.source           = { :git => '/Users/zego/Documents/IMKit/ZIMKit_CoCoPod/ZIMKit-IOS/ZIMKit'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '8.0'
 
-  s.source_files = 'ZIMKit/Classes/**/*.'
+  s.source_files = 'ZIMKit/Classes/**/*'
   
   # 是否是静态库 这个地方很重要 假如不写这句打出来的包 就是动态库 不能使用 一运行会报错 image not found
 #  s.static_framework = true
