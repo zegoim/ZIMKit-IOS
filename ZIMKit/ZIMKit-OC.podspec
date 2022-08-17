@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZIMKit-OC'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A short description of ZIMKit-OC.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'ZIMKit/Classes/**/*'
+  s.source_files = 'ZIMKit/Classes/**/*.{h,m}'
   
   # 是否是静态库 这个地方很重要 假如不写这句打出来的包 就是动态库 不能使用 一运行会报错 image not found
   s.static_framework = true
