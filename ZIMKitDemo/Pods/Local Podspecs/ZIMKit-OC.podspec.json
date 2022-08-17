@@ -1,6 +1,6 @@
 {
   "name": "ZIMKit-OC",
-  "version": "0.1.1",
+  "version": "0.1.5.3",
   "summary": "A short description of ZIMKit-OC.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/wukun/ZIMKit",
@@ -12,23 +12,17 @@
     "wukun": "wukun@zego.im"
   },
   "source": {
-    "git": "/Users/zego/Documents/IMKit/ZIMKit_CoCoPod/ZIMKit-IOS/ZIMKit"
+    "git": "https://github.com/zegoim/ZIMKit-IOS.git",
+    "tag": "0.1.5.3"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "9.0"
   },
   "source_files": "ZIMKit/Classes/**/*",
-  "static_framework": true,
+  "prefix_header_file": "ZIMKit/Classes/ZIMKitCommon/ZIMKitPrefix.pch",
   "xcconfig": {
     "VALID_ARCHS": "arm64 x86_64"
   },
-  "user_target_xcconfig": {
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
-  },
-  "pod_target_xcconfig": {
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
-  },
-  "prefix_header_file": "ZIMKit/Classes/ZIMKitCommon/ZIMKitPrefix.pch",
   "ios": {
     "resource_bundles": {
       "ZIMKitRecources": [

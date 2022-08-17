@@ -530,7 +530,7 @@
 				86656F42286C62E40031C59C /* Sources */,
 				86656F43286C62E40031C59C /* Frameworks */,
 				86656F44286C62E40031C59C /* Resources */,
-				87D90CD9E3A4A94EA91D77BE /* [CP] Copy Pods Resources */,
+				CCE10BEE552358D1030D471E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -651,21 +651,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		87D90CD9E3A4A94EA91D77BE /* [CP] Copy Pods Resources */ = {
+		CCE10BEE552358D1030D471E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZIMKitDemo/Pods-ZIMKitDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ZIMKitDemo/Pods-ZIMKitDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZIMKitDemo/Pods-ZIMKitDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ZIMKitDemo/Pods-ZIMKitDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZIMKitDemo/Pods-ZIMKitDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZIMKitDemo/Pods-ZIMKitDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EF6121F37A0676E04B4E70CB /* [CP] Check Pods Manifest.lock */ = {

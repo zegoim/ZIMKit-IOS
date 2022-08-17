@@ -32,7 +32,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'ZIMKit/Classes/**/*.{h,m}'
+  s.source_files = 'ZIMKit/Classes/**/*'
   
   # 是否是静态库 这个地方很重要 假如不写这句打出来的包 就是动态库 不能使用 一运行会报错 image not found
 #  s.static_framework = true
@@ -45,22 +45,22 @@ TODO: Add long description of the pod here.
 #
 #  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     
-#  s.prefix_header_file = 'ZIMKit/Classes/ZIMKitCommon/ZIMKitPrefix.pch'
+  s.prefix_header_file = 'ZIMKit/Classes/ZIMKitCommon/ZIMKitPrefix.pch'
 
 # 必须要加,ZIM 不支持i386
   s.xcconfig = {
   'VALID_ARCHS' =>  'arm64 x86_64',
   }
   
-#  s.ios.resource_bundles = {
-#    'ZIMKitRecources' => ['ZIMKit/Assets/ChatResources/*'],
-#    'ZIMKitCommon' => ['ZIMKit/Assets/CommonResources/*'],
-#    'ZIMKitConversation' => ['ZIMKit/Assets/ConversationResources/*'],
-#    'ZIMKitGroup' => ['ZIMKit/Assets/GroupResources/*'],
-#    'GKPhotoBrowser' => ['ZIMKit/Assets/GKPhotoBrowser/*']
-#  }
+  s.ios.resource_bundles = {
+    'ZIMKitRecources' => ['ZIMKit/Assets/ChatResources/*'],
+    'ZIMKitCommon' => ['ZIMKit/Assets/CommonResources/*'],
+    'ZIMKitConversation' => ['ZIMKit/Assets/ConversationResources/*'],
+    'ZIMKitGroup' => ['ZIMKit/Assets/GroupResources/*'],
+    'GKPhotoBrowser' => ['ZIMKit/Assets/GKPhotoBrowser/*']
+  }
   
-#  s.ios.public_header_files = 'ZIMKit/Classes/**/*.h'
+  s.ios.public_header_files = 'ZIMKit/Classes/**/*.h'
   
    s.dependency 'Masonry', '1.1.0'
    s.dependency 'YYText', '1.0.7'

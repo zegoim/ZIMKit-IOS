@@ -430,7 +430,7 @@
 		5CD0F17E15915989D3DF1D40E1B90E2B /* ResourceBundle-ZIMKitCommon-ZIMKit-OC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ZIMKitCommon-ZIMKit-OC-Info.plist"; sourceTree = "<group>"; };
 		5D974BCEC93F9CABB4C35B312A279E29 /* receve_bubble.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = receve_bubble.png; sourceTree = "<group>"; };
 		5D9C279DF154D38016F92CC4DB90A631 /* Pods-ZIMKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZIMKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5D9C98FE92FFABE9D23E5F4DABFC0EFD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5D9C98FE92FFABE9D23E5F4DABFC0EFD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		5D9ECAFD04161C43F8888455FC570D3B /* ZIMKitSystemMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitSystemMessage.m; sourceTree = "<group>"; };
 		5F17E996A4E0A601D1BBA2A26F41B2D2 /* Pods-ZIMKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZIMKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		61AC980A240528776EC25F812E34311C /* chat_image_fail_bg.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = chat_image_fail_bg.png; sourceTree = "<group>"; };
@@ -472,7 +472,7 @@
 		80CFF8D6104FE037D9B49955A35E1E21 /* GKWebImageProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GKWebImageProtocol.h; sourceTree = "<group>"; };
 		845047F382FFCC3F8E5F4B2D0A7AE25A /* ZIMKitEventHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitEventHandler.m; sourceTree = "<group>"; };
 		866BD1C2BF337A3362385C71170EA1F0 /* ZIMKit-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ZIMKit-OC.release.xcconfig"; sourceTree = "<group>"; };
-		8683E93B1FB2B61A1F26032F17B0458B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8683E93B1FB2B61A1F26032F17B0458B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		86F44BCEF902093B915B17604872C958 /* chat_face_photoIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = chat_face_photoIcon.png; sourceTree = "<group>"; };
 		8792EACB27E8120E1A052AA23CC351F9 /* ResourceBundle-ZIMKitGroup-ZIMKit-OC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ZIMKitGroup-ZIMKit-OC-Info.plist"; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
@@ -505,7 +505,7 @@
 		9BAB226B5DBE1FC7498031777AC3E231 /* NSObject+ZIMKitUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZIMKitUtil.m"; sourceTree = "<group>"; };
 		9BC29F873A16020BD113B13D2E005B42 /* ZIMKitSystemMessageCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitSystemMessageCell.m; sourceTree = "<group>"; };
 		9C289B2A81CACC9406B6B9896E863EE9 /* conversation_msg_fail.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = conversation_msg_fail.png; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E1211F033F2AF793A5B0D5F582E3179 /* chat_image_fail@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "chat_image_fail@2x.png"; sourceTree = "<group>"; };
 		9F81096ACABEC689BC14E7D9FD528784 /* conversation_msg_fail@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "conversation_msg_fail@2x.png"; sourceTree = "<group>"; };
 		A077E0D03E6D190E06804B4552DF380A /* chat_face_functionIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "chat_face_functionIcon@2x.png"; sourceTree = "<group>"; };
@@ -515,7 +515,7 @@
 		A50B75E1F78ADB5CC1AB82537D67AB71 /* ZIMKitNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitNavigationController.h; sourceTree = "<group>"; };
 		A5FBAFEFB022EBE4361944980915C409 /* message_selected@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "message_selected@3x.png"; sourceTree = "<group>"; };
 		A636B854E20E1A8188853ACADC7AE37F /* chat_nav_left.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = chat_nav_left.png; sourceTree = "<group>"; };
-		A759A6976C955D961F0B09E0274D6F1F /* ZIMKit-OC.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "ZIMKit-OC.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A759A6976C955D961F0B09E0274D6F1F /* ZIMKit-OC.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "ZIMKit-OC.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A84F620025E4BD8A1BF678C8577F1977 /* message_selected@3x-1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "message_selected@3x-1.png"; sourceTree = "<group>"; };
 		A8A99DE92E3735D15759CED8D4441A5E /* chat_image_fail.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = chat_image_fail.png; sourceTree = "<group>"; };
 		A952E41E625FC59F0423338644F559E9 /* ZIMKitConversationModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitConversationModel.h; sourceTree = "<group>"; };
@@ -570,7 +570,7 @@
 		D0D8273600820968372AA0734FE783A6 /* ZIMKitMessageCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitMessageCell.h; sourceTree = "<group>"; };
 		D18B10C5746D15A1C6579E10D9B31BCB /* ZIMKitMessageCellConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitMessageCellConfig.m; sourceTree = "<group>"; };
 		D1A72D8A60DEB4DCD0F4DFADCD6A51DB /* chat_faceIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "chat_faceIcon@2x.png"; sourceTree = "<group>"; };
-		D1C00E30E127539ABBF0DEB0C5653786 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
+		D1C00E30E127539ABBF0DEB0C5653786 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = en.lproj; sourceTree = "<group>"; };
 		D2A47DCE475A27AABD119A043759391F /* ZIMKitRefreshAutoHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZIMKitRefreshAutoHeader.h; sourceTree = "<group>"; };
 		D3641F4CA88E98BC19F9AE3AB5F0B36E /* ZIMKitBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitBaseViewController.m; sourceTree = "<group>"; };
 		D4DA9EE19807EAB10D7B9DD9E0649AD6 /* Pods-ZIMKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZIMKit_Example-dummy.m"; sourceTree = "<group>"; };
@@ -585,7 +585,7 @@
 		DBB58CA5D88F34AC6C8F47A78925440E /* ZIMKit-OC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZIMKit-OC-prefix.pch"; sourceTree = "<group>"; };
 		DE6018BC14F5BE465979D26836CAD4DB /* conversation_bar_right@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "conversation_bar_right@2x.png"; sourceTree = "<group>"; };
 		DE91116A393FA36D88E73B09786860CD /* ZIMKitGroupDetailController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZIMKitGroupDetailController.m; sourceTree = "<group>"; };
-		DF51D31DCFC4CACA8FA9909B35EE97DE /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
+		DF51D31DCFC4CACA8FA9909B35EE97DE /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
 		DF6CD68EA1FED74E41963BA2D1F3B495 /* Pods-ZIMKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZIMKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		E04B4CE5639E83746A5F6CEE7EA583BC /* Pods-ZIMKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZIMKit_Example-Info.plist"; sourceTree = "<group>"; };
 		E15D91D3987C0A4D55A5590CC1B13D07 /* group_bar_close@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "group_bar_close@2x.png"; sourceTree = "<group>"; };
@@ -707,6 +707,7 @@
 				D2A47DCE475A27AABD119A043759391F /* ZIMKitRefreshAutoHeader.h */,
 				7F6E6D15EA424AF4C4A4992951F44DFD /* ZIMKitRefreshAutoHeader.m */,
 			);
+			name = ZIMKitMessageUtil;
 			path = ZIMKitMessageUtil;
 			sourceTree = "<group>";
 		};
@@ -730,6 +731,7 @@
 				FB04199101868C8872F203AC36AEAEA4 /* ZIMKitGroupModule.h */,
 				F3A6F52007788B10C20B4BF2BEFB1B35 /* ZIMKitGroupModule.m */,
 			);
+			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -739,6 +741,7 @@
 				BC27B1A55EBF5C3363A162F0AF5FF58E /* GKYYWebImageManager.h */,
 				4D4D395B85A0D5D9B5CBDE06DB6DF576 /* GKYYWebImageManager.m */,
 			);
+			name = YYWebImage;
 			path = YYWebImage;
 			sourceTree = "<group>";
 		};
@@ -764,6 +767,7 @@
 				112586A45CB3EBB715D04F6F17423859 /* ZIMKitGroupVM.h */,
 				EA380011F099848C3FC54B2DBB91128E /* ZIMKitGroupVM.m */,
 			);
+			name = VM;
 			path = VM;
 			sourceTree = "<group>";
 		};
@@ -777,6 +781,7 @@
 				98F0F5348268539DB32FCD69447372AE /* ZIMKitFaceManagerView.h */,
 				422C3B7D427C40BAA4F8E5073D98614F /* ZIMKitFaceManagerView.m */,
 			);
+			name = FaceView;
 			path = FaceView;
 			sourceTree = "<group>";
 		};
@@ -786,6 +791,7 @@
 				152EDCD502EA0C30D8D5F1EC0C8884F3 /* ZIMKitMessagesVM.h */,
 				3C389DE3C993378D2F27CB2999FB90D2 /* ZIMKitMessagesVM.m */,
 			);
+			name = VM;
 			path = VM;
 			sourceTree = "<group>";
 		};
@@ -796,6 +802,7 @@
 				FBADD1070A68D593A030F59B2990A805 /* Vc */,
 				A127BE29C08632FC0664D0B8A6CA1F78 /* View */,
 			);
+			name = UI;
 			path = UI;
 			sourceTree = "<group>";
 		};
@@ -815,6 +822,7 @@
 				D7B79F08FF2E32B0BCBDC7473AB96C6A /* ZIMKitUnKnowMessageCell.h */,
 				21F8651739E495406D69443A96D6A0DD /* ZIMKitUnKnowMessageCell.m */,
 			);
+			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
@@ -833,6 +841,7 @@
 				D76CCFE99AB2BB7B81E755D5950129B8 /* SDWebImage */,
 				237B175E49220C026DF61E06D6EFF7D8 /* YYWebImage */,
 			);
+			name = GKPhotoBrowser;
 			path = GKPhotoBrowser;
 			sourceTree = "<group>";
 		};
@@ -846,6 +855,7 @@
 				6B93BE3BB373535EFCBE936216B992F4 /* ZIMKitConversationListNoDataView.h */,
 				BA5B26D0C5871600E4FEE0C7825C8715 /* ZIMKitConversationListNoDataView.m */,
 			);
+			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -855,6 +865,7 @@
 				7BBA699122DAFD5D96403BA36EC05CB9 /* ZIMKitGroupdetailView.h */,
 				79C73FA6B296EC7CC5DD35CFB1F79726 /* ZIMKitGroupdetailView.m */,
 			);
+			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -887,6 +898,7 @@
 				B889ECC34CA4CFE7A8FAA1416FFFE38E /* ZIMKitRouter.h */,
 				49668ABD43D3B79884ADAD9CFB4E33A6 /* ZIMKitRouter.m */,
 			);
+			name = ZIMKitRouter;
 			path = ZIMKitRouter;
 			sourceTree = "<group>";
 		};
@@ -928,6 +940,7 @@
 				8D51E7000FF69E9D882A5DE4DF5671E8 /* ZIMKitLoadingView.h */,
 				E23597C9D15CF5725ECD9C1BF14237B2 /* ZIMKitLoadingView.m */,
 			);
+			name = Core;
 			path = Core;
 			sourceTree = "<group>";
 		};
@@ -942,6 +955,7 @@
 				D3A88018CAFB569FA9DDBCFAA86ECCB9 /* InputBar */,
 				EFEB70B00B57494C1EE652BEE9CA8085 /* MoreFunctionView */,
 			);
+			name = InputView;
 			path = InputView;
 			sourceTree = "<group>";
 		};
@@ -1030,6 +1044,7 @@
 			children = (
 				44479A440E8BDD67942E712CB2439E71 /* GKPhotoBrowser */,
 			);
+			name = Vendor;
 			path = Vendor;
 			sourceTree = "<group>";
 		};
@@ -1039,6 +1054,7 @@
 				A952E41E625FC59F0423338644F559E9 /* ZIMKitConversationModel.h */,
 				067B94701569954297CBC2DD58221DD8 /* ZIMKitConversationModel.m */,
 			);
+			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -1067,6 +1083,7 @@
 				A9AD2C00F540DC5CF51671DA86721EBB /* ZIMKitGroupDetailController.h */,
 				DE91116A393FA36D88E73B09786860CD /* ZIMKitGroupDetailController.m */,
 			);
+			name = Vc;
 			path = Vc;
 			sourceTree = "<group>";
 		};
@@ -1116,6 +1133,7 @@
 			children = (
 				584BEF57A423DB022F159C81D01E92E4 /* InputView */,
 			);
+			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -1159,6 +1177,7 @@
 				112432EDD9CD2C35D1E4C72D4779DAAF /* ZIMMessage+Extension.h */,
 				6F90C4DA10502B7F6A54C0E9DE71E308 /* ZIMMessage+Extension.m */,
 			);
+			name = ZIMKitToolUtil;
 			path = ZIMKitToolUtil;
 			sourceTree = "<group>";
 		};
@@ -1182,6 +1201,7 @@
 				8EDED86F0A251DCF6B5F02B7B050A6C9 /* ZIMKitUnknowMessage.h */,
 				80BCFD3DF83744ED0188A2BAE0CDC79D /* ZIMKitUnknowMessage.m */,
 			);
+			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -1193,6 +1213,7 @@
 				C03E8FE66374AB70FA5D869DE03295BB /* ZIMKitUnReadView.h */,
 				AFB902F9CE87412F4AEB571C64168E07 /* ZIMKitUnReadView.m */,
 			);
+			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
@@ -1204,6 +1225,7 @@
 				43C0C91C8168B7694CEE86D652B92286 /* ZIMKitConversationVM.h */,
 				04D32EBF2DF3AF5360048D0B1C46FC3F /* ZIMKitConversationVM.m */,
 			);
+			name = VM;
 			path = VM;
 			sourceTree = "<group>";
 		};
@@ -1302,6 +1324,7 @@
 				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
 				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
 			);
+			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -1334,6 +1357,7 @@
 				A9C0C88CDD0DA531D08D1B3045DE0D3B /* ZIMKitInputTextViewInternal.h */,
 				38CCE9FB9333C69F5785563B4D23FFFE /* ZIMKitInputTextViewInternal.m */,
 			);
+			name = InputBar;
 			path = InputBar;
 			sourceTree = "<group>";
 		};
@@ -1356,6 +1380,7 @@
 				E615FC7B86E4DCD20103A4A5B9402AB9 /* GKSDWebImageManager.h */,
 				0FF09BC9728E639248A5C2612A4B7FB7 /* GKSDWebImageManager.m */,
 			);
+			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -1365,6 +1390,7 @@
 				7998920E114AF347B48C26B076DC889D /* Vc */,
 				4634B673DF7362C754FF4296B727E780 /* View */,
 			);
+			name = UI;
 			path = UI;
 			sourceTree = "<group>";
 		};
@@ -1382,6 +1408,7 @@
 				7A9F2BF017630DBC51D5D78D990B6A68 /* ZIMKitChatBarMoreView.h */,
 				00023840256BDE44C3F7AF74D181A2ED /* ZIMKitChatBarMoreView.m */,
 			);
+			name = MoreFunctionView;
 			path = MoreFunctionView;
 			sourceTree = "<group>";
 		};
@@ -1391,6 +1418,7 @@
 				AFC5FD9233C930421AD3FBB73AAD4F1C /* Cell */,
 				456C1DEE14A8ED4BA32D372D8021E84B /* View */,
 			);
+			name = UI;
 			path = UI;
 			sourceTree = "<group>";
 		};
@@ -1423,6 +1451,7 @@
 				002A1A9D4AAD0F76E4728A70C9D833FA /* ZIMKitMessagesListVC+InputBar.h */,
 				77E92D91CB0761E26EC0B18DDA9475BC /* ZIMKitMessagesListVC+InputBar.m */,
 			);
+			name = Vc;
 			path = Vc;
 			sourceTree = "<group>";
 		};
@@ -2097,53 +2126,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0058026DE645599AF7EC8939266D362D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C99813071DE0325402F4C5B863878C8C /* ZIMKit-OC.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
-				IBSC_MODULE = ZIMKit_OC;
-				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-ZIMKitGroup-ZIMKit-OC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = ZIMKitGroup;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		01D4A70C5680254535A41E4896D07957 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C99813071DE0325402F4C5B863878C8C /* ZIMKit-OC.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZIMKit-OC/ZIMKit-OC-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ZIMKit-OC-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZIMKit-OC/ZIMKit-OC.modulemap";
-				PRODUCT_MODULE_NAME = ZIMKit_OC;
-				PRODUCT_NAME = ZIMKit_OC;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		0CF977E736A9F0297ED689DCD07C3E1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */;
@@ -2175,269 +2157,14 @@
 			};
 			name = Release;
 		};
-		1F70CF9466E3A6D20C08BD8E9E781920 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 866BD1C2BF337A3362385C71170EA1F0 /* ZIMKit-OC.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
-				IBSC_MODULE = ZIMKit_OC;
-				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-ZIMKitCommon-ZIMKit-OC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = ZIMKitCommon;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		2BD3CA8396A57F29580BD2AA5D281D86 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3395C455A9FC18B72996497A3B20A384 /* Pods-ZIMKit_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZIMKit_Tests/Pods-ZIMKit_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZIMKit_Tests/Pods-ZIMKit_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2E702D14C992C41F00A266F424D75B37 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 866BD1C2BF337A3362385C71170EA1F0 /* ZIMKit-OC.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
-				IBSC_MODULE = ZIMKit_OC;
-				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-ZIMKitGroup-ZIMKit-OC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = ZIMKitGroup;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		39CA2DD752AAA536FA863A7FBEDE4BD4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 866BD1C2BF337A3362385C71170EA1F0 /* ZIMKit-OC.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
-				IBSC_MODULE = ZIMKit_OC;
-				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-GKPhotoBrowser-ZIMKit-OC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = GKPhotoBrowser;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		7EF66A57AF7DEEF8D915CD573B9FC8EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 475E761383B864D1A8725BD2D6A4716D /* Pods-ZIMKit_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZIMKit_Tests/Pods-ZIMKit_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZIMKit_Tests/Pods-ZIMKit_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		824BCA81BA6898E8DB159D89ADC10CA0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C99813071DE0325402F4C5B863878C8C /* ZIMKit-OC.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
-				IBSC_MODULE = ZIMKit_OC;
-				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-GKPhotoBrowser-ZIMKit-OC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = GKPhotoBrowser;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		842C60C4F1EBC85F9C8FF97D39D120FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
-				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
-				PRODUCT_NAME = FBSnapshotTestCase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8D6566B6DD7158AEE52165617B7E838E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D9C279DF154D38016F92CC4DB90A631 /* Pods-ZIMKit_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZIMKit_Example/Pods-ZIMKit_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZIMKit_Example/Pods-ZIMKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		900C135138AC8B7B6AB33D9DE39A7A2C /* Debug */ = {
+		17823727D80C2321A37FFC5FDF26DB26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C99813071DE0325402F4C5B863878C8C /* ZIMKit-OC.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
 				IBSC_MODULE = ZIMKit_OC;
 				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-ZIMKitConversation-ZIMKit-OC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = ZIMKitConversation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2446,105 +2173,7 @@
 			};
 			name = Debug;
 		};
-		A0CD646F8D092C7F03A6FD564120C6CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E5516FF66946768FF1709AE31375508 /* Pods-ZIMKit_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZIMKit_Example/Pods-ZIMKit_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZIMKit_Example/Pods-ZIMKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B86716A6297D95ABA1A816CE42ADFD25 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 866BD1C2BF337A3362385C71170EA1F0 /* ZIMKit-OC.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
-				IBSC_MODULE = ZIMKit_OC;
-				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-ZIMKitRecources-ZIMKit-OC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = ZIMKitRecources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		C9333A7926F111B539B12B3B1F16E0B5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 866BD1C2BF337A3362385C71170EA1F0 /* ZIMKit-OC.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZIMKit-OC/ZIMKit-OC-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ZIMKit-OC-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZIMKit-OC/ZIMKit-OC.modulemap";
-				PRODUCT_MODULE_NAME = ZIMKit_OC;
-				PRODUCT_NAME = ZIMKit_OC;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CCABBE9EB31D100AF27076A0B4638FB4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C99813071DE0325402F4C5B863878C8C /* ZIMKit-OC.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
-				IBSC_MODULE = ZIMKit_OC;
-				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-ZIMKitCommon-ZIMKit-OC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = ZIMKitCommon;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2597,7 +2226,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2610,15 +2239,142 @@
 			};
 			name = Debug;
 		};
-		DE536483977C5A10CE119B2A9170D3D2 /* Debug */ = {
+		2C042FFBBE2A9F83F8337BF1697EF279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E5516FF66946768FF1709AE31375508 /* Pods-ZIMKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZIMKit_Example/Pods-ZIMKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZIMKit_Example/Pods-ZIMKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2C9E5D72C620DA9B4C0BA7730362D72D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 866BD1C2BF337A3362385C71170EA1F0 /* ZIMKit-OC.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
+				IBSC_MODULE = ZIMKit_OC;
+				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-ZIMKitRecources-ZIMKit-OC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ZIMKitRecources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		514FC1237ED8089D63CF3C87847ADF29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99813071DE0325402F4C5B863878C8C /* ZIMKit-OC.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZIMKit-OC/ZIMKit-OC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ZIMKit-OC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZIMKit-OC/ZIMKit-OC.modulemap";
+				PRODUCT_MODULE_NAME = ZIMKit_OC;
+				PRODUCT_NAME = ZIMKit_OC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		57B9E7F74AEB0B8572C3B4E7F5AD6DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 866BD1C2BF337A3362385C71170EA1F0 /* ZIMKit-OC.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
+				IBSC_MODULE = ZIMKit_OC;
+				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-ZIMKitGroup-ZIMKit-OC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ZIMKitGroup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		721E2F590C1AB61C5C241915D7EEF6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3395C455A9FC18B72996497A3B20A384 /* Pods-ZIMKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZIMKit_Tests/Pods-ZIMKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZIMKit_Tests/Pods-ZIMKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7852BFC54FCC4F6E822BD25343E1F996 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C99813071DE0325402F4C5B863878C8C /* ZIMKit-OC.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
 				IBSC_MODULE = ZIMKit_OC;
-				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-ZIMKitRecources-ZIMKit-OC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = ZIMKitRecources;
+				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-GKPhotoBrowser-ZIMKit-OC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = GKPhotoBrowser;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2626,14 +2382,185 @@
 			};
 			name = Debug;
 		};
-		EF2AE4CEA629F55700F6DE1B3FE14E1A /* Release */ = {
+		842C60C4F1EBC85F9C8FF97D39D120FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		865ECA560D6F4E0C7A038D0A59AE3ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 866BD1C2BF337A3362385C71170EA1F0 /* ZIMKit-OC.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
+				IBSC_MODULE = ZIMKit_OC;
+				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-GKPhotoBrowser-ZIMKit-OC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = GKPhotoBrowser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		96B5A854973FA1CE1006C2B64D0D7BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99813071DE0325402F4C5B863878C8C /* ZIMKit-OC.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
+				IBSC_MODULE = ZIMKit_OC;
+				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-ZIMKitCommon-ZIMKit-OC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ZIMKitCommon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A922F2EF7800CFECF57A64030752A5D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 866BD1C2BF337A3362385C71170EA1F0 /* ZIMKit-OC.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
+				IBSC_MODULE = ZIMKit_OC;
+				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-ZIMKitCommon-ZIMKit-OC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ZIMKitCommon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D037C7D80C04964550326ED12118F77C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 866BD1C2BF337A3362385C71170EA1F0 /* ZIMKit-OC.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZIMKit-OC/ZIMKit-OC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ZIMKit-OC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZIMKit-OC/ZIMKit-OC.modulemap";
+				PRODUCT_MODULE_NAME = ZIMKit_OC;
+				PRODUCT_NAME = ZIMKit_OC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D565056D832964F61CE45AB12300340E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 866BD1C2BF337A3362385C71170EA1F0 /* ZIMKit-OC.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
 				IBSC_MODULE = ZIMKit_OC;
 				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-ZIMKitConversation-ZIMKit-OC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = ZIMKitConversation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2642,14 +2569,111 @@
 			};
 			name = Release;
 		};
+		E3C23091B9B4637329D0570872DCC1EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99813071DE0325402F4C5B863878C8C /* ZIMKit-OC.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
+				IBSC_MODULE = ZIMKit_OC;
+				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-ZIMKitRecources-ZIMKit-OC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ZIMKitRecources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		EAB8B956345137A2C605C40ACAF101FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 475E761383B864D1A8725BD2D6A4716D /* Pods-ZIMKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZIMKit_Tests/Pods-ZIMKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZIMKit_Tests/Pods-ZIMKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F27174EC772823557D210E0DA68850C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D9C279DF154D38016F92CC4DB90A631 /* Pods-ZIMKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZIMKit_Example/Pods-ZIMKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZIMKit_Example/Pods-ZIMKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F9EA5A027398FB81345E53FF803246B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99813071DE0325402F4C5B863878C8C /* ZIMKit-OC.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZIMKit-OC";
+				IBSC_MODULE = ZIMKit_OC;
+				INFOPLIST_FILE = "Target Support Files/ZIMKit-OC/ResourceBundle-ZIMKitGroup-ZIMKit-OC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ZIMKitGroup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		1CD9BFD6389A00FB91E04E5030584D0C /* Build configuration list for PBXNativeTarget "Pods-ZIMKit_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D6566B6DD7158AEE52165617B7E838E /* Debug */,
-				A0CD646F8D092C7F03A6FD564120C6CF /* Release */,
+				F27174EC772823557D210E0DA68850C1 /* Debug */,
+				2C042FFBBE2A9F83F8337BF1697EF279 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2666,8 +2690,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
-				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2675,8 +2699,8 @@
 		4841640C68E3854A55BA42CD2BAC1CF5 /* Build configuration list for PBXNativeTarget "ZIMKit-OC-ZIMKitCommon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CCABBE9EB31D100AF27076A0B4638FB4 /* Debug */,
-				1F70CF9466E3A6D20C08BD8E9E781920 /* Release */,
+				96B5A854973FA1CE1006C2B64D0D7BF9 /* Debug */,
+				A922F2EF7800CFECF57A64030752A5D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2684,8 +2708,8 @@
 		5A95A04AD5EED2DC18D1148593F1DF4F /* Build configuration list for PBXNativeTarget "ZIMKit-OC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				01D4A70C5680254535A41E4896D07957 /* Debug */,
-				C9333A7926F111B539B12B3B1F16E0B5 /* Release */,
+				514FC1237ED8089D63CF3C87847ADF29 /* Debug */,
+				D037C7D80C04964550326ED12118F77C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2693,8 +2717,8 @@
 		5F2F1D40AB307663E174A0F1F3E81DE6 /* Build configuration list for PBXNativeTarget "ZIMKit-OC-ZIMKitGroup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0058026DE645599AF7EC8939266D362D /* Debug */,
-				2E702D14C992C41F00A266F424D75B37 /* Release */,
+				F9EA5A027398FB81345E53FF803246B9 /* Debug */,
+				57B9E7F74AEB0B8572C3B4E7F5AD6DAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2702,8 +2726,8 @@
 		6E1448C40F6217DC085F275F9987714D /* Build configuration list for PBXNativeTarget "ZIMKit-OC-ZIMKitConversation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				900C135138AC8B7B6AB33D9DE39A7A2C /* Debug */,
-				EF2AE4CEA629F55700F6DE1B3FE14E1A /* Release */,
+				17823727D80C2321A37FFC5FDF26DB26 /* Debug */,
+				D565056D832964F61CE45AB12300340E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2711,8 +2735,8 @@
 		7140E1640443385001777B173DC1C524 /* Build configuration list for PBXNativeTarget "ZIMKit-OC-GKPhotoBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				824BCA81BA6898E8DB159D89ADC10CA0 /* Debug */,
-				39CA2DD752AAA536FA863A7FBEDE4BD4 /* Release */,
+				7852BFC54FCC4F6E822BD25343E1F996 /* Debug */,
+				865ECA560D6F4E0C7A038D0A59AE3ED9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2720,8 +2744,8 @@
 		9732A3882AB31027434A6CC3EF7C34C7 /* Build configuration list for PBXNativeTarget "Pods-ZIMKit_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2BD3CA8396A57F29580BD2AA5D281D86 /* Debug */,
-				7EF66A57AF7DEEF8D915CD573B9FC8EE /* Release */,
+				721E2F590C1AB61C5C241915D7EEF6A1 /* Debug */,
+				EAB8B956345137A2C605C40ACAF101FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2729,8 +2753,8 @@
 		BDDAFEBBE6F6057435B3CCA61D5F79C6 /* Build configuration list for PBXNativeTarget "ZIMKit-OC-ZIMKitRecources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE536483977C5A10CE119B2A9170D3D2 /* Debug */,
-				B86716A6297D95ABA1A816CE42ADFD25 /* Release */,
+				E3C23091B9B4637329D0570872DCC1EA /* Debug */,
+				2C9E5D72C620DA9B4C0BA7730362D72D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
