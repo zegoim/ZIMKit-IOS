@@ -54,15 +54,15 @@ TODO: Add long description of the pod here.
   'VALID_ARCHS' =>  'arm64 x86_64',
   }
   
-#  s.ios.resource_bundles = {
-#    'ZIMKitRecources' => ['ZIMKit/Assets/ChatResources/*'],
-#    'ZIMKitCommon' => ['ZIMKit/Assets/CommonResources/*'],
-#    'ZIMKitConversation' => ['ZIMKit/Assets/ConversationResources/*'],
-#    'ZIMKitGroup' => ['ZIMKit/Assets/GroupResources/*'],
-#    'GKPhotoBrowser' => ['ZIMKit/Assets/GKPhotoBrowser/*']
-#  }
+  s.ios.resource_bundles = {
+    'ZIMKitRecources' => ['ZIMKit/ZIMKit/Assets/ChatResources/*'],
+    'ZIMKitCommon' => ['ZIMKit/ZIMKit/Assets/CommonResources/*'],
+    'ZIMKitConversation' => ['ZIMKit/ZIMKit/Assets/ConversationResources/*'],
+    'ZIMKitGroup' => ['ZIMKit/ZIMKit/Assets/GroupResources/*'],
+    'GKPhotoBrowser' => ['ZIMKit/ZIMKit/Assets/GKPhotoBrowser/*']
+  }
   
-#  s.ios.public_header_files = 'ZIMKit/Classes/**/*.h'
+  s.ios.public_header_files = 'ZIMKit/ZIMKit/Classes/**/*.h'
   
    s.dependency 'Masonry', '1.1.0'
    s.dependency 'YYText', '1.0.7'
