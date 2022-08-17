@@ -32,10 +32,10 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-#  s.source_files = 'ZIMKit/Classes/**/*'
- s.subspec 'Common' do |common|
-     common.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitCommon/*.{h,m}'
- end
+  s.source_files = 'ZIMKit/ZIMKit/Classes/**/*'
+# s.subspec 'Common' do |common|
+#     common.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitCommon/*.{h,m}'
+# end
   # 是否是静态库 这个地方很重要 假如不写这句打出来的包 就是动态库 不能使用 一运行会报错 image not found
 #  s.static_framework = true
   # 链接设置 重要
@@ -47,7 +47,7 @@ TODO: Add long description of the pod here.
 #
 #  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     
-#  s.prefix_header_file = 'ZIMKit/Classes/ZIMKitCommon/ZIMKitPrefix.pch'
+  s.prefix_header_file = 'ZIMKit/ZIMKit/Classes/ZIMKitCommon/ZIMKitPrefix.pch'
 
 # 必须要加,ZIM 不支持i386
   s.xcconfig = {
