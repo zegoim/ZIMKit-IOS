@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'ZIMKit'
+  s.name             = 'ZIMKit-OC'
   s.version          = '0.1.5.2'
   s.summary          = 'A short description of ZIMKit-OC.'
 
@@ -25,7 +25,8 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wukun' => 'wukun@zego.im' }
-  s.source           = { :git => 'https://github.com/zegoim/ZIMKit-IOS.git', :tag => s.version.to_s }
+#  s.source           = { :git => 'https://github.com/zegoim/ZIMKit-IOS.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/zegoim/ZIMKit-IOS.git', :tag => "#{s.version}" }
 #  s.source           = { :git => '/Users/zego/Documents/IMKit/ZIMKit_CoCoPod/ZIMKit-IOS/ZIMKit'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
