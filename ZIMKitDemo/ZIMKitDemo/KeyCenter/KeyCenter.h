@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (class, copy, readonly,nonnull) NSString *appSign;
 
-@property (class, copy, readonly,nonnull) NSString *Secret;
 @end
 
 NS_ASSUME_NONNULL_END

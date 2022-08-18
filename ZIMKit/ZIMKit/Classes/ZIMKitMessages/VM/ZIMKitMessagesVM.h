@@ -26,6 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 收到房间消息
 - (void)onReceiveRoomMessage:(NSArray<ZIMKitMessage *> *)messageList fromRoomID:(NSString *)fromRoomID;
 
+/// 群成员变更
+- (void)onGroupMemberStateChanged:(ZIMGroupMemberState)state event:(ZIMGroupMemberEvent)event userList:(NSArray<ZIMGroupMemberInfo *> *)userList operatedInfo:(ZIMGroupOperatedInfo *)operatedInfo groupID:(NSString *)groupID;
+
 #pragma mark 数据源的更新代理
 /// 数据源插入
 - (void)dataSourceInsert:(ZIMKitMessagesVM *)VM index:(int)index animation:(BOOL)animation;

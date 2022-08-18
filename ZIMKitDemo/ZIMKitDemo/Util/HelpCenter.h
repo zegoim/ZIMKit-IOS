@@ -14,8 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HelpCenter : NSObject
 
-+ (NSString *)getTokenWithUserID:(NSString *)userID;
-
 // 获取用户名
 + (NSString *)getUserNameWith:(NSString *)userID;
 

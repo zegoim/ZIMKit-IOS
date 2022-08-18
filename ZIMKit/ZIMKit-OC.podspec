@@ -21,8 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/wukun/ZIMKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/zegoim/ZIMKit-IOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wukun' => 'wukun@zego.im' }
 #  s.source           = { :git => 'https://github.com/zegoim/ZIMKit-IOS.git', :tag => s.version.to_s }
@@ -43,11 +42,11 @@ TODO: Add long description of the pod here.
   
 #  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 'GCC_PREPROCESSOR_DEFINITIONS[config=Debug]' => '$(inherited) _ZX_ENVIRONMENT_DEBUG_=1001', 'GCC_PREPROCESSOR_DEFINITIONS' =>
 #  'GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1' }
-#  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }  #必须
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }  #必须
 #
-#  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     
-  s.prefix_header_file = 'ZIMKit/ZIMKit/Classes/ZIMKitCommon/ZIMKitPrefix.pch'
+  s.prefix_header_file = 'ZIMKit/ZIMKit/Classes/ZIMKitCommon/ZIMKitCommBase/ZIMKitPrefix.pch'
 
 # 必须要加,ZIM 不支持i386
   s.xcconfig = {
@@ -68,7 +67,7 @@ TODO: Add long description of the pod here.
    s.dependency 'YYText', '1.0.7'
    s.dependency 'MJRefresh', '3.1.15.3'
    s.dependency 'TZImagePickerController', '3.8.3'
-   s.dependency 'SDWebImage'
+   s.dependency 'SDWebImage', '~>5.13.2'
    s.dependency 'YYWebImage', '~> 1.0.5'
    s.dependency 'ZIM', '2.3.0'
 end

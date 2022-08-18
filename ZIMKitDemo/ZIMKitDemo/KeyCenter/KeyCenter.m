@@ -10,15 +10,11 @@
 @implementation KeyCenter
 
 + (unsigned int)appID {
-    return 0;
-}
-
-+ (NSString *)Secret{
-    return @"";
+    return 0; //联系即构ZEGO 商务人员
 }
 
 + (NSString *)appSign {
-    return @"";
+    return @""; //联系即构ZEGO 商务人员
 }
 
 @end

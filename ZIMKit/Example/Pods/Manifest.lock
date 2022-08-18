@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - ZIMKit-OC (0.1.5.3)
+  - ZIMKit-OC (0.1.5.5)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  ZIMKit-OC: 98a2042f6678a0da52da345eb4b8f4ba7a3a4e4b
+  ZIMKit-OC: 41e80b4858f88299af5ef4d1960335bfe8e82cea
 
 PODFILE CHECKSUM: 13027dcba9f256da8ab1721a16d44eb4b200b0fe
 

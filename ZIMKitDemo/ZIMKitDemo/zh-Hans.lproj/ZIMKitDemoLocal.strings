@@ -15,6 +15,7 @@
 "demo_user_id_login" = "用户ID登录";
 "confirm" = "确认";
 "demo_user_kick_out" = "重复登录，用户被踢出";
+"demo_user_login_tip1" = "网络异常，请检查网络后重试";
 
 "conversation_start_single_chat" = "发起单聊";
 "conversation_start_group_chat" = "发起群聊";

@@ -16,6 +16,7 @@
 "demo_user_id_login" = "User Login";
 "confirm" = "confirm";
 "demo_user_kick_out" = "The user is kicked out because the ID is reused for login. ";
+"demo_user_login_tip1" = "Network error. Please check the network and try again.";
 
 "conversation_start_single_chat" = "One-on-one chat";
 "conversation_start_group_chat" = "Group chat";

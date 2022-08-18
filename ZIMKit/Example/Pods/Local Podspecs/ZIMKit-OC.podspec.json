@@ -1,9 +1,9 @@
 {
   "name": "ZIMKit-OC",
-  "version": "0.1.5.3",
+  "version": "0.1.5.5",
   "summary": "A short description of ZIMKit-OC.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/wukun/ZIMKit",
+  "homepage": "https://github.com/zegoim/ZIMKit-IOS",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,14 +12,13 @@
     "wukun": "wukun@zego.im"
   },
   "source": {
-    "git": "https://github.com/zegoim/ZIMKit-IOS.git",
-    "tag": "0.1.5.3"
+    "git": "/Users/zego/Documents/IMKit/ZIMKit_CoCoPod/ZIMKit-IOS/ZIMKit"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "ZIMKit/Classes/**/*",
-  "prefix_header_file": "ZIMKit/Classes/ZIMKitCommon/ZIMKitPrefix.pch",
+  "prefix_header_file": "ZIMKit/Classes/ZIMKitCommon/ZIMKitCommBase/ZIMKitPrefix.pch",
   "xcconfig": {
     "VALID_ARCHS": "arm64 x86_64"
   },

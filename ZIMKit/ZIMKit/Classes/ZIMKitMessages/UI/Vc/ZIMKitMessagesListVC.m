@@ -330,6 +330,24 @@
     
 }
 
+- (void)onGroupMemberStateChanged:(ZIMGroupMemberState)state event:(ZIMGroupMemberEvent)event userList:(NSArray<ZIMGroupMemberInfo *> *)userList operatedInfo:(ZIMGroupOperatedInfo *)operatedInfo groupID:(NSString *)groupID {
+    if (self.conversationType == ZIMConversationTypeGroup && [self.conversationID isEqualToString:groupID]) {
+        if (state == ZIMGroupMemberStateQuit) {
+            for (ZIMGroupMemberInfo *memberInfo in userList) {
+                if (memberInfo.userID) {
+                    [self.memberListDic removeObjectForKey:memberInfo.userID];
+                }
+            }
+        } else if (state == ZIMGroupMemberStateEnter) {
+            for (ZIMGroupMemberInfo *memberInfo in userList) {
+                if (memberInfo.userID) {
+                    [self.memberListDic setObject:memberInfo forKey:memberInfo.userID];
+                }
+            }
+        }
+    }
+}
+
 #pragma mark ZIMKitInputBarDelegate
 /// 重置键盘
 - (void)didTapViewController {

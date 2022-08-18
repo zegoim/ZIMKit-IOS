@@ -118,6 +118,20 @@ static NSString *const KEY_CONNECTION_STATE_CHANGED = @"connectionStateChanged";
  */
 static NSString *const PARAM_STATE = @"state";
 
+/**
+ group event key
+ */
+static NSString *const KEY_GROUP_MEMBER_STATE_CHANGED = @"groupMemberStateChanged";
+
+/**
+ group  event param
+*/
+static NSString *const PARAM_GROUP_MEMBER_STATE = @"state";
+static NSString *const PARAM_GROUP_MEMBER_EVENT = @"event";
+static NSString *const PARAM_GROUP_USER_LIST    = @"userList";
+static NSString *const PARAM_GROUP_OPERATEDINFO = @"operatedInfo";
+static NSString *const PARAM_GROUP_GROUPID      = @"groupID";
+
 /*
  ZIMKitRouter
  */

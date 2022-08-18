@@ -116,6 +116,17 @@
                      param:@{PARAM_MESSAGE_LIST : messageList, PARAM_FROM_ROOM_ID : fromRoomID ? :@""}];
 }
 
+/**
+ group
+ */
+- (void)zim:(ZIM *)zim groupMemberStateChanged:(ZIMGroupMemberState)state event:(ZIMGroupMemberEvent)event userList:(NSArray<ZIMGroupMemberInfo *> *)userList operatedInfo:(ZIMGroupOperatedInfo *)operatedInfo groupID:(NSString *)groupID {
+    [self eventhandlerWith:KEY_GROUP_MEMBER_STATE_CHANGED param:@{PARAM_GROUP_GROUPID : groupID ? :@"",
+                                                                  PARAM_GROUP_MEMBER_STATE : @(state),
+                                                                  PARAM_GROUP_MEMBER_EVENT : @(event),
+                                                                  PARAM_GROUP_USER_LIST : userList ? userList : [NSArray array],
+                                                                  PARAM_GROUP_OPERATEDINFO : operatedInfo ? operatedInfo : [[ZIMGroupOperatedInfo alloc]init]}];
+}
+
 - (void)eventhandlerWith:(NSString *)key param:(NSDictionary *)param {
     NSMutableArray *listenerArray = [self.eventHandleDic objectForKey:key];
     

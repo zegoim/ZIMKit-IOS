@@ -155,10 +155,11 @@
     [self.view makeToastActivity:CSToastPositionCenter];
     [[ZIMKitManager shared] login:userinfo callback:^(ZIMError * _Nonnull errorInfo) {
         [self.view hideToastActivity];
-        if (errorInfo.code) {
+        if (errorInfo.code == 6000104) {
+            [weakSelf resetLayout];
+            [self.view makeToast:KitDemoLocalizedString(@"demo_user_login_tip1", LocalizedDemoKey, nil)];
+        } else if (errorInfo.code) {
             weakSelf.phoneTipL.hidden = NO;
-//            weakSelf.btLoginBtn.enabled = NO;
-//            weakSelf.btLoginBtn.backgroundColor = [BSRGBColor(0x3478FC) colorWithAlphaComponent:0.5];
             [weakSelf resetLayout];
             [self.view makeToast:errorInfo.message];
         } else {

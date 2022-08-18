@@ -7,8 +7,6 @@
 
 #import "HelpCenter.h"
 #import "KeyCenter.h"
-#import "ZegoServerAssistant.h"
-#import "ZegoRTCServerAssistant.h"
 #import <CommonCrypto/CommonDigest.h>
 
 @implementation HelpCenter
@@ -33,15 +31,6 @@
     }
     
     return userAvatar;
-}
-
-+ (NSString *)getTokenWithUserID:(NSString *)userID {
-    NSString *token = [[NSString alloc] init];
-    if(userID != nil){
-        auto tokenResult = ZEGO::SERVER_ASSISTANT::ZegoServerAssistant::GenerateToken(KeyCenter.appID, userID.UTF8String,KeyCenter.Secret.UTF8String, 3600*24);
-        token = [NSString stringWithCString:tokenResult.token.c_str() encoding:[NSString defaultCStringEncoding]];
-    }
-    return token;
 }
 
 + (NSString *)getUserNameWith:(NSString *)userID {

@@ -266,6 +266,19 @@
             [self.delegate onReceiveRoomMessage:listData fromRoomID:fromRoomID];
         }
     }];
+    
+    [[ZIMKitEventHandler shared] addEventListener:KEY_GROUP_MEMBER_STATE_CHANGED listener:self callBack:^(NSDictionary * _Nullable param) {
+        @strongify(self);
+        ZIMGroupMemberState state = [param[PARAM_GROUP_MEMBER_STATE] intValue];
+        ZIMGroupMemberEvent event = [param[PARAM_GROUP_MEMBER_EVENT] intValue];
+        NSArray *userList = param[PARAM_GROUP_USER_LIST];
+        ZIMGroupOperatedInfo *operatedInfo = param[PARAM_GROUP_OPERATEDINFO];
+        NSString *groupID = param[PARAM_GROUP_GROUPID];
+        
+        if (self.delegate && [self.delegate respondsToSelector:@selector(onGroupMemberStateChanged:event:userList:operatedInfo:groupID:)]) {
+            [self.delegate onGroupMemberStateChanged:state event:event userList:userList operatedInfo:operatedInfo groupID:groupID];
+        }
+    }];
 }
 
 /// 清空会话未读数
