@@ -31,10 +31,92 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'ZIMKit/ZIMKit/Classes/**/*'
-# s.subspec 'Common' do |common|
-#     common.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitCommon/*.{h,m}'
-# end
+#  s.source_files = 'ZIMKit/ZIMKit/Classes/**/*'
+
+s.subspec 'ZIMKitCommon' do |common|
+    common.subspec 'ZIMKitCommonBase' do |base|
+      base.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitCommon/ZIMKitCommonBase/*'
+    end
+    
+    common.subspec 'ZIMKitRouter' do |router|
+      router.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitCommon/ZIMKitRouter/*'
+    end
+    
+    common.subspec 'ZIMKitToolUtil' do |toolUtil|
+      toolUtil.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitCommon/ZIMKitToolUtil/*'
+    end
+end
+
+s.subspec 'ZIMKitConversation' do |conversation|
+  conversation.subspec 'Model' do |model|
+    model.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitConversation/Model/*'
+  end
+  
+  conversation.subspec 'VM' do |vm|
+    vm.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitConversation/VM/*'
+  end
+  conversation.subspec 'UI' do |ui|
+    ui.subspec 'Cell' do |cell|
+      cell.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitConversation/UI/Cell/*'
+    end
+    ui.subspec 'Vc' do |vc|
+      vc.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitConversation/UI/Vc/*'
+    end
+    ui.subspec 'View' do |view|
+      view.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitConversation/UI/View/*'
+    end
+  end
+end
+
+s.subspec 'ZIMKitGroup' do |group|
+  group.subspec 'Model' do |model|
+    model.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitGroup/Model/*'
+  end
+  group.subspec 'UI' do |ui|
+    ui.subspec 'Vc' do |vc|
+      vc.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitGroup/UI/Vc/*'
+    end
+    ui.subspec 'View' do |view|
+      view.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitGroup/UI/View/*'
+    end
+  end
+  group.subspec 'VM' do |vm|
+    vm.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitGroup/VM/*'
+  end
+end
+
+s.subspec 'ZIMKitMessages' do |message|
+  message.subspec 'Model' |model|
+   model.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitMessages/Model/*'
+  end
+  message.subspec 'Vendor' do |vendor|
+    vendor.subspec 'GKPhotoBrowser' do |photoBrowser|
+      photoBrowser.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitMessages/Vendor/GKPhotoBrowser/*'
+    end
+  end
+  message.subspec 'VM' do |vm|
+    vm.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitMessages/VM/*'
+  end
+  
+  message.subspec 'ZIMKitMessageUtil' do |messageUtil|
+    messageUtil.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitMessages/ZIMKitMessageUtil/*'
+  end
+  
+  message.subspec 'UI' do |ui|
+    ui.subspec 'Cell' do |cell|
+      cell.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitMessages/UI/Cell/*'
+    end
+    ui.subspec 'Vc' do |vc|
+      vc.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitMessages/UI/Vc/*'
+    end
+    ui.subspec 'View' do |view|
+      view.subspec 'InputView' do |inputview|
+        inputview.source_files = 'ZIMKit/ZIMKit/Classes/ZIMKitMessages/UI/View/InputView/*'
+      end
+    end
+  end
+end
+
   # 是否是静态库 这个地方很重要 假如不写这句打出来的包 就是动态库 不能使用 一运行会报错 image not found
 #  s.static_framework = true
   # 链接设置 重要
