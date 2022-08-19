@@ -307,7 +307,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZIMKit_Example/Pods-ZIMKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZIMKit-OC/ZIMKit_OC.framework",
+				"${BUILT_PRODUCTS_DIR}/ZIMKit_OC/ZIMKit_OC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DD3FA3E84CD27ED2EA287A895150BFBC"
-               BuildableName = "ZIMKit_OC.framework"
-               BlueprintName = "ZIMKit-OC"
+               BlueprintIdentifier = "EA155FA97D0C7BE14FCE890A6E1B6DB9"
+               BuildableName = "GKPhotoBrowser.bundle"
+               BlueprintName = "ZIMKit_OC-GKPhotoBrowser"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

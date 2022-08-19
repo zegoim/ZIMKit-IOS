@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'ZIMKit_Example' do
-  pod 'ZIMKit-OC', :path => '../'
+  pod 'ZIMKit_OC', :path => '../'
 
   target 'ZIMKit_Tests' do
     inherit! :search_paths

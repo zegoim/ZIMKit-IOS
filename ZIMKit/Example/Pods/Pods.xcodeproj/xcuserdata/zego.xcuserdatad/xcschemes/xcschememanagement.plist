@@ -19,32 +19,32 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ZIMKit-OC-GKPhotoBrowser.xcscheme</key>
+		<key>ZIMKit_OC-GKPhotoBrowser.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ZIMKit-OC-ZIMKitCommon.xcscheme</key>
+		<key>ZIMKit_OC-ZIMKitCommon.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ZIMKit-OC-ZIMKitConversation.xcscheme</key>
+		<key>ZIMKit_OC-ZIMKitConversation.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ZIMKit-OC-ZIMKitGroup.xcscheme</key>
+		<key>ZIMKit_OC-ZIMKitGroup.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ZIMKit-OC-ZIMKitRecources.xcscheme</key>
+		<key>ZIMKit_OC-ZIMKitRecources.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ZIMKit-OC.xcscheme</key>
+		<key>ZIMKit_OC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
