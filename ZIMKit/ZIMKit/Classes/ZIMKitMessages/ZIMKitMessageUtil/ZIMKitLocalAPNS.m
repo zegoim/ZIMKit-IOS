@@ -153,7 +153,7 @@
 
 /// 移除事件的监听
 - (void)removeConversationEventHadle {
-    [[ZIMKitEventHandler shared] removeEventListener:KEY_RECEIVE_GROUP_MESSAGE listener:self];
+    [[ZIMKitEventHandler shared] removeEventListener:KEY_RECEIVE_PEER_MESSAGE listener:self];
     [[ZIMKitEventHandler shared] removeEventListener:KEY_RECEIVE_GROUP_MESSAGE listener:self];
     [[ZIMKitEventHandler shared] removeEventListener:KEY_RECEIVE_ROOM_MESSAGE listener:self];
 }

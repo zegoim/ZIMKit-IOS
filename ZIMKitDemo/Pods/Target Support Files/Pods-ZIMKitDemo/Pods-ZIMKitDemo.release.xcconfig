@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit-OC" "${PODS_ROOT}/Bugly"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit_OC" "${PODS_ROOT}/Bugly"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit-OC/ZIMKit_OC.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ZIMKit_OC/ZIMKit_OC.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"z" -framework "Bugly" -framework "Security" -framework "SystemConfiguration" -framework "ZIMKit_OC"
 PODS_BUILD_DIR = ${BUILD_DIR}

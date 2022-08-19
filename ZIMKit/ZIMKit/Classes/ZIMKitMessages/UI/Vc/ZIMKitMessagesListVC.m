@@ -372,12 +372,16 @@
     if (self.conversationType == ZIMConversationTypePeer) {
         [self.messageVM sendPeerMessage:msg toUserID:self.conversationID config:msgConfig callBack:^(ZIMKitMessage * _Nullable message, ZIMError * _Nullable errorInfo) {
             [self reloaddataAndScrolltoBottom];
-            [self showErrorinfo:errorInfo];
+            if (errorInfo.code) {
+                [self showErrorinfo:errorInfo];
+            }
         }];
     } else if (self.conversationType == ZIMConversationTypeGroup) {
         [self.messageVM sendGroupMessage:msg toGroupID:self.conversationID config:msgConfig callBack:^(ZIMKitMessage * _Nullable message, ZIMError * _Nullable errorInfo) {
             [self reloaddataAndScrolltoBottom];
-            [self showErrorinfo:errorInfo];
+            if (errorInfo.code) {
+                [self showErrorinfo:errorInfo];
+            }
         }];
     }
 }

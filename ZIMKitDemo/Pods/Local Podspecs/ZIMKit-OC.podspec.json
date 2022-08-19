@@ -1,6 +1,6 @@
 {
   "name": "ZIMKit-OC",
-  "version": "0.1.5.5",
+  "version": "0.1.6",
   "summary": "A short description of ZIMKit-OC.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/zegoim/ZIMKit-IOS",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/zegoim/ZIMKit-IOS.git",
-    "tag": "0.1.5.5"
+    "tag": "0.1.6"
   },
   "platforms": {
     "ios": "9.0"
@@ -48,5 +48,28 @@
       ]
     },
     "public_header_files": "ZIMKit/Classes/**/*.h"
+  },
+  "dependencies": {
+    "Masonry": [
+      "1.1.0"
+    ],
+    "YYText": [
+      "1.0.7"
+    ],
+    "MJRefresh": [
+      "3.1.15.3"
+    ],
+    "TZImagePickerController": [
+      "3.8.3"
+    ],
+    "SDWebImage": [
+      "~>5.13.2"
+    ],
+    "YYWebImage": [
+      "~> 1.0.5"
+    ],
+    "ZIM": [
+      "2.3.0"
+    ]
   }
 }

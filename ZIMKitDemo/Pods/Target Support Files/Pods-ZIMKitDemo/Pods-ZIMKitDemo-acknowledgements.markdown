@@ -6,7 +6,7 @@ This application makes use of the following third party libraries:
 Copyright (C) 2017 Tencent Bugly, Inc. All rights reserved.
 
 
-## ZIMKit-OC
+## ZIMKit_OC
 
 Copyright (c) 2022 wukun <wukun@zego.im>
 

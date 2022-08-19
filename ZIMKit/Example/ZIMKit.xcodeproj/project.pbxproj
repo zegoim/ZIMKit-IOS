@@ -63,7 +63,7 @@
 		6A904F8F5E0A0EA72396F990 /* Pods_ZIMKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZIMKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8FB60730F745DA0B0584FCB1 /* ZIMKit-OC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "ZIMKit-OC.podspec"; path = "../ZIMKit-OC.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8FB60730F745DA0B0584FCB1 /* ZIMKit_OC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZIMKit_OC.podspec; path = ../ZIMKit_OC.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D718629857EA37C6DC27617E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D978B83B02D3C5969F787FEA /* Pods-ZIMKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZIMKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZIMKit_Example/Pods-ZIMKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DDE7F685EC16DDB93665A5BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				8FB60730F745DA0B0584FCB1 /* ZIMKit-OC.podspec */,
+				8FB60730F745DA0B0584FCB1 /* ZIMKit_OC.podspec */,
 				DDE7F685EC16DDB93665A5BE /* README.md */,
 				D718629857EA37C6DC27617E /* LICENSE */,
 			);

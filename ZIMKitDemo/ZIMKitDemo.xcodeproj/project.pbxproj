@@ -229,16 +229,8 @@
 			children = (
 				86EEDB93286C7056002E6C29 /* ConversationController.m */,
 				86EEDB97286C7056002E6C29 /* ConversationController.h */,
-				86EEDB94286C7056002E6C29 /* View */,
 			);
 			path = Conversation;
-			sourceTree = "<group>";
-		};
-		86EEDB94286C7056002E6C29 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		86EEDB9C286C94F3002E6C29 /* Tabbar */ = {
@@ -666,7 +658,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 52;
+				CURRENT_PROJECT_VERSION = 53;
 				DEVELOPMENT_TEAM = B82BHJ5H89;
 				GCC_PREFIX_HEADER = ZIMKitDemo/ZIMKitDemoPrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -698,7 +690,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 52;
+				CURRENT_PROJECT_VERSION = 53;
 				DEVELOPMENT_TEAM = B82BHJ5H89;
 				GCC_PREFIX_HEADER = ZIMKitDemo/ZIMKitDemoPrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;

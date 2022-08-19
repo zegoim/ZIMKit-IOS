@@ -3,6 +3,6 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'ZIMKitDemo' do
-  pod 'ZIMKit-OC', :path => '../ZIMKit'
+  pod 'ZIMKit_OC', :path => '../ZIMKit'
   pod 'Bugly'
 end

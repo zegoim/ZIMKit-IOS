@@ -107,6 +107,9 @@
 
 - (void)didlocalNotificationResponse:(NSString *)conversationID conversationType:(ZIMConversationType)conversationType conversationName:(NSString *)conversationName {
     UITabBarController *tab = (UITabBarController *)self.window.rootViewController;
+    if (![tab isKindOfClass:UITabBarController.class]) {
+        return;
+    }
     UINavigationController *nav = (UINavigationController *)tab.selectedViewController;
     if (![nav isKindOfClass:UINavigationController.class]) {
         return;
