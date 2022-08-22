@@ -136,11 +136,11 @@ TODO: Add long description of the pod here.
   }
   
   s.ios.resource_bundles = {
-    'ZIMKitRecources' => ['ZIMKit/Assets/ChatResources/*'],
-    'ZIMKitCommon' => ['ZIMKit/Assets/CommonResources/*'],
-    'ZIMKitConversation' => ['ZIMKit/Assets/ConversationResources/*'],
-    'ZIMKitGroup' => ['ZIMKit/Assets/GroupResources/*'],
-    'GKPhotoBrowser' => ['ZIMKit/Assets/GKPhotoBrowser/*']
+    'ChatResources' => ['ZIMKit/Assets/ChatResources/*'],
+    'CommonResources' => ['ZIMKit/Assets/CommonResources/*'],
+    'ConversationResources' => ['ZIMKit/Assets/ConversationResources/*'],
+    'GroupResources' => ['ZIMKit/Assets/GroupResources/*'],
+    'GKPhotoBrowserRecources' => ['ZIMKit/Assets/GKPhotoBrowserRecources/*']
   }
   
   s.ios.public_header_files = 'ZIMKit/Classes/**/*.h'

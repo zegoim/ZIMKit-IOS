@@ -31,20 +31,20 @@
   },
   "ios": {
     "resource_bundles": {
-      "ZIMKitRecources": [
+      "ChatResources": [
         "ZIMKit/Assets/ChatResources/*"
       ],
-      "ZIMKitCommon": [
+      "CommonResources": [
         "ZIMKit/Assets/CommonResources/*"
       ],
-      "ZIMKitConversation": [
+      "ConversationResources": [
         "ZIMKit/Assets/ConversationResources/*"
       ],
-      "ZIMKitGroup": [
+      "GroupResources": [
         "ZIMKit/Assets/GroupResources/*"
       ],
-      "GKPhotoBrowser": [
-        "ZIMKit/Assets/GKPhotoBrowser/*"
+      "GKPhotoBrowserRecources": [
+        "ZIMKit/Assets/GKPhotoBrowserRecources/*"
       ]
     },
     "public_header_files": "ZIMKit/Classes/**/*.h"

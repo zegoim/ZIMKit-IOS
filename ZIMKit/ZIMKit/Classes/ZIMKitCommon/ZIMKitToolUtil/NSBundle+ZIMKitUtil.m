@@ -14,7 +14,7 @@
     static NSBundle *commonBundle = nil;
     if (commonBundle == nil) {
         // 这里不使用mainBundle是为了适配pod 1.x和0.x
-        commonBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"ZIMKitNavigationController")] pathForResource:@"ZIMKitCommon" ofType:@"bundle"]];
+        commonBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"ZIMKitNavigationController")] pathForResource:@"CommonResources" ofType:@"bundle"]];
     }
     return commonBundle;
 }

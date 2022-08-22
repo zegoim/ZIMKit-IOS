@@ -10,12 +10,12 @@
 
 @implementation UIImage (ZIMKitUtil)
 
-+ (NSBundle *)ZIMKitCommonBundle
++ (NSBundle *)ZIMKitChatBundle
 {
     static NSBundle *commonBundle = nil;
     if (commonBundle == nil) {
         // 这里不使用mainBundle是为了适配pod 1.x和0.x
-        commonBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"ZIMKitNavigationController")] pathForResource:@"ZIMKitRecources" ofType:@"bundle"]];
+        commonBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"ZIMKitNavigationController")] pathForResource:@"ChatResources" ofType:@"bundle"]];
     }
     return commonBundle;
 }
@@ -26,7 +26,7 @@
         return nil;
     }
     
-    NSBundle *bundle = [self ZIMKitCommonBundle];
+    NSBundle *bundle = [self ZIMKitChatBundle];
     UIImage *image = [UIImage imageNamed:name inBundle:bundle compatibleWithTraitCollection:nil];
     return image;
 }
@@ -35,7 +35,7 @@
     static NSBundle *conversationBundle = nil;
     if (conversationBundle == nil) {
         // 这里不使用mainBundle是为了适配pod 1.x和0.x
-        conversationBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"ZIMKitNavigationController")] pathForResource:@"ZIMKitConversation" ofType:@"bundle"]];
+        conversationBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"ZIMKitNavigationController")] pathForResource:@"ConversationResources" ofType:@"bundle"]];
     }
     return conversationBundle;
 }
@@ -53,7 +53,7 @@
     static NSBundle *groupBundle = nil;
     if (groupBundle == nil) {
         // 这里不使用mainBundle是为了适配pod 1.x和0.x
-        groupBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"ZIMKitNavigationController")] pathForResource:@"ZIMKitGroup" ofType:@"bundle"]];
+        groupBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"ZIMKitNavigationController")] pathForResource:@"GroupResources" ofType:@"bundle"]];
     }
     return groupBundle;
 }
