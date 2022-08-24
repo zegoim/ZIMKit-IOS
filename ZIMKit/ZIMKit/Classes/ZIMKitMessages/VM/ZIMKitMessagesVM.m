@@ -17,16 +17,20 @@
 @interface ZIMKitMessagesVM ()
 
 /// 消息集合
-@property (nonatomic, strong) NSMutableArray *messages;
+@property (nonatomic, strong) NSMutableArray  *messages;
 
-@property (nonatomic, strong) NSDateFormatter    *dateFormatter;
+@property (nonatomic, strong) NSDateFormatter *dateFormatter;
+
+///current conversation ID
+@property (nonatomic, strong) NSString        *curConversationID;
 
 @end
 
 @implementation ZIMKitMessagesVM
 
-- (instancetype)init {
+- (instancetype)initWith:(NSString *)conversationID {
     if (self = [super init]) {
+        _curConversationID = conversationID;
         [self addConversationEventHadle];
         _messages = [NSMutableArray array];
     }
@@ -197,23 +201,24 @@
         @strongify(self);
         NSArray<ZIMMessage *>* messageLlist = param[PARAM_MESSAGE_LIST];
         NSString *fromUserID = param[PARAM_FROM_USER_ID];
-        
-        //这里的消息需要先排序
-        NSArray *list = [messageLlist sortedArrayUsingComparator:^NSComparisonResult(ZIMMessage *obj1, ZIMMessage *obj2) {
-            return obj1.timestamp > obj2.timestamp;
-        }];
-        
-        NSMutableArray *listData = [NSMutableArray array];
-        for (ZIMMessage *message in list) {
-            ZIMKitMessage *kitMessage = [ZIMKitMessageTool fromZIMMessageConvert:message];
-            if (kitMessage) {
-                [listData addObject:kitMessage];
-                [self addKitMessage:kitMessage];
+        if ([self.curConversationID isEqualToString:fromUserID]) {
+            //这里的消息需要先排序
+            NSArray *list = [messageLlist sortedArrayUsingComparator:^NSComparisonResult(ZIMMessage *obj1, ZIMMessage *obj2) {
+                return obj1.timestamp > obj2.timestamp;
+            }];
+            
+            NSMutableArray *listData = [NSMutableArray array];
+            for (ZIMMessage *message in list) {
+                ZIMKitMessage *kitMessage = [ZIMKitMessageTool fromZIMMessageConvert:message];
+                if (kitMessage) {
+                    [listData addObject:kitMessage];
+                    [self addKitMessage:kitMessage];
+                }
             }
-        }
-        
-        if (self.delegate && [self.delegate respondsToSelector:@selector(onReceivePeerMessage:fromUserID:)]) {
-            [self.delegate onReceivePeerMessage:listData fromUserID:fromUserID];
+            
+            if (self.delegate && [self.delegate respondsToSelector:@selector(onReceivePeerMessage:fromUserID:)]) {
+                [self.delegate onReceivePeerMessage:listData fromUserID:fromUserID];
+            }
         }
     }];
     
@@ -224,21 +229,23 @@
         NSArray<ZIMMessage *>* messageLlist = param[PARAM_MESSAGE_LIST];
         NSString *fromGroupID = param[PARAM_FROM_GROUP_ID];
         
-        //这里的消息需要先排序
-        NSArray *list = [messageLlist sortedArrayUsingComparator:^NSComparisonResult(ZIMMessage *obj1, ZIMMessage *obj2) {
-            return obj1.timestamp > obj2.timestamp;
-        }];
-        NSMutableArray *listData = [NSMutableArray array];
-        for (ZIMMessage *message in list) {
-            ZIMKitMessage *kitMessage = [ZIMKitMessageTool fromZIMMessageConvert:message];
-            if (kitMessage) {
-                [listData addObject:kitMessage];
-                [self addKitMessage:kitMessage];
+        if ([self.curConversationID isEqualToString:fromGroupID]) {
+            //这里的消息需要先排序
+            NSArray *list = [messageLlist sortedArrayUsingComparator:^NSComparisonResult(ZIMMessage *obj1, ZIMMessage *obj2) {
+                return obj1.timestamp > obj2.timestamp;
+            }];
+            NSMutableArray *listData = [NSMutableArray array];
+            for (ZIMMessage *message in list) {
+                ZIMKitMessage *kitMessage = [ZIMKitMessageTool fromZIMMessageConvert:message];
+                if (kitMessage) {
+                    [listData addObject:kitMessage];
+                    [self addKitMessage:kitMessage];
+                }
             }
-        }
-        
-        if (self.delegate && [self.delegate respondsToSelector:@selector(onReceiveGroupMessage:fromGroupID:)]) {
-            [self.delegate onReceiveGroupMessage:listData fromGroupID:fromGroupID];
+            
+            if (self.delegate && [self.delegate respondsToSelector:@selector(onReceiveGroupMessage:fromGroupID:)]) {
+                [self.delegate onReceiveGroupMessage:listData fromGroupID:fromGroupID];
+            }
         }
     }];
     
@@ -248,35 +255,41 @@
         @strongify(self);
         NSArray<ZIMMessage *>* messageLlist = param[PARAM_MESSAGE_LIST];
         NSString *fromRoomID = param[PARAM_FROM_ROOM_ID];
-        //这里的消息需要先排序
-        NSArray *list = [messageLlist sortedArrayUsingComparator:^NSComparisonResult(ZIMMessage *obj1, ZIMMessage *obj2) {
-            return obj1.timestamp > obj2.timestamp;
-        }];
         
-        NSMutableArray *listData = [NSMutableArray array];
-        for (ZIMMessage *message in list) {
-            ZIMKitMessage *kitMessage = [ZIMKitMessageTool fromZIMMessageConvert:message];
-            if (kitMessage) {
-                [listData addObject:kitMessage];
-                [self addKitMessage:kitMessage];
+        if ([self.curConversationID isEqualToString:fromRoomID]) {
+            //这里的消息需要先排序
+            NSArray *list = [messageLlist sortedArrayUsingComparator:^NSComparisonResult(ZIMMessage *obj1, ZIMMessage *obj2) {
+                return obj1.timestamp > obj2.timestamp;
+            }];
+            
+            NSMutableArray *listData = [NSMutableArray array];
+            for (ZIMMessage *message in list) {
+                ZIMKitMessage *kitMessage = [ZIMKitMessageTool fromZIMMessageConvert:message];
+                if (kitMessage) {
+                    [listData addObject:kitMessage];
+                    [self addKitMessage:kitMessage];
+                }
             }
-        }
-        
-        if (self.delegate && [self.delegate respondsToSelector:@selector(onReceiveRoomMessage:fromRoomID:)]) {
-            [self.delegate onReceiveRoomMessage:listData fromRoomID:fromRoomID];
+            
+            if (self.delegate && [self.delegate respondsToSelector:@selector(onReceiveRoomMessage:fromRoomID:)]) {
+                [self.delegate onReceiveRoomMessage:listData fromRoomID:fromRoomID];
+            }
         }
     }];
     
     [[ZIMKitEventHandler shared] addEventListener:KEY_GROUP_MEMBER_STATE_CHANGED listener:self callBack:^(NSDictionary * _Nullable param) {
         @strongify(self);
-        ZIMGroupMemberState state = [param[PARAM_GROUP_MEMBER_STATE] intValue];
-        ZIMGroupMemberEvent event = [param[PARAM_GROUP_MEMBER_EVENT] intValue];
-        NSArray *userList = param[PARAM_GROUP_USER_LIST];
-        ZIMGroupOperatedInfo *operatedInfo = param[PARAM_GROUP_OPERATEDINFO];
         NSString *groupID = param[PARAM_GROUP_GROUPID];
         
-        if (self.delegate && [self.delegate respondsToSelector:@selector(onGroupMemberStateChanged:event:userList:operatedInfo:groupID:)]) {
-            [self.delegate onGroupMemberStateChanged:state event:event userList:userList operatedInfo:operatedInfo groupID:groupID];
+        if ([self.curConversationID isEqualToString:groupID]) {
+            ZIMGroupMemberState state = [param[PARAM_GROUP_MEMBER_STATE] intValue];
+            ZIMGroupMemberEvent event = [param[PARAM_GROUP_MEMBER_EVENT] intValue];
+            NSArray *userList = param[PARAM_GROUP_USER_LIST];
+            ZIMGroupOperatedInfo *operatedInfo = param[PARAM_GROUP_OPERATEDINFO];
+            
+            if (self.delegate && [self.delegate respondsToSelector:@selector(onGroupMemberStateChanged:event:userList:operatedInfo:groupID:)]) {
+                [self.delegate onGroupMemberStateChanged:state event:event userList:userList operatedInfo:operatedInfo groupID:groupID];
+            }
         }
     }];
 }
@@ -307,6 +320,7 @@
 - (NSString *)getImagepath {
     return [[ZIMKitManager shared] getImagepath];
 }
+
 #pragma mark private
 - (void)addKitMessage:(ZIMKitMessage *)message {
     ZIMKitMessage *preMessage = self.messages.lastObject;

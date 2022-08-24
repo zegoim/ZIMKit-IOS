@@ -5,8 +5,6 @@
 //  Created by zego on 2022/6/30.
 //
 
-#import <ZIMKit_OC/ZIMKit.h>
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZIMKitGroupModule : ZIMKitBaseModule

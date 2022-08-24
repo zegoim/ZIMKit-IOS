@@ -139,7 +139,7 @@
 
 - (ZIMKitMessagesVM *)messageVM {
     if (!_messageVM) {
-        _messageVM = [[ZIMKitMessagesVM alloc] init];
+        _messageVM = [[ZIMKitMessagesVM alloc] initWith:self.conversationID];
         _messageVM.delegate = self;
     }
     return _messageVM;

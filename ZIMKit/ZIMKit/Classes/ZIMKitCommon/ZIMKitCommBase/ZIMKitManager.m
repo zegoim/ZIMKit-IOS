@@ -52,7 +52,7 @@
 }
 
 - (void)queryUsersInfo:(NSArray<NSString *>*)userIDs callback:(ZIMUsersInfoQueriedCallback)callback {
-    ZIMUserInfoQueryConfig *config = [ZIMUserInfoQueryConfig new];
+    ZIMUsersInfoQueryConfig *config = [ZIMUsersInfoQueryConfig new];
     [self.zim queryUsersInfo:userIDs config:config callback:callback];
 }
 

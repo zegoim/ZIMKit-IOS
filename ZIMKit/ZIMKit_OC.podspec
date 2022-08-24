@@ -151,5 +151,5 @@ TODO: Add long description of the pod here.
    s.dependency 'TZImagePickerController', '3.8.3'
    s.dependency 'SDWebImage', '~>5.13.2'
    s.dependency 'YYWebImage', '~> 1.0.5'
-   s.dependency 'ZIM', '2.3.0'
+   s.dependency 'ZIM', '2.3.1'
 end

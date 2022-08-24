@@ -5,8 +5,7 @@
 //  Created by zego on 2022/7/13.
 //
 
-#import <ZIMKit_OC/ZIMKit.h>
-
+#import "ZIMKitMessagesListVC.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZIMKitMessagesListVC (InputBar)<ZIMKitMessageSendToolbarDelegate>

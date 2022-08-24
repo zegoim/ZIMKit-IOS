@@ -40,6 +40,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// 消息list
 @property (nonatomic, readonly) NSArray<ZIMKitMessage *> *messageList;
 
+/// init messageVM
+/// @param conversationID  current conversationID
+- (instancetype)initWith:(NSString *)conversationID;
+
 /// 发送单聊消息
 /// @param message 发送消息对象
 /// @param toUserID 发送对方ID
