@@ -6,6 +6,8 @@
 //
 
 #import "ZIMMessage+Extension.h"
+#import "NSBundle+ZIMKitUtil.h"
+
 
 @implementation ZIMMessage (Extension)
 

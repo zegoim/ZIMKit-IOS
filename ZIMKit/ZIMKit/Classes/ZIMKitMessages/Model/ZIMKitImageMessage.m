@@ -6,6 +6,7 @@
 //
 
 #import "ZIMKitImageMessage.h"
+#import "ZIMKitDefine.h"
 
 @implementation ZIMKitImageMessage
 

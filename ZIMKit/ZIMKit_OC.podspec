@@ -128,7 +128,7 @@ TODO: Add long description of the pod here.
 #
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     
-  s.prefix_header_file = 'ZIMKit/Classes/ZIMKitCommon/ZIMKitCommBase/ZIMKitPrefix.pch'
+#  s.prefix_header_file = 'ZIMKit/Classes/ZIMKitCommon/ZIMKitCommBase/ZIMKitPrefix.pch'
 
 # 必须要加,ZIM 不支持i386
   s.xcconfig = {

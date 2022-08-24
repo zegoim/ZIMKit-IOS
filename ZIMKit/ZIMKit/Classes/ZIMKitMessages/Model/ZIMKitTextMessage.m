@@ -7,6 +7,7 @@
 
 #import "ZIMKitTextMessage.h"
 #import "NSString+ZIMKitUtil.h"
+#import "ZIMKitDefine.h"
 
 @implementation ZIMKitTextMessage
 

@@ -7,6 +7,8 @@
 
 #import "ZIMKitMessageCell.h"
 #import "NSString+ZIMKitUtil.h"
+#import "ZIMKitDefine.h"
+#import <SDWebImage/SDWebImage.h>
 
 @interface ZIMKitMessageCell ()
 

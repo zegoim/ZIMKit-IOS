@@ -6,6 +6,8 @@
 //
 
 #import "ZIMKitMessage.h"
+#import "ZIMKitDefine.h"
+#import <YYText/YYText.h>
 #import <objc/runtime.h>
 
 @interface ZIMKitMessage ()

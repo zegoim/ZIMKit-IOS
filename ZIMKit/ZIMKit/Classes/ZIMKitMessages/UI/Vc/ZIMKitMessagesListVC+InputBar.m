@@ -6,6 +6,8 @@
 //
 
 #import "ZIMKitMessagesListVC+InputBar.h"
+#import "ZIMKitDefine.h"
+#import <TZImagePickerController/TZImagePickerController.h>
 
 @implementation ZIMKitMessagesListVC (InputBar)
 

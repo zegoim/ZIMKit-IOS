@@ -6,7 +6,7 @@
 //
 
 #import "ZIMKitSystemMessage.h"
-#import "NSString+ZIMKitUtil.h"
+#import "ZIMKitDefine.h"
 
 @implementation ZIMKitSystemMessage
 

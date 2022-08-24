@@ -7,6 +7,8 @@
 
 #import "ZIMKitFaceManagerView.h"
 #import "ZIMKitDefaultEmojiCollectionView.h"
+#import "ZIMKitDefine.h"
+#import <Masonry/Masonry.h>
 
 @interface ZIMKitFaceManagerView ()<UICollectionViewDelegate, UICollectionViewDataSource, ZIMKitDefaultEmojiCollectionViewDelegate>
 

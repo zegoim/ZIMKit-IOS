@@ -6,6 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ZIM/ZIM.h>
+
 @class ZIMKitGroupInfo, ZIMKitGroupMember;
 
 typedef void (^ZIMKitGroupCallback)(ZIMKitGroupInfo  *_Nullable groupInfo, ZIMError * _Nullable errorInfo);

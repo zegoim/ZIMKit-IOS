@@ -6,6 +6,7 @@
 //
 
 #import "ZIMKitMessageSendToolbar.h"
+#import "ZIMKitDefine.h"
 
 @interface ZIMKitMessageSendToolbar ()<ZIMKitInputBarDelegate, ZIMKitFaceManagerViewDelegate, ZIMKitChatBarMoreViewDelegate>
 

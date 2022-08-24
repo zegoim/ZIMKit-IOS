@@ -6,6 +6,7 @@
 //
 
 #import "ZIMKitTextMessageCell.h"
+#import "UIView+ZIMKitLayout.h"
 
 @interface ZIMKitTextMessageCell ()
 @property (nonatomic, strong) ZIMKitTextMessage *message;

@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIView (Layout)
+@interface UIView (ZIMKitLayout)
 
 @property (nonatomic) CGFloat x;
 @property (nonatomic) CGFloat y;

@@ -7,6 +7,7 @@
 
 #import "ZIMKitManager.h"
 #import "ZIMKitEventHandler.h"
+#import "ZIMKitDefine.h"
 
 @interface ZIMKitManager ()
 

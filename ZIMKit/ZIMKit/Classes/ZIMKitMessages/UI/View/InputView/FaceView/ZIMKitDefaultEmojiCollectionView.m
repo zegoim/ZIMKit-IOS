@@ -7,6 +7,9 @@
 
 #import "ZIMKitDefaultEmojiCollectionView.h"
 #import "ZIMKitEmojiItemCell.h"
+#import "ZIMKitDefine.h"
+
+#import <Masonry/Masonry.h>
 
 #define ZIMKitEmojiRowCount 7
 

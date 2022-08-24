@@ -5,10 +5,11 @@
 //  Created by zego on 2022/5/19.
 //  
 
-#import "UIView+Layout.h"
+#import "UIView+ZIMKitLayout.h"
+#import "ZIMKitDefine.h"
 #import <objc/runtime.h>
 
-@implementation UIView (Layout)
+@implementation UIView (ZIMKitLayout)
 
 - (void)setX:(CGFloat)x {
     CGRect frame = self.frame;

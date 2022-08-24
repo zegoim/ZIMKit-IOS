@@ -18,6 +18,9 @@
 #import "ZIMKitMessagesListVC+InputBar.h"
 #import "ZIMKitImageMessage.h"
 #import "GKPhotoBrowser.h"
+#import "ZIMKitDefine.h"
+#import <TZImagePickerController/TZImagePickerController.h>
+#import <SDWebImage/SDWebImage.h>
 
 @interface ZIMKitMessagesListVC ()
             <ZIMKitMessagesVMDelegate, UITableViewDelegate, UITableViewDataSource,

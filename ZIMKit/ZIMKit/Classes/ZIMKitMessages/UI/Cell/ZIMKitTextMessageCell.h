@@ -7,6 +7,7 @@
 
 #import "ZIMKitBubbleMessageCell.h"
 #import "ZIMKitTextMessage.h"
+#import <YYText/YYText.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

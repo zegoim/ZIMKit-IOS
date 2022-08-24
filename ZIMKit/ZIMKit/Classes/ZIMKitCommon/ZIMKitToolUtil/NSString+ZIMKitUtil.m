@@ -6,6 +6,7 @@
 //
 
 #import "NSString+ZIMKitUtil.h"
+#import "NSBundle+ZIMKitUtil.h"
 
 @implementation NSString (ZIMKitUtil)
 

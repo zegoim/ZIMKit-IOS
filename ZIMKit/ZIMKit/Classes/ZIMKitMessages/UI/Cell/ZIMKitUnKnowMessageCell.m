@@ -7,6 +7,8 @@
 
 #import "ZIMKitUnKnowMessageCell.h"
 #import "ZIMKitUnKnowMessage.h"
+#import <YYText/YYText.h>
+#import "UIView+ZIMKitLayout.h"
 
 @interface ZIMKitUnKnowMessageCell ()
 

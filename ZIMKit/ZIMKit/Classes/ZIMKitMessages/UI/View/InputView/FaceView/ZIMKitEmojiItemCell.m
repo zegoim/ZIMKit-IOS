@@ -6,6 +6,7 @@
 //
 
 #import "ZIMKitEmojiItemCell.h"
+#import <Masonry/Masonry.h>
 
 @implementation ZIMKitEmojiItemCell
 

@@ -30,7 +30,8 @@
 #define  kSCREEN_HEIGHT  ([UIScreen mainScreen].bounds.size.height)
 #define UnReadView_Margin 4
 
-#define IS_iPhoneX (Screen_Width >=375.0f && Screen_Height >=812.0f && Is_Iphone)
+#define Is_Iphone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_iPhoneX (kSCREEN_WIDTH >=375.0f && kSCREEN_HEIGHT >=812.0f && Is_Iphone)
 
 #endif
 

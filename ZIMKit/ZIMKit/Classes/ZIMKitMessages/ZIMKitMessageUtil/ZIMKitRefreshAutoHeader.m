@@ -6,6 +6,7 @@
 //
 
 #import "ZIMKitRefreshAutoHeader.h"
+#import "ZIMKitDefine.h"
 
 @interface ZIMKitRefreshAutoHeader()
 @property (weak, nonatomic) UILabel *label;

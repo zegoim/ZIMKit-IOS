@@ -13,6 +13,7 @@
 #import "ZIMKitSystemMessage.h"
 #import "ZIMKitEventHandler.h"
 #import "ZIMKitMessageTool.h"
+#import "ZIMKitDefine.h"
 
 @interface ZIMKitMessagesVM ()
 

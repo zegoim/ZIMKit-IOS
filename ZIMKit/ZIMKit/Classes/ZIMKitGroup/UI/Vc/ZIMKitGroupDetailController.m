@@ -7,6 +7,7 @@
 
 #import "ZIMKitGroupDetailController.h"
 #import "ZIMKitGroupdetailView.h"
+#import "ZIMKitDefine.h"
 
 @interface ZIMKitGroupDetailController ()
 

@@ -9,6 +9,7 @@
 #import "ZIMKitDefine.h"
 #import "NSString+ZIMKitUtil.h"
 #import "ZIMMessage+Extension.h"
+#import <SDWebImage/SDWebImage.h>
 
 @implementation ZIMKitConversationCell
 

@@ -25,7 +25,6 @@
   "pod_target_xcconfig": {
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
-  "prefix_header_file": "ZIMKit/Classes/ZIMKitCommon/ZIMKitCommBase/ZIMKitPrefix.pch",
   "xcconfig": {
     "VALID_ARCHS": "arm64 x86_64"
   },

@@ -6,6 +6,7 @@
 //
 
 #import "ZIMKitInputTextView.h"
+#import "ZIMKitDefine.h"
 
 #define kTextInsetX 4
 #define kTextInsetY 0

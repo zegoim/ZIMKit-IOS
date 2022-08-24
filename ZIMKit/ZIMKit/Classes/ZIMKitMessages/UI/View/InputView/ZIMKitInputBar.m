@@ -6,6 +6,7 @@
 //
 
 #import "ZIMKitInputBar.h"
+#import "ZIMKitDefine.h"
 
 #define ZIMKitFaceKeybordH 250
 #define inputViewH 44

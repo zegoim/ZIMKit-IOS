@@ -41,7 +41,7 @@ extern const NSString * CSToastPositionBottom;
  The `showToast:` methods display any view as toast.
  
  */
-@interface UIView (Toast)
+@interface UIView (ZIMKitToast)
 
 /**
  Creates and presents a new toast view with a message and displays it with the

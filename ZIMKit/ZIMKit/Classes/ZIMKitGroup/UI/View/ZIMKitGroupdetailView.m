@@ -6,6 +6,7 @@
 //
 
 #import "ZIMKitGroupdetailView.h"
+#import "ZIMKitDefine.h"
 
 @interface ZIMKitGroupdetailView ()
 

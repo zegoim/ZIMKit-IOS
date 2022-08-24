@@ -6,6 +6,7 @@
 //
 
 #import "ZIMKitGroupModule.h"
+#import "ZIMKitDefine.h"
 
 @implementation ZIMKitGroupModule
 

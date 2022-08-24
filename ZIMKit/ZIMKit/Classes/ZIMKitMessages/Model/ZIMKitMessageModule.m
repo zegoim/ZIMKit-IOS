@@ -6,6 +6,7 @@
 //
 
 #import "ZIMKitMessageModule.h"
+#import "ZIMKitDefine.h"
 
 @implementation ZIMKitMessageModule
 

@@ -6,6 +6,7 @@
 //
 
 #import "ZIMKitAlertView.h"
+#import "ZIMKitDefine.h"
 
 #define itemH 50
 #define topMargin 12

@@ -6,7 +6,7 @@
 //
 
 #import "ZIMKitUnknowMessage.h"
-#import "NSString+ZIMKitUtil.h"
+#import "ZIMKitDefine.h"
 
 @implementation ZIMKitUnknowMessage
 

@@ -10,6 +10,7 @@
 #import "ZIMKitMessageTool.h"
 #import <UserNotifications/UserNotifications.h>
 #import "ZIMMessage+Extension.h"
+#import "ZIMKitDefine.h"
 
 @interface ZIMKitLocalAPNS ()
 {

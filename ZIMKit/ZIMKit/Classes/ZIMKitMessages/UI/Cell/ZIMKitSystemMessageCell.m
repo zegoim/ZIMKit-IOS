@@ -7,6 +7,7 @@
 
 #import "ZIMKitSystemMessageCell.h"
 #import "NSString+ZIMKitUtil.h"
+#import "ZIMKitDefine.h"
 
 @interface ZIMKitSystemMessageCell ()
 

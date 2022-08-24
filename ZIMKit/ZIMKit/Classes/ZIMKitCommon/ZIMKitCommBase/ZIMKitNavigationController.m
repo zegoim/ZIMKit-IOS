@@ -6,6 +6,7 @@
 //
 
 #import "ZIMKitNavigationController.h"
+#import "ZIMKitDefine.h"
 
 @interface ZIMKitNavigationController ()
 

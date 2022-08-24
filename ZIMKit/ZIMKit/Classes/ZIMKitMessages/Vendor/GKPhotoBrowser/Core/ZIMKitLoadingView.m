@@ -6,6 +6,8 @@
 //
 
 #import "ZIMKitLoadingView.h"
+#import "ZIMKitDefine.h"
+#import <Masonry/Masonry.h>
 
 @implementation ZIMKitLoadingView
 

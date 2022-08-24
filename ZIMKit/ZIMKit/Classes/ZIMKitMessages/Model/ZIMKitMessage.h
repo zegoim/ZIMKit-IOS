@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ZIMKitMessageCellConfig.h"
+#import <ZIM/ZIM.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

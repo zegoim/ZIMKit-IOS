@@ -6,6 +6,9 @@
 //
 
 #import "ZIMKitChatBarMoreView.h"
+#import "ZIMKitDefine.h"
+#import <Masonry/Masonry.h>
+
 #define ZIMKitMoreRowCount 4
 
 @interface ZIMKitMoreListCollectionViewCell : UICollectionViewCell

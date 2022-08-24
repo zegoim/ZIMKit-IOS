@@ -8,6 +8,7 @@
 #import "ZIMKitGroupVM.h"
 #import "ZIMKitGroupInfo.h"
 #import "ZIMKitGroupMember.h"
+#import "ZIMKitDefine.h"
 
 @implementation ZIMKitGroupVM
 

@@ -13,7 +13,13 @@
 #import "ZIMKitConversationListVC.h"
 #import "ZIMKitNavigationController.h"
 #import "ZIMKitBaseViewController.h"
-#import "UIView+Toast.h"
+#import "UIView+ZIMKitToast.h"
+#import "UIView+ZIMKitLayout.h"
+#import "UIColor+ZIMKitUtil.h"
+#import "UIImage+ZIMKitUtil.h"
+#import "NSBundle+ZIMKitUtil.h"
+#import "NSObject+ZIMKitUtil.h"
+
 #import "ZIMKitRouter.h"
 #import "ZIMKitBaseModule.h"
 #import "ZIMKitLocalAPNS.h"
@@ -22,6 +28,9 @@
 #import "ZIMKitGroupDetailController.h"
 #import "ZIMKitAlertView.h"
 #import "ZIMKitMessagesListVC.h"
+
+#define weakify(obj) autoreleasepool{} __weak typeof(obj) obj##Weak = obj;
+#define strongify(obj) autoreleasepool{} __strong typeof(obj) obj = obj##Weak;
 
 #define ZIMKitManagerZIM    [ZIMKitManager shared].zim
 #define Screen_Width        [UIScreen mainScreen].bounds.size.width

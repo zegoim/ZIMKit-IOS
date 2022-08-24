@@ -8,6 +8,7 @@
 
 #import "GKPhotoBrowser.h"
 #import "GKPanGestureRecognizer.h"
+#import "ZIMKitDefine.h"
 
 #if __has_include(<GKYYWebImageManager.h>)
 #import "GKYYWebImageManager.h"

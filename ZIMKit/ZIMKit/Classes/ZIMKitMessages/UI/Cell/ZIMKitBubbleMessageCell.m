@@ -6,6 +6,8 @@
 //
 
 #import "ZIMKitBubbleMessageCell.h"
+#import "UIView+ZIMKitLayout.h"
+
 
 @interface ZIMKitBubbleMessageCell ()
 @property (nonatomic, strong) ZIMKitMessage *message;

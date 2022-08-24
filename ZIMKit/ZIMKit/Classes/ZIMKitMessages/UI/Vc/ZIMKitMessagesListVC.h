@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ZIM/ZIM.h>
 #import "ZIMKitBaseViewController.h"
 #import "ZIMKitMessageSendToolbar.h"
 

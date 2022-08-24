@@ -6,6 +6,10 @@
 //
 
 #import "ZIMKitImageMessageCell.h"
+#import "UIView+ZIMKitLayout.h"
+#import "UIImage+ZIMKitUtil.h"
+
+#import <SDWebImage/SDWebImage.h>
 
 @interface ZIMKitImageMessageCell ()
 

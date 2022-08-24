@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ZIM/ZIM.h>
 
 @class ZIMKitMessage,ZIMKitMediaMessage, ZIMKitMessagesVM;
 
