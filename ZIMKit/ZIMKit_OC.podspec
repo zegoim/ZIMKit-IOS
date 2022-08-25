@@ -140,7 +140,7 @@ TODO: Add long description of the pod here.
     'CommonResources' => ['ZIMKit/Assets/CommonResources/*'],
     'ConversationResources' => ['ZIMKit/Assets/ConversationResources/*'],
     'GroupResources' => ['ZIMKit/Assets/GroupResources/*'],
-    'GKPhotoBrowserRecources' => ['ZIMKit/Assets/GKPhotoBrowserRecources/*']
+    'GKPhotoBrowser' => ['ZIMKit/Assets/GKPhotoBrowser/*']
   }
   
   s.ios.public_header_files = 'ZIMKit/Classes/**/*.h'
