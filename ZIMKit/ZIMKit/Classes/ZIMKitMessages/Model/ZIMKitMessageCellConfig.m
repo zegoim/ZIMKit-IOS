@@ -57,7 +57,7 @@
 /// 内容与四周边缘距离
 - (UIEdgeInsets)contentViewInsets {
     
-    if (self.message.type == ZIMMessageTypeText) {
+    if (self.message.type == ZIMMessageTypeText || self.message.type == ZIMMessageTypeUnknown) {
         return UIEdgeInsetsMake(11, 12, 11, 12);
     } else {
         return UIEdgeInsetsZero;

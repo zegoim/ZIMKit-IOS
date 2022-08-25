@@ -42,8 +42,8 @@
       "GroupResources": [
         "ZIMKit/Assets/GroupResources/*"
       ],
-      "GKPhotoBrowserRecources": [
-        "ZIMKit/Assets/GKPhotoBrowserRecources/*"
+      "GKPhotoBrowser": [
+        "ZIMKit/Assets/GKPhotoBrowser/*"
       ]
     },
     "public_header_files": "ZIMKit/Classes/**/*.h"
