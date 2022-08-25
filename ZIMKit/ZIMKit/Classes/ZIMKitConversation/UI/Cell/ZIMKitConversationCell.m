@@ -63,9 +63,9 @@
     self.headImageView.image = nil;
     
     if (data.type == ZIMConversationTypePeer) {
-        [self.headImageView sd_setImageWithURL:[NSURL URLWithString:data.conversationAvatar] placeholderImage:[UIImage ZIMKitConversationImage:@"avatar_default"]];
+        [self.headImageView sd_setImageWithURL:[NSURL URLWithString:data.conversationAvatar] placeholderImage:[UIImage ZIMKitConversationImage:@"conversation_avatar_default"]];
     } else {
-        self.headImageView.image = [UIImage ZIMKitConversationImage:@"groupAvatar_default"];
+        self.headImageView.image = [UIImage ZIMKitConversationImage:@"conversation_groupAvatar_default"];
     }
     
     self.titleLabel.text = data.conversationName;

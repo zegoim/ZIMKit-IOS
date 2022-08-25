@@ -39,7 +39,7 @@
     
     _avatarImageView = [[UIImageView alloc] init];
     _avatarImageView.contentMode = UIViewContentModeScaleAspectFit;
-    _avatarImageView.image = [UIImage zegoImageNamed:@"avatar_default"];
+    _avatarImageView.image = [UIImage zegoImageNamed:@"chat_avatar_default"];
     _avatarImageView.layer.cornerRadius = 8.0;
     _avatarImageView.layer.masksToBounds = YES;
     [self.contentView addSubview:_avatarImageView];
@@ -58,7 +58,7 @@
     [self.contentView addSubview:_indicator];
     
     _retryButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_retryButton setImage:[UIImage zegoImageNamed:@"message_send_fail"] forState:UIControlStateNormal];
+    [_retryButton setImage:[UIImage zegoImageNamed:@"chat_message_send_fail"] forState:UIControlStateNormal];
     [self.contentView addSubview:_retryButton];
     
     _selectedButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -69,9 +69,9 @@
     _message = message;
     
     if (message.direction == ZIMMessageDirectionReceive) {
-        [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString:message.senderUserAvatar] placeholderImage:[UIImage zegoImageNamed:@"avatar_default"]];
+        [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString:message.senderUserAvatar] placeholderImage:[UIImage zegoImageNamed:@"chat_avatar_default"]];
     } else {
-        [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString:[ZIMKitManager shared].userfullinfo.userAvatarUrl] placeholderImage:[UIImage zegoImageNamed:@"avatar_default"]];
+        [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString:[ZIMKitManager shared].userfullinfo.userAvatarUrl] placeholderImage:[UIImage zegoImageNamed:@"chat_avatar_default"]];
     }
     
     if (message.sentStatus == ZIMMessageSentStatusSending) {
