@@ -1,59 +1,61 @@
-## 概述
+## Overview
 
-本文介绍如何快速跑通示例源码，体验基础的 ZIMKit 集成方案。
+The following describe how to run the sample code of the In-app Chat UIKit.
 
-## 准备环境
+## Prepare the environment
 
-在运行示例源码前，请确保开发环境满足以下要求：
+Before you begin, make sure your environment meets the following:
 
-- Xcode 7.0 或以上版本。
-- iOS 9.0 或以上版本的 iOS 设备（真机）。
-- iOS 设备已经连接到 Internet。
+- Xcode 7.0 or later.
+- A real iOS device that is running on iOS 9.0 or later and supports audio and video.
+- The device is connected to the internet.
 
-## 前提条件
+## Prerequisites
 
-请联系 ZEGO 技术支持，申请接入 ZIM SDK 服务所需的 AppID 和 ServerSecret 并配置相关服务权限。
+- Go to [ZEGOCLOUD Admin Console\|_blank](https://console.zegocloud.com/) and do the following:
+    1.  Create a project, and get the `AppID` and `AppSign` of your project. 
+    2.  Subscribe the **In-app Chat** service.
 
-## 示例源码运行指引
+## Run the sample code
 
-### 示例源码目录结构
+### Sample code directory structure
 
 ```bash
-├── Podfile ----------------------------------------------工程依赖相关第三方库配置
-├── Pods -------------------------------------------------工程依赖相关第三方库
-├── ZIMKitDemo.xcworkspace -------------------------------可使用 xcode 打开工程
+├── Podfile ----------------------------------------------Related third-party library configurations that the project depends on
+├── Pods -------------------------------------------------Related third-party libraries on which the project depends
+├── ZIMKitDemo.xcworkspace -------------------------------Project can be opened with XCode
 └── ZIMKitDemo
     ├── AppDelegate.m
     ├── AppDelegate.h
     ├── KeyCenter
     │   ├── KeyCenter.h
-    │   └── KeyCenter.m-----------------------------------填写申请的 AppID
-    ├── Login ---------------------------------------------登录相关
-    ├── Conversation --------------------------------------会话列表相关
-    ├── TokenGenerator ------------------------------------生成鉴权token
-    ├── zh-Hans.lproj -------------------------------------demo的多语言
-    ├── podfile -------------------------------------------demo的相关依赖
-    ├── Assets.xcassets -----------------------------------demo的资源图片
-    └── Util ----------------------------------------------demo 用到的工具类
+    │   └── KeyCenter.m----------------------------------- Fill in the AppID you get
+    ├── Login ---------------------------------------------Login related
+    ├── Conversation --------------------------------------Session list related
+    ├── TokenGenerator ------------------------------------Token related
+    ├── zh-Hans.lproj -------------------------------------Multilanguage files
+    ├── podfile -------------------------------------------Demo related dependencies
+    ├── Assets.xcassets -----------------------------------dDemo resource images
+    └── Util ----------------------------------------------Utilities that the demo uses
 ```
 
-### 运行示例源码
+### Run the sample code
 
-1. 下载上方示例源码，打开 ZIMKit-IOS/ZIMKitDemo/ZIMKitDemo/KeyCenter 文件夹下的 “KeyCenter.m” 文件，并使用本文 [前提条件] 已获取的 AppID 和 ServerSecret 正确填写，并保存。
+1. Downlaod the sample code, open the `KeyCenter.m` file under the `ZIMKit-IOS/ZIMKitDemo/ZIMKitDemo/KeyCenter` folder, and fill in the AppID and AppSign you get from the ZEGOCLOUD Admin Console.
 
    ```objc
    + (unsigned int)appID {
         return 0; //AppID
     }
 
-   + (NSString *)Secret{
-        return @""; //ServerSecret
+   + (NSString *)AppSign{
+        return @""; //AppSign
     }
    ```
 
-2. 进入到ZIMKit-IOS/ZIMKitDemo/ 执行pod install 下载需要的依赖库。
+2. Go to the `ZIMKit-IOS/ZIMKitDemo/` and run the command `pod install` to install dependencies. 
 
    ```bash
     pod install
    ```
-3.pod install 完成之后 便可编译运行 。
+3. After finishing the above steps, you can complile and run the In-app Chat UIKit.
